@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-05-19T15:32:05-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Other Effective Sampling Methods</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Statistics Lecture Notes</span></a></h1>
+<p class="byline">Jason D. Underdown</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-simple-random-sampling.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-collection.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-bias-in-sampling.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-simple-random-sampling.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-collection.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-bias-in-sampling.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+</ul>
+</li>
+<li class="link"><a href="part-getting-information.html" data-scroll="part-getting-information"><span class="codenumber">I</span> <span class="title">Getting the Information You Need</span></a></li>
+<li class="link">
+<a href="ch-collection.html" data-scroll="ch-collection"><span class="codenumber">1</span> <span class="title">Data Collection</span></a><ul>
+<li><a href="sec-practice-of-stats.html" data-scroll="sec-practice-of-stats">Introduction to the Practice of Statistics</a></li>
+<li><a href="sec-observational-vs-designed.html" data-scroll="sec-observational-vs-designed">Observational Studies Vs. Designed Experiments</a></li>
+<li><a href="sec-simple-random-sampling.html" data-scroll="sec-simple-random-sampling">Simple Random Sampling</a></li>
+<li><a href="sec-other-sampling-methods.html" data-scroll="sec-other-sampling-methods" class="active">Other Effective Sampling Methods</a></li>
+<li><a href="sec-bias-in-sampling.html" data-scroll="sec-bias-in-sampling">Bias in Sampling</a></li>
+</ul>
+</li>
+<li class="link"><a href="part-descriptive-stats.html" data-scroll="part-descriptive-stats"><span class="codenumber">II</span> <span class="title">Descriptive Statistics</span></a></li>
+<li class="link">
+<a href="ch-tables-and-graphs.html" data-scroll="ch-tables-and-graphs"><span class="codenumber">2</span> <span class="title">Summarizing Data in Tables and Graphs</span></a><ul>
+<li><a href="sec-organizing-qualitative-data.html" data-scroll="sec-organizing-qualitative-data">Organizing Qualitative Data</a></li>
+<li><a href="sec-organizing-quantitative-data.html" data-scroll="sec-organizing-quantitative-data">Organizing Quantitative Data</a></li>
+<li><a href="sec-graphical-misrepresentations-of-data.html" data-scroll="sec-graphical-misrepresentations-of-data">Graphical Misrepresentations of Data</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-numerical-summaries.html" data-scroll="ch-numerical-summaries"><span class="codenumber">3</span> <span class="title">Numerically Summarizing Data</span></a><ul>
+<li><a href="sec-measures-central-tendency.html" data-scroll="sec-measures-central-tendency">Measures of Central Tendency</a></li>
+<li><a href="sec-measures-dispersion.html" data-scroll="sec-measures-dispersion">Measures of Dispersion</a></li>
+<li><a href="sec-measures-grouped-data.html" data-scroll="sec-measures-grouped-data">Measures of Central Tendency and Dispersion from Grouped Data</a></li>
+<li><a href="sec-measures-position-and-outliers.html" data-scroll="sec-measures-position-and-outliers">Measures of Position and Outliers</a></li>
+<li><a href="sec-five-number-summary-boxplots.html" data-scroll="sec-five-number-summary-boxplots">The Five--Number Summary and Boxplots</a></li>
+</ul>
+</li>
+<li class="link"><a href="ch-relations-between-two-varibles.html" data-scroll="ch-relations-between-two-varibles"><span class="codenumber">4</span> <span class="title">Describing the Relation between Two Variables</span></a></li>
+<li class="link"><a href="part-probability.html" data-scroll="part-probability"><span class="codenumber">III</span> <span class="title">Probability and Probability Distributions</span></a></li>
+<li class="link"><a href="ch-probability.html" data-scroll="ch-probability"><span class="codenumber">5</span> <span class="title">Probability</span></a></li>
+<li class="link"><a href="ch-discrete-probability.html" data-scroll="ch-discrete-probability"><span class="codenumber">6</span> <span class="title">Discrete Probability Distributions</span></a></li>
+<li class="link"><a href="ch-normal-probability.html" data-scroll="ch-normal-probability"><span class="codenumber">7</span> <span class="title">The Normal Probability Distribution</span></a></li>
+<li class="link"><a href="part-inferential-stats.html" data-scroll="part-inferential-stats"><span class="codenumber">IV</span> <span class="title">Inference: From Samples to Population</span></a></li>
+<li class="link"><a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></li>
+<li class="link"><a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a></li>
+<li class="link"><a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a></li>
+<li class="link"><a href="ch-inferences-on-two-samples.html" data-scroll="ch-inferences-on-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-other-sampling-methods"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">Other Effective Sampling Methods</span>
+</h2>
+<a href="sec-other-sampling-methods.html" class="permalink">¶</a><article class="definition-like" id="definition-32"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">1.4.1</span>. <span class="title">stratified sampling.</span>
+</h6>a simple random sample is drawn from each nonoverlapping subgroup (or <dfn class="terminology">stratum</dfn>) into which the population has been separated.<p id="p-19">Works best when individuals in each stratum are similar in some way and we want to make sure each stratum type is represented. The size of each simple random sample is proportional to the number of individuals in the stratum from which it is selected. (e.g. separating individuals into age groups)</p></article><article class="definition-like" id="definition-33"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">1.4.2</span>. <span class="title">systematic sampling.</span>
+</h6>
+<p id="p-20">a starting point, \(p\text{,}\) is randomly selected and then every \(k\)th subject is included in the sample, where</p>
+<div class="displaymath">
+\begin{gather*}
+k = \lfloor N/n \rfloor
+\end{gather*}
+</div>
+<p>The brackets, \(\lfloor x \rfloor\text{,}\) mean round \(x\) down to the nearest integer, or take the <dfn class="terminology">floor</dfn> of \(x\text{.}\) Subjects in the sample are numbered:</p>
+<div class="displaymath">
+\begin{gather*}
+p, p+k, p+2k, p+3k, \ldots, p+(n-1)k
+\end{gather*}
+</div>
+<p id="p-21">Works best when individuals are arranged sequentially but you’re not sure how many total individuals there are because you don’t have a frame of the population (e.g. files in a drawer, people coming out of a building exit polling, etc.).</p></article><article class="definition-like" id="definition-34"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">1.4.3</span>. <span class="title">cluster sampling.</span>
+</h6>
+<p id="p-22">the population is divided into sections or <dfn class="terminology">clusters</dfn>; all individuals from randomly selected clusters are included in the sample.</p>
+<p id="p-23">Works best when individuals are grouped geographically so it makes logistical sense to sample this way, but location does not affect your variable of interest; clusters are heterogeneous like the population.</p></article><article class="definition-like" id="definition-35"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">1.4.4</span>. <span class="title">convenience sampling.</span>
+</h6>
+<p id="p-24">sampling subjects who are easy to get (bad sampling method).</p>
+<p id="p-25">Works best when: NEVER!! (not random)</p></article><article class="definition-like" id="definition-36"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">1.4.5</span>. <span class="title">self-selected sampling.</span>
+</h6>
+<p id="p-26">a convenience sample where individuals are self-selected (another bad sampling method).</p>
+<p id="p-27">Works best when: NEVER!! (not random, favors those with stronger opinions)</p></article><article class="definition-like" id="definition-37"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">1.4.6</span>. <span class="title">multi-stage sampling.</span>
+</h6>
+<p id="p-28">a sample that is selected in multiple stages, each of which might use a different method of sampling.</p>
+<p id="p-29">Works best when: The population is organized hierarchically but no list exists.</p></article><section class="reading-questions" id="reading-questions-11"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Identify the Sampling Method Part I</span>
+</h3>
+<article class="exercise-like" id="exercise-41"><h6 class="heading"><span class="codenumber">1.</span></h6>The fifth person exiting the student center and every 12th person afterward is interviewed. <a data-knowl="" class="id-ref" data-refid="hk-answer-42" id="answer-42"><span class="type">Answer</span></a><div id="hk-answer-42" class="hidden-content tex2jax_ignore"><div class="solution">systematic sampling</div></div></article><article class="exercise-like" id="exercise-42"><h6 class="heading"><span class="codenumber">2.</span></h6>Two out of the six parking lots on campus are randomly selected and every driver in the two lots receives a questionnaire. <a data-knowl="" class="id-ref" data-refid="hk-answer-43" id="answer-43"><span class="type">Answer</span></a><div id="hk-answer-43" class="hidden-content tex2jax_ignore"><div class="solution">cluster sampling</div></div></article><article class="exercise-like" id="exercise-43"><h6 class="heading"><span class="codenumber">3.</span></h6>Each registered student is assigned a number, 20 numbers are randomly generated and the corresponding students are interviewed. <a data-knowl="" class="id-ref" data-refid="hk-answer-44" id="answer-44"><span class="type">Answer</span></a><div id="hk-answer-44" class="hidden-content tex2jax_ignore"><div class="solution">simple random sampling</div></div></article><article class="exercise-like" id="exercise-44"><h6 class="heading"><span class="codenumber">4.</span></h6>Six buildings on campus are randomly selected and every 4th person who exits each building is included in the sample. <a data-knowl="" class="id-ref" data-refid="hk-answer-45" id="answer-45"><span class="type">Answer</span></a><div id="hk-answer-45" class="hidden-content tex2jax_ignore"><div class="solution">multi-stage sampling; (cluster sampling followed by systematic sampling)</div></div></article><article class="exercise-like" id="exercise-45"><h6 class="heading"><span class="codenumber">5.</span></h6>Randomly select 10 males and 10 females in the activity center to be interviewed. <a data-knowl="" class="id-ref" data-refid="hk-answer-46" id="answer-46"><span class="type">Answer</span></a><div id="hk-answer-46" class="hidden-content tex2jax_ignore"><div class="solution">stratified sampling</div></div></article><article class="exercise-like" id="exercise-46"><h6 class="heading"><span class="codenumber">6.</span></h6>Every person in my class that sits next to me in Math 1040 is interviewed. <a data-knowl="" class="id-ref" data-refid="hk-answer-47" id="answer-47"><span class="type">Answer</span></a><div id="hk-answer-47" class="hidden-content tex2jax_ignore"><div class="solution">convenience sampling</div></div></article><article class="exercise-like" id="exercise-47"><h6 class="heading"><span class="codenumber">7.</span></h6>A pile of questionnaires is left on a table in the library with a sign that says, “Please complete.” <a data-knowl="" class="id-ref" data-refid="hk-answer-48" id="answer-48"><span class="type">Answer</span></a><div id="hk-answer-48" class="hidden-content tex2jax_ignore"><div class="solution">self-selected sampling</div></div></article></section><section class="reading-questions" id="reading-questions-12"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Identify the Sampling Method Part II</span>
+</h3>
+<p id="p-30">For each scenario determine which type of sampling is used.</p>
+<article class="exercise-like" id="exercise-48"><h6 class="heading"><span class="codenumber">1.</span></h6>To estimate the percentage of defects in a recent manufacturing batch, a quality control manager selects every 8th chip that comes of the assemply line starting with the 3rd until she obtains 140 chips. <a data-knowl="" class="id-ref" data-refid="hk-answer-49" id="answer-49"><span class="type">Answer</span></a><div id="hk-answer-49" class="hidden-content tex2jax_ignore"><div class="solution">systematic sampling</div></div></article><article class="exercise-like" id="exercise-49"><h6 class="heading"><span class="codenumber">2.</span></h6>To determine customer opinion of its boarding policy, Southwest Airlines randomly selects 60 flights during a certain week and surveys all passengers on the flights. <a data-knowl="" class="id-ref" data-refid="hk-answer-50" id="answer-50"><span class="type">Answer</span></a><div id="hk-answer-50" class="hidden-content tex2jax_ignore"><div class="solution">cluster sampling</div></div></article><article class="exercise-like" id="exercise-50"><h6 class="heading"><span class="codenumber">3.</span></h6>A member of Congress wishes to determine her constituency’s opinions regarding estate taxes. She first divides her constituency into three income classes: low-income households, middle-income households, and upper-income households. She then takes a simple random sample of households from each income class. <a data-knowl="" class="id-ref" data-refid="hk-answer-51" id="answer-51"><span class="type">Answer</span></a><div id="hk-answer-51" class="hidden-content tex2jax_ignore"><div class="solution">stratified sampling</div></div></article><article class="exercise-like" id="exercise-51"><h6 class="heading"><span class="codenumber">4.</span></h6>In an effort to identify whether an advertising campaign has been effective, a marketing firm conducts a nation wide poll by randomly selecting individuals from a list of known users of the product. <a data-knowl="" class="id-ref" data-refid="hk-answer-52" id="answer-52"><span class="type">Answer</span></a><div id="hk-answer-52" class="hidden-content tex2jax_ignore"><div class="solution">simple random sampling</div></div></article><article class="exercise-like" id="exercise-52"><h6 class="heading"><span class="codenumber">5.</span></h6>A radio station asks its listeners to call in their opinion regarding the use of U.S. forces in peace keeping missions. <a data-knowl="" class="id-ref" data-refid="hk-answer-53" id="answer-53"><span class="type">Answer</span></a><div id="hk-answer-53" class="hidden-content tex2jax_ignore"><div class="solution">self-selected sampling</div></div></article><article class="exercise-like" id="exercise-53"><h6 class="heading"><span class="codenumber">6.</span></h6>A college official divides the student population into five classes: freshman, sophomore, junior, senior and graduate student. The official takes a simple random sample from each class and asks the members’ opinions regarding student services. <a data-knowl="" class="id-ref" data-refid="hk-answer-54" id="answer-54"><span class="type">Answer</span></a><div id="hk-answer-54" class="hidden-content tex2jax_ignore"><div class="solution">stratified sampling</div></div></article></section><section class="reading-questions" id="reading-questions-13"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Systematic Sampling Example</span>
+</h3>
+<p id="p-31">The human resources department at a company wants to conduct a survey regarding employee morale. The department has a list of all 400 employees at the company and wants to do a systematic sample of size 20. To do this they randomly select the 8th employee and then select every 20th person. Which workers will be surveyed?</p>
+<article class="exercise-like" id="exercise-54"><h6 class="heading"><span class="codenumber">1.</span></h6>1st = <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><a data-knowl="" class="id-ref" data-refid="hk-answer-55" id="answer-55"><span class="type">Answer</span></a><div id="hk-answer-55" class="hidden-content tex2jax_ignore"><div class="solution">\(8 = p\)</div></div></article><article class="exercise-like" id="exercise-55"><h6 class="heading"><span class="codenumber">2.</span></h6>2nd = <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><a data-knowl="" class="id-ref" data-refid="hk-answer-56" id="answer-56"><span class="type">Answer</span></a><div id="hk-answer-56" class="hidden-content tex2jax_ignore"><div class="solution">\(28 = p + k = 8 + 20\)</div></div></article><article class="exercise-like" id="exercise-56"><h6 class="heading"><span class="codenumber">3.</span></h6>3rd = <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><a data-knowl="" class="id-ref" data-refid="hk-answer-57" id="answer-57"><span class="type">Answer</span></a><div id="hk-answer-57" class="hidden-content tex2jax_ignore"><div class="solution">\(48 = p + 2k = 8 + 40\)</div></div></article><article class="exercise-like" id="exercise-57"><h6 class="heading"><span class="codenumber">4.</span></h6>20th = <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><a data-knowl="" class="id-ref" data-refid="hk-answer-58" id="answer-58"><span class="type">Answer</span></a><div id="hk-answer-58" class="hidden-content tex2jax_ignore"><div class="solution">\(388 = p + (n-1)k = 8 + (19)20\)</div></div></article></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>
