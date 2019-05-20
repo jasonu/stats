@@ -1295,7 +1295,7 @@
 	    </statement>
 	  </definition>
 
-	  <example>
+	  <reading-questions>
 	    <title>Favorite Day to Eat Out</title>
 
 	    <p>
@@ -1304,66 +1304,297 @@
 	      go out to dinner. The following data are the results.
 	    </p>
 
-	    <tabular top="major">
-	      <row bottom="minor">
-		<cell>Thursday</cell>
-		<cell>Saturday</cell>
-		<cell>Friday</cell>
-		<cell>Friday</cell>
-		<cell>Sunday</cell>
-	      </row>
-	      <row bottom="minor">
-		<cell>Wednesday</cell>
-		<cell>Saturday</cell>
-		<cell>Friday</cell>
-		<cell>Tuesday</cell>
-		<cell>Friday</cell>
-	      </row>
-	      <row bottom="minor">
-		<cell>Saturday</cell>
-		<cell>Monday</cell>
-		<cell>Friday</cell>
-		<cell>Friday</cell>
-		<cell>Sunday</cell>
-	      </row>
-	      <row bottom="minor">
-		<cell>Friday</cell>
-		<cell>Tuesday</cell>
-		<cell>Wednesday</cell>
-		<cell>Saturday</cell>
-		<cell>Friday</cell>
-	      </row>
-	      <row bottom="minor">
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-	      </row>
-	      <row bottom="minor">
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-	      </row>
-	      <row bottom="minor">
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-	      </row>
-	      <row bottom="minor">
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-		<cell></cell>
-	      </row>
-	    </tabular>
+	    <table>
+	      <caption>Data from Wakefield Research</caption>
+	      <tabular top="major">
+		<row bottom="minor">
+		  <cell>Thursday</cell>
+		  <cell>Saturday</cell>
+		  <cell>Friday</cell>
+		  <cell>Friday</cell>
+		  <cell>Sunday</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Wednesday</cell>
+		  <cell>Saturday</cell>
+		  <cell>Friday</cell>
+		  <cell>Tuesday</cell>
+		  <cell>Friday</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Saturday</cell>
+		  <cell>Monday</cell>
+		  <cell>Friday</cell>
+		  <cell>Friday</cell>
+		  <cell>Sunday</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Friday</cell>
+		  <cell>Tuesday</cell>
+		  <cell>Wednesday</cell>
+		  <cell>Saturday</cell>
+		  <cell>Friday</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Wednesday</cell>
+		  <cell>Monday</cell>
+		  <cell>Wednesday</cell>
+		  <cell>Wednesday</cell>
+		  <cell>Friday</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Friday</cell>
+		  <cell>Wednesday</cell>
+		  <cell>Thursday</cell>
+		  <cell>Tuesday</cell>
+		  <cell>Friday</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Tuesday</cell>
+		  <cell>Saturday</cell>
+		  <cell>Friday</cell>
+		  <cell>Tuesday</cell>
+		  <cell>Friday</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Saturday</cell>
+		  <cell>Saturday</cell>
+		  <cell>Saturday</cell>
+		  <cell>Sunday</cell>
+		  <cell>Friday</cell>
+		</row>
+	      </tabular>
+	    </table>
 
-	  </example>
+	    <exercise>
+	      <p>
+		Construct a frequency distribution
+	      </p>
+
+	      <tabular top="major">
+		<row bottom="major">
+		  <cell>Day</cell>
+		  <cell>Tally</cell>
+		  <cell>Frequency</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Sunday</cell>
+		  <cell>
+		    <!-- Some spaces to increase column width  -->
+		    <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+		    <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+		    <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+		    <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+		    <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+		  </cell>
+		  <cell></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Monday</cell>
+		  <cell></cell>
+		  <cell></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Tuesday</cell>
+		  <cell></cell>
+		  <cell></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Wednesday</cell>
+		  <cell></cell>
+		  <cell></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Thursday</cell>
+		  <cell></cell>
+		  <cell></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Friday</cell>
+		  <cell></cell>
+		  <cell></cell>
+		</row>
+		<row bottom="major">
+		  <cell>Saturday</cell>
+		  <cell></cell>
+		  <cell></cell>
+		</row>
+		<row bottom="major">
+		  <cell>Sum:</cell>
+		  <cell></cell>
+		  <cell></cell>
+		</row>
+	      </tabular>
+
+	      <solution>
+		<tabular top="major">
+		  <row bottom="major">
+		    <cell>Day</cell>
+		    <cell halign="center">Frequency</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Sunday</cell>
+		    <cell halign="center">3</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Monday</cell>
+		    <cell halign="center">2</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Tuesday</cell>
+		    <cell halign="center">5</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Wednesday</cell>
+		    <cell halign="center">6</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Thursday</cell>
+		    <cell halign="center">2</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Friday</cell>
+		    <cell halign="center">14</cell>
+		  </row>
+		  <row bottom="major">
+		    <cell>Saturday</cell>
+		    <cell halign="center">8</cell>
+		  </row>
+		  <row bottom="major">
+		    <cell>Sum:</cell>
+		    <cell halign="center">40</cell>
+		  </row>
+		</tabular>
+	      </solution>
+	    </exercise>
+
+	    <exercise>
+	      <p>
+		Construct a relative frequency distribution
+	      </p>
+	      <tabular top="major">
+		<row bottom="major">
+		  <cell>Day</cell>
+		  <cell halign="center">Relative Frequency</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Sunday</cell>
+		  <cell halign="center"></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Monday</cell>
+		  <cell halign="center"></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Tuesday</cell>
+		  <cell halign="center"></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Wednesday</cell>
+		  <cell halign="center"></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Thursday</cell>
+		  <cell halign="center"></cell>
+		</row>
+		<row bottom="minor">
+		  <cell>Friday</cell>
+		  <cell halign="center"></cell>
+		</row>
+		<row bottom="major">
+		  <cell>Saturday</cell>
+		  <cell halign="center"></cell>
+		</row>
+		<row bottom="major">
+		  <cell>Sum:</cell>
+		  <cell halign="center"></cell>
+		</row>
+	      </tabular>
+
+	      <solution>
+		<tabular top="major">
+		  <row bottom="major">
+		    <cell>Day</cell>
+		    <cell halign="right"> Relative Frequency</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Sunday</cell>
+		    <cell halign="right">0.075</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Monday</cell>
+		    <cell halign="right">0.050</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Tuesday</cell>
+		    <cell halign="right">0.125</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Wednesday</cell>
+		    <cell halign="right">0.150</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Thursday</cell>
+		    <cell halign="right">0.050</cell>
+		  </row>
+		  <row bottom="minor">
+		    <cell>Friday</cell>
+		    <cell halign="right">0.350</cell>
+		  </row>
+		  <row bottom="major">
+		    <cell>Saturday</cell>
+		    <cell halign="right">0.200</cell>
+		  </row>
+		  <row bottom="major">
+		    <cell>Sum:</cell>
+		    <cell halign="right">1.000</cell>
+		  </row>
+		</tabular>
+	      </solution>
+	    </exercise>
+
+	    <exercise>
+	      <p>
+		Construct a frequency bar chart
+	      </p>
+	      <solution>
+		<image source="images/eat-out-bar-chart.png" width="100%" />
+	      </solution>
+	    </exercise>
+
+	    <exercise>
+	      <p>
+		Construct a relative frequency bar chart
+	      </p>
+	      <solution>
+		<image source="images/eat-out-rel-freq-bar-chart.png" width="100%" />
+	      </solution>
+	    </exercise>
+
+	    <exercise>
+	      <p>
+		Construct a pie chart
+	      </p>
+	      <solution>
+		<image source="images/eat-out-pie-chart.png" width="100%" />
+	      </solution>
+	    </exercise>
+	    <exercise>
+	      <p>
+		If you own a restaurant, which days would you purchase
+		an advertisement on the local radio? Are there days
+		that you should avoid?
+	      </p>
+	      <answer>
+		<p>
+		  It would be good to advertise on Fridays and
+		  Saturdays, but not so worthwhile to advertise on
+		  Mondays and Thursdays.
+		</p>
+	      </answer>
+	    </exercise>
+	  </reading-questions>
+
 
 
 	</section>
