@@ -1654,8 +1654,8 @@
 	  </subsection>
 
 	  <subsection xml:id="sub-histogram-from-data">
-	    <title>Create a Histogram (and Frequency Distribution)
-	    from Data</title>
+	    <title>Create Histograms and Frequency Distributions
+	    from Data Using the TI-84 Plus</title>
 
 	    <p>
 	      The TI-84 Plus calculator can generate histograms and
@@ -1722,10 +1722,10 @@
 
 	      <li>
 		<p>
-		  Press <c>2nd</c>, <c>Y=</c> to enter the STAT
-		  PLOT menu. (Make sure Plot2 and Plot3 are OFF by
-		  pressing <c>4</c> (PlotsOff) if necessary.)
-		  Choose Plot1 by pressing <c>1</c>.
+		  Press <c>2nd</c>, <c>Y=</c> to enter the STAT PLOTS
+		  menu. (Make sure Plot2 and Plot3 are OFF by pressing
+		  <c>4</c> (PlotsOff) if necessary.) Choose Plot1 by
+		  pressing <c>1</c>.
 		</p>
 		<image
 		    source="images/stat-plots-menu.png"
@@ -1770,6 +1770,169 @@
 		screenshot above indicates that the class of heights
 		between 62 and 64 inches contains 7 individuals.
 	      </li>
+
+	      <li>
+		<p>
+		If you use the <c>trace</c> feature to determine the
+		frequency for each bar (class) you can generate a
+		<term>frequency distribution</term>. On the TI-84 Plus
+		calculator, instead of using the <term>classes</term>
+		we instead enter the <term>class midpoints</term> in
+		list 2 and the <term>frequencies</term> in list 3.
+		</p>
+		<sidebyside>
+		  <table>
+		    <caption>Height frequency distribution</caption>
+		    <tabular top="major">
+		      <row bottom="major">
+			<cell halign="center">Height</cell>
+			<cell halign="center">Freq.</cell>
+		      </row>
+		      <row bottom="minor">
+			<cell halign="center">60<ndash/>&lt;62</cell>
+			<cell halign="center">1</cell>
+		      </row>
+		      <row bottom="minor">
+			<cell halign="center">62<ndash/>&lt;64</cell>
+			<cell halign="center">7</cell>
+		      </row>
+		      <row bottom="minor">
+			<cell halign="center">64<ndash/>&lt;66</cell>
+			<cell halign="center">1</cell>
+		      </row>
+		      <row bottom="minor">
+			<cell halign="center">66<ndash/>&lt;68</cell>
+			<cell halign="center">2</cell>
+		      </row>
+		      <row bottom="minor">
+			<cell halign="center">68<ndash/>&lt;70</cell>
+			<cell halign="center">6</cell>
+		      </row>
+		      <row bottom="minor">
+			<cell halign="center">70<ndash/>&lt;72</cell>
+			<cell halign="center">5</cell>
+		      </row>
+		      <row bottom="minor">
+			<cell halign="center">72<ndash/>&lt;74</cell>
+			<cell halign="center">1</cell>
+		      </row>
+		      <row bottom="minor">
+			<cell halign="center">74<ndash/>&lt;76</cell>
+			<cell halign="center">0</cell>
+		      </row>
+		      <row bottom="minor">
+			<cell halign="center">76<ndash/>&lt;78</cell>
+			<cell halign="center">0</cell>
+		      </row>
+		      <row bottom="major">
+			<cell halign="center">78<ndash/>&lt;80</cell>
+			<cell halign="center">1</cell>
+		      </row>
+		      <row bottom="major">
+			<cell halign="right">Sum:</cell>
+			<cell halign="center">24</cell>
+		      </row>
+		    </tabular>
+		  </table>
+		  <image
+		      source="images/heights-freq-dist.png"
+		      width="40%"
+		      />
+		</sidebyside>
+	      </li>
+
+	      <li>
+		<p>
+		  Next, we can have the TI-84 Plus calculator generate
+		  <term>relative frequencies</term> for us. Let's
+		  store the relative frequencies in list 4. Go to
+		  <c>stat</c>, <c>1</c> and edit list 4. Cursor to the
+		  list 4 header, <ie/> cursor up until the header is
+		  highlighted (shaded black) and type the following:
+		  <c>2nd</c><c>3</c><c>÷</c><c>2nd</c><c>stat</c>,
+		  choose CALC and then
+		  <c>5</c><c>2nd</c><c>3</c><c>)</c><c>enter</c>.
+		</p>
+		<sidebyside>
+		  <image
+		      source="images/generate-rel-freq.png"
+		      width="40%" />
+		  <image
+		      source="images/generated-rel-freq.png"
+		      width="40%" />
+		</sidebyside>
+		<p>
+		  The result is the following frequency and relative
+		  frequency distiribution.
+		</p>
+		<table>
+		  <caption>Height frequency/relative frequency
+		  distribution</caption>
+		  <tabular top="major">
+		    <row bottom="major">
+		      <cell halign="center">Height</cell>
+		      <cell halign="right">Freq.</cell>
+		      <cell halign="right">Rel. Freq.</cell>
+		    </row>
+		    <row bottom="minor">
+		      <cell halign="center">60<ndash/>&lt;62</cell>
+		      <cell halign="right">1</cell>
+		      <cell halign="right">.04167</cell>
+		    </row>
+		    <row bottom="minor">
+		      <cell halign="center">62<ndash/>&lt;64</cell>
+		      <cell halign="right">7</cell>
+		      <cell halign="right">.29167</cell>
+		    </row>
+		    <row bottom="minor">
+		      <cell halign="center">64<ndash/>&lt;66</cell>
+		      <cell halign="right">1</cell>
+		      <cell halign="right">.04167</cell>
+		    </row>
+		    <row bottom="minor">
+		      <cell halign="center">66<ndash/>&lt;68</cell>
+		      <cell halign="right">2</cell>
+		      <cell halign="right">.08333</cell>
+		    </row>
+		    <row bottom="minor">
+		      <cell halign="center">68<ndash/>&lt;70</cell>
+		      <cell halign="right">6</cell>
+		      <cell halign="right">.25000</cell>
+		    </row>
+		    <row bottom="minor">
+		      <cell halign="center">70<ndash/>&lt;72</cell>
+		      <cell halign="right">5</cell>
+		      <cell halign="right">.20833</cell>
+		    </row>
+		    <row bottom="minor">
+		      <cell halign="center">72<ndash/>&lt;74</cell>
+		      <cell halign="right">1</cell>
+		      <cell halign="right">.04167</cell>
+		    </row>
+		    <row bottom="minor">
+		      <cell halign="center">74<ndash/>&lt;76</cell>
+		      <cell halign="right">0</cell>
+		      <cell halign="right">.00000</cell>
+		    </row>
+		    <row bottom="minor">
+		      <cell halign="center">76<ndash/>&lt;78</cell>
+		      <cell halign="right">0</cell>
+		      <cell halign="right">.00000</cell>
+		    </row>
+		    <row bottom="major">
+		      <cell halign="center">78<ndash/>&lt;80</cell>
+		      <cell halign="right">1</cell>
+		      <cell halign="right">.04167</cell>
+		    </row>
+		    <row bottom="major">
+		      <cell halign="right">Sum:</cell>
+		      <cell halign="right">24</cell>
+		      <cell halign="right">1.00000</cell>
+		    </row>
+		  </tabular>
+		</table>
+
+	      </li>
 	    </ol>
 	    <p>
 	      The term <term>distribution</term> is just a fancy word
@@ -1782,58 +1945,6 @@
 	      <c>trace</c> button we can get each midpoint and
 	      frequency and record them in a table.
 	    </p>
-	    <table>
-	      <caption>Height frequency distribution</caption>
-	      <tabular top="major">
-		<row bottom="major">
-		  <cell>Height</cell><cell>Frequency</cell>
-		</row>
-		<row bottom="minor">
-		  <cell halign="center">61</cell>
-		  <cell halign="center">1</cell>
-		</row>
-		<row bottom="minor">
-		  <cell halign="center">63</cell>
-		  <cell halign="center">7</cell>
-		</row>
-		<row bottom="minor">
-		  <cell halign="center">65</cell>
-		  <cell halign="center">1</cell>
-		</row>
-		<row bottom="minor">
-		  <cell halign="center">67</cell>
-		  <cell halign="center">2</cell>
-		</row>
-		<row bottom="minor">
-		  <cell halign="center">69</cell>
-		  <cell halign="center">6</cell>
-		</row>
-		<row bottom="minor">
-		  <cell halign="center">71</cell>
-		  <cell halign="center">5</cell>
-		</row>
-		<row bottom="minor">
-		  <cell halign="center">73</cell>
-		  <cell halign="center">1</cell>
-		</row>
-		<row bottom="minor">
-		  <cell halign="center">75</cell>
-		  <cell halign="center">0</cell>
-		</row>
-		<row bottom="minor">
-		  <cell halign="center">77</cell>
-		  <cell halign="center">0</cell>
-		</row>
-		<row bottom="major">
-		  <cell halign="center">79</cell>
-		  <cell halign="center">1</cell>
-		</row>
-		<row bottom="major">
-		  <cell halign="right">Sum:</cell>
-		  <cell halign="center">24</cell>
-		</row>
-	      </tabular>
-	    </table>
 	  </subsection>
 
 	  <reading-questions>
