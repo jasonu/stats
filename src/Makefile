@@ -59,9 +59,9 @@ html: .check_install .check_xsltproc
 	cp -a $(IMAGES) $(HTML)
 	-rm $(HTML)/*.html
 	cd $(HTML); \
-	xsltproc --xinclude \
-	        --stringparam numbering.maximum.level 3 \
-		--stringparam html.knowl.example no \
+	xsltproc -xinclude \
+	        -stringparam numbering.maximum.level 3 \
+		-stringparam html.knowl.example no \
 		$(MBXSL)/mathbook-html.xsl $(SRC)/stats.xml
 	@echo "Successfully generated HTML output."
 
@@ -88,7 +88,7 @@ latex:  .check_xsltproc
 	install -d $(PDF)
 	cp -a $(IMAGES) $(PDF)
 	cd $(PDF); \
-	xsltproc --xinclude -o stats.tex $(MBXSL)/mathbook-latex.xsl $(SRC)/stats.xml
+	xsltproc -xinclude -o stats.tex $(MBXSL)/mathbook-latex.xsl $(SRC)/stats.xml
 
 pdf:    .check_pdflatex
 	cd $(PDF); \

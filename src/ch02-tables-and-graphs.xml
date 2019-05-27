@@ -1,0 +1,965 @@
+<chapter xml:id="ch-tables-and-graphs"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Summarizing Data in Tables and Graphs</title>
+
+  <section xml:id="sec-organizing-qualitative-data">
+    <title>Organizing Qualitative Data</title>
+    <definition>
+      <title>frequency distribution</title>
+      <statement>
+	<p>
+	  lists each category of data and the number of
+	  occurrences for each category.
+	</p>
+      </statement>
+    </definition>
+    <definition>
+      <title>relative frequency distribution</title>
+      <statement>
+	<p>
+	  lists each category of data and the proportion (or
+	  percent) of obervations in that category.
+	</p>
+	<p>
+	  relative frequency = count/total
+	</p>
+      </statement>
+    </definition>
+
+    <definition>
+      <title>pie chart</title>
+      <statement>
+	<p>
+	  is a circle divided into sectors. Each sector
+	  represents a category of data and its area is
+	  proportional to the frequency.
+	</p>
+      </statement>
+    </definition>
+
+    <figure>
+      <caption>Crash Course Statistics: Data Visualization Part
+      1</caption>
+      <video
+	  youtube="hEWY6kkBdpo"
+	  width="80%" />
+    </figure>
+
+    <reading-questions>
+      <title>Favorite Day to Eat Out</title>
+
+      <p>
+	A survey was conducted by Wakefield Research in which 40
+	particpants were asked to give their favorite night to
+	go out to dinner. The following data are the results.
+      </p>
+
+      <table>
+	<caption>Data from Wakefield Research</caption>
+	<tabular top="major">
+	  <row bottom="minor">
+	    <cell>Thursday</cell>
+	    <cell>Saturday</cell>
+	    <cell>Friday</cell>
+	    <cell>Friday</cell>
+	    <cell>Sunday</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Wednesday</cell>
+	    <cell>Saturday</cell>
+	    <cell>Friday</cell>
+	    <cell>Tuesday</cell>
+	    <cell>Friday</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Saturday</cell>
+	    <cell>Monday</cell>
+	    <cell>Friday</cell>
+	    <cell>Friday</cell>
+	    <cell>Sunday</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Friday</cell>
+	    <cell>Tuesday</cell>
+	    <cell>Wednesday</cell>
+	    <cell>Saturday</cell>
+	    <cell>Friday</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Wednesday</cell>
+	    <cell>Monday</cell>
+	    <cell>Wednesday</cell>
+	    <cell>Wednesday</cell>
+	    <cell>Friday</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Friday</cell>
+	    <cell>Wednesday</cell>
+	    <cell>Thursday</cell>
+	    <cell>Tuesday</cell>
+	    <cell>Friday</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Tuesday</cell>
+	    <cell>Saturday</cell>
+	    <cell>Friday</cell>
+	    <cell>Tuesday</cell>
+	    <cell>Friday</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Saturday</cell>
+	    <cell>Saturday</cell>
+	    <cell>Saturday</cell>
+	    <cell>Sunday</cell>
+	    <cell>Friday</cell>
+	  </row>
+	</tabular>
+      </table>
+
+      <exercise>
+	<p>
+	  Construct a frequency distribution
+	</p>
+
+	<tabular top="major">
+	  <row bottom="major">
+	    <cell>Day</cell>
+	    <cell>Tally</cell>
+	    <cell>Frequency</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Sunday</cell>
+	    <cell>
+	      <!-- Some spaces to increase column width  -->
+	      <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+	      <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+	      <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+	      <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+	      <nbsp/><nbsp/><nbsp/><nbsp/><nbsp/>
+	    </cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Monday</cell>
+	    <cell></cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Tuesday</cell>
+	    <cell></cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Wednesday</cell>
+	    <cell></cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Thursday</cell>
+	    <cell></cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Friday</cell>
+	    <cell></cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="major">
+	    <cell>Saturday</cell>
+	    <cell></cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="major">
+	    <cell>Sum:</cell>
+	    <cell></cell>
+	    <cell></cell>
+	  </row>
+	</tabular>
+
+	<solution>
+	  <tabular top="major">
+	    <row bottom="major">
+	      <cell>Day</cell>
+	      <cell halign="center">Frequency</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Sunday</cell>
+	      <cell halign="center">3</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Monday</cell>
+	      <cell halign="center">2</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Tuesday</cell>
+	      <cell halign="center">5</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Wednesday</cell>
+	      <cell halign="center">6</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Thursday</cell>
+	      <cell halign="center">2</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Friday</cell>
+	      <cell halign="center">14</cell>
+	    </row>
+	    <row bottom="major">
+	      <cell>Saturday</cell>
+	      <cell halign="center">8</cell>
+	    </row>
+	    <row bottom="major">
+	      <cell>Sum:</cell>
+	      <cell halign="center">40</cell>
+	    </row>
+	  </tabular>
+	</solution>
+      </exercise>
+
+      <exercise>
+	<p>
+	  Construct a relative frequency distribution
+	</p>
+	<tabular top="major">
+	  <row bottom="major">
+	    <cell>Day</cell>
+	    <cell halign="center">Relative Frequency</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Sunday</cell>
+	    <cell halign="center"></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Monday</cell>
+	    <cell halign="center"></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Tuesday</cell>
+	    <cell halign="center"></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Wednesday</cell>
+	    <cell halign="center"></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Thursday</cell>
+	    <cell halign="center"></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>Friday</cell>
+	    <cell halign="center"></cell>
+	  </row>
+	  <row bottom="major">
+	    <cell>Saturday</cell>
+	    <cell halign="center"></cell>
+	  </row>
+	  <row bottom="major">
+	    <cell>Sum:</cell>
+	    <cell halign="center"></cell>
+	  </row>
+	</tabular>
+
+	<solution>
+	  <tabular top="major">
+	    <row bottom="major">
+	      <cell>Day</cell>
+	      <cell halign="right"> Relative Frequency</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Sunday</cell>
+	      <cell halign="right">0.075</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Monday</cell>
+	      <cell halign="right">0.050</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Tuesday</cell>
+	      <cell halign="right">0.125</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Wednesday</cell>
+	      <cell halign="right">0.150</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Thursday</cell>
+	      <cell halign="right">0.050</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>Friday</cell>
+	      <cell halign="right">0.350</cell>
+	    </row>
+	    <row bottom="major">
+	      <cell>Saturday</cell>
+	      <cell halign="right">0.200</cell>
+	    </row>
+	    <row bottom="major">
+	      <cell>Sum:</cell>
+	      <cell halign="right">1.000</cell>
+	    </row>
+	  </tabular>
+	</solution>
+      </exercise>
+
+      <exercise>
+	<p>
+	  Construct a frequency bar chart
+	</p>
+	<solution>
+	  <image source="images/eat-out-bar-chart.png" width="100%" />
+	</solution>
+      </exercise>
+
+      <exercise>
+	<p>
+	  Construct a relative frequency bar chart
+	</p>
+	<solution>
+	  <image source="images/eat-out-rel-freq-bar-chart.png" width="100%" />
+	</solution>
+      </exercise>
+
+      <exercise>
+	<p>
+	  Construct a pie chart
+	</p>
+	<solution>
+	  <image source="images/eat-out-pie-chart.png" width="100%" />
+	</solution>
+      </exercise>
+      <exercise>
+	<p>
+	  If you own a restaurant, which days would you purchase
+	  an advertisement on the local radio? Are there days
+	  that you should avoid?
+	</p>
+	<answer>
+	  <p>
+	    It would be good to advertise on Fridays and
+	    Saturdays, but not so worthwhile to advertise on
+	    Mondays and Thursdays.
+	  </p>
+	</answer>
+      </exercise>
+    </reading-questions>
+
+  </section>
+
+  <section xml:id="sec-organizing-quantitative-data">
+    <title>Organizing Quantitative Data</title>
+    <definition>
+      <statement>
+	<p>
+	  A <term>bar graph</term> is for qualitative data while
+	  a <term>histogram</term> is used for quantitative
+	  data. In a histogram, data is grouped into
+	  <term>classes</term> or <term>bins</term>.
+	</p>
+	<p>
+	  Notes on histograms:
+	  <ol>
+	    <li>Bars have equal widths</li>
+	    <li>Bars are touching</li>
+	  </ol>
+	</p>
+	<p>
+	  Terminology related to histograms:
+	  <ul>
+	    <li><term>lower class limit</term>: smallest value in
+	    a class</li>
+	    <li><term>upper class limit</term>: largest value in
+	    a class</li>
+	    <li><term>class width (bin width)</term>: difference
+	    between consecutive lower class limits (or upper
+	    class limits)</li>
+	    <li><term>open ended</term>: a table where the first
+	    class has no lower limit and/or the last class has
+	    no upper limit.</li>
+	  </ul>
+	</p>
+      </statement>
+    </definition>
+    <subsection xml:id="sub-distribution-shapes">
+      <title>The Shape of a Distribution</title>
+
+      <p>
+	One reason for going through the trouble of displaying
+	data in a histogram is to determine the basic shape of
+	your data. The four most common shapes are:
+      </p>
+      <figure>
+	<caption>Four most common distribution shapes.</caption>
+	<image source="images/four-distribution-shapes.png" width="80%" />
+      </figure>
+    </subsection>
+
+    <subsection xml:id="sub-histogram-from-data">
+      <title>Create Histograms and Frequency Distributions
+      from Data Using the TI-84 Plus</title>
+
+      <p>
+	The TI-84 Plus calculator can generate histograms and
+	frequency distributions from raw data. Normally, one
+	would first sort their data, separate it into classes to
+	create a frequency distribution and then plot the
+	frequency distribution with vertical bars to generate a
+	histogram. However, when we use the calculator, we will
+	first generate the histogram and then read off the
+	frequencies from the height of each bar to create the
+	frequency distribution.
+      </p>
+      <p>
+	The data below was generated by asking each student from
+	a statistics class to give their height in inches.
+      </p>
+      <table xml:id="tab-student-heights">
+	<caption>Student heights (inches)</caption>
+	<tabular top="major">
+	  <row bottom="minor">
+	    <cell>62</cell>
+	    <cell color="gray">79</cell>
+	    <cell>63</cell>
+	    <cell>68</cell>
+	    <cell>62</cell>
+	    <cell>69</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>69</cell>
+	    <cell>64</cell>
+	    <cell>62</cell>
+	    <cell>63</cell>
+	    <cell>68</cell>
+	    <cell>71</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>72</cell>
+	    <cell>68</cell>
+	    <cell>63</cell>
+	    <cell>70</cell>
+	    <cell>63</cell>
+	    <cell>67</cell>
+	  </row>
+	  <row bottom="major">
+	    <cell>60</cell>
+	    <cell>66</cell>
+	    <cell>71</cell>
+	    <cell>69</cell>
+	    <cell>70</cell>
+	    <cell>71</cell>
+	  </row>
+	</tabular>
+      </table>
+      <p>
+	To create a histogram of the height data above do the
+	following:
+      </p>
+      <ol>
+	<li>
+	  Enter the data in the above table into list 1. This
+	  can be done by pressing <c>stat</c>, <c>1</c> and
+	  then using the cursor to select list 1.
+	</li>
+
+	<li>
+	  <p>
+	    Press <c>2nd</c>, <c>y=</c> to enter the STAT PLOTS
+	    menu. (Make sure Plot2 and Plot3 are OFF by pressing
+	    <c>4</c> (PlotsOff) if necessary.) Choose Plot1 by
+	    pressing <c>1</c>.
+	  </p>
+	  <image
+	      source="images/stat-plots-menu.png"
+	      width="40%" />
+	</li>
+
+	<li>
+	  <p>
+	    Make your screen match the image below:
+	  </p>
+	  <image
+	      source="images/stat-plot-histogram-from-list.png"
+	      width="40%" />
+	</li>
+
+	<li>
+	  <p>
+	    Press <c>zoom</c>, <c>9</c>. This will cause the
+	    calculator to bin the data according to its internal
+	    algorithm and display the histogram.
+	  </p>
+	  <image
+	      source="images/heights-histogram-1.png"
+	      width="40%" />
+	  <p>
+	    You can press <c>trace</c> and move the cursor to
+	    check the class/bin limits the calculator chose.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    Press <c>window</c> and modify Xmin, Xmax, Xscl,
+	    Ymin and Ymax to match the screen below. Setting
+	    Xscl to 2 changes the class/bin width to 2 (inches).
+	  </p>
+	  <image
+	      source="images/heights-histogram-window.png"
+	      width="40%" />
+	</li>
+
+	<li>
+	  <p>
+	    Press <c>graph</c> to display the new histogram.
+	  </p>
+	  <image
+	      source="images/heights-histogram-2.png"
+	      width="40%" />
+	  <p>
+	    You can use the <c>trace</c> and cursor keys to
+	    check the lower and upper class limits for each
+	    class as well as the count or frequency. The
+	    screenshot above indicates that the class of heights
+	    between 62 and 64 inches contains 7 individuals.
+	  </p>
+	</li>
+
+	<li>
+	  <p>
+	    If you use the <c>trace</c> feature to determine the
+	    frequency for each bar (class) you can generate a
+	    <term>frequency distribution</term>. On the TI-84
+	    Plus calculator, instead of using the
+	    <term>classes</term> we instead enter the
+	    <term>class midpoints</term> in list 2 and the
+	    <term>frequencies</term> in list 3.
+	  </p>
+	  <sidebyside>
+	    <table>
+	      <caption>Height frequency distribution</caption>
+	      <tabular top="major">
+		<row bottom="major">
+		  <cell halign="center">Height</cell>
+		  <cell halign="center">Freq.</cell>
+		</row>
+		<row bottom="minor">
+		  <cell halign="center">60<ndash/>&lt;62</cell>
+		  <cell halign="center">1</cell>
+		</row>
+		<row bottom="minor">
+		  <cell halign="center">62<ndash/>&lt;64</cell>
+		  <cell halign="center">7</cell>
+		</row>
+		<row bottom="minor">
+		  <cell halign="center">64<ndash/>&lt;66</cell>
+		  <cell halign="center">1</cell>
+		</row>
+		<row bottom="minor">
+		  <cell halign="center">66<ndash/>&lt;68</cell>
+		  <cell halign="center">2</cell>
+		</row>
+		<row bottom="minor">
+		  <cell halign="center">68<ndash/>&lt;70</cell>
+		  <cell halign="center">6</cell>
+		</row>
+		<row bottom="minor">
+		  <cell halign="center">70<ndash/>&lt;72</cell>
+		  <cell halign="center">5</cell>
+		</row>
+		<row bottom="minor">
+		  <cell halign="center">72<ndash/>&lt;74</cell>
+		  <cell halign="center">1</cell>
+		</row>
+		<row bottom="minor">
+		  <cell halign="center">74<ndash/>&lt;76</cell>
+		  <cell halign="center">0</cell>
+		</row>
+		<row bottom="minor">
+		  <cell halign="center">76<ndash/>&lt;78</cell>
+		  <cell halign="center">0</cell>
+		</row>
+		<row bottom="major">
+		  <cell halign="center">78<ndash/>&lt;80</cell>
+		  <cell halign="center">1</cell>
+		</row>
+		<row bottom="major">
+		  <cell halign="right">Sum:</cell>
+		  <cell halign="center">24</cell>
+		</row>
+	      </tabular>
+	    </table>
+	    <image
+		source="images/heights-freq-dist.png"
+		width="40%"
+		/>
+	  </sidebyside>
+	</li>
+
+	<li>
+	  <p>
+	    Next, we can have the TI-84 Plus calculator generate
+	    <term>relative frequencies</term> for us. Let's
+	    store the relative frequencies in list 4. Go to
+	    <c>stat</c>, <c>1</c> and edit list 4. Cursor to the
+	    list 4 header, <ie/> cursor up until the header is
+	    highlighted (shaded black) and press the following:
+	    <sidebyside width="60%">
+	      <p>
+		<c>2nd</c><c>3</c><c>÷</c><c>2nd</c><c>stat</c>,
+	      </p>
+	    </sidebyside>
+	    choose CALC and then press the following keys:
+	    <sidebyside width="60%">
+	      <p>
+		<c>5</c><c>2nd</c><c>3</c><c>)</c><c>enter</c>
+	      </p>
+	    </sidebyside>
+	    <sidebyside>
+	      <image
+		  source="images/generate-rel-freq.png"
+		  width="40%" />
+	      <image
+		  source="images/generated-rel-freq.png"
+		  width="40%" />
+	    </sidebyside>
+	    The resulting frequency and relative
+	    frequency distiributions are reproduced here.
+	  </p>
+	  <table>
+	    <caption>Height frequency/relative frequency
+	    distribution</caption>
+	    <tabular top="major">
+	      <row bottom="major">
+		<cell halign="center">Height</cell>
+		<cell halign="right">Freq.</cell>
+		<cell halign="right">Rel. Freq.</cell>
+	      </row>
+	      <row bottom="minor">
+		<cell halign="center">60<ndash/>&lt;62</cell>
+		<cell halign="right">1</cell>
+		<cell halign="right">.04167</cell>
+	      </row>
+	      <row bottom="minor">
+		<cell halign="center">62<ndash/>&lt;64</cell>
+		<cell halign="right">7</cell>
+		<cell halign="right">.29167</cell>
+	      </row>
+	      <row bottom="minor">
+		<cell halign="center">64<ndash/>&lt;66</cell>
+		<cell halign="right">1</cell>
+		<cell halign="right">.04167</cell>
+	      </row>
+	      <row bottom="minor">
+		<cell halign="center">66<ndash/>&lt;68</cell>
+		<cell halign="right">2</cell>
+		<cell halign="right">.08333</cell>
+	      </row>
+	      <row bottom="minor">
+		<cell halign="center">68<ndash/>&lt;70</cell>
+		<cell halign="right">6</cell>
+		<cell halign="right">.25000</cell>
+	      </row>
+	      <row bottom="minor">
+		<cell halign="center">70<ndash/>&lt;72</cell>
+		<cell halign="right">5</cell>
+		<cell halign="right">.20833</cell>
+	      </row>
+	      <row bottom="minor">
+		<cell halign="center">72<ndash/>&lt;74</cell>
+		<cell halign="right">1</cell>
+		<cell halign="right">.04167</cell>
+	      </row>
+	      <row bottom="minor">
+		<cell halign="center">74<ndash/>&lt;76</cell>
+		<cell halign="right">0</cell>
+		<cell halign="right">.00000</cell>
+	      </row>
+	      <row bottom="minor">
+		<cell halign="center">76<ndash/>&lt;78</cell>
+		<cell halign="right">0</cell>
+		<cell halign="right">.00000</cell>
+	      </row>
+	      <row bottom="major">
+		<cell halign="center">78<ndash/>&lt;80</cell>
+		<cell halign="right">1</cell>
+		<cell halign="right">.04167</cell>
+	      </row>
+	      <row bottom="major">
+		<cell halign="right">Sum:</cell>
+		<cell halign="right">24</cell>
+		<cell halign="right">1.00000</cell>
+	      </row>
+	    </tabular>
+	  </table>
+
+	</li>
+      </ol>
+    </subsection>
+
+    <subsection xml:id="sub-histogram-from-freq-dist">
+      <title>Creating Histograms from Frequency Distributions
+      Using the TI-84 Plus</title>
+
+      <p>
+	Perhaps you don't have access to raw data, but you do
+	have a frequency distribution of the data, then you can
+	still create a histogram of the data.
+      </p>
+
+      <p>
+	In this section, we will continue using the height data in
+	table <xref ref="tab-student-heights"></xref>.
+	Further, we will assume you have the same list data
+	generated in that example in lists 2,3 and 4 of your
+	calculator.
+      </p>
+
+      <p>
+	To create a histogram from a frequency distribution:
+      </p>
+      <ol>
+	<li>
+	  <p>
+	    Go to STAT PLOTS by pressing <c>2nd</c> <c>y=</c>
+	    and choosing Plot1. Assuming you have the class
+	    midpoints in list 2 and the frequencies in list 3,
+	    we can generate a histogram by filling out the Plot1
+	    menu to look like below:
+	  </p>
+	  <image
+	      source="images/stat-plot-histogram-from-freq-dist.png"
+	      width="40%"
+	      />
+	</li>
+
+	<li>
+	  <p>
+	    If you have not changed any settings in
+	    <c>window</c>, then you can just press <c>graph</c>
+	    to generate the histogram. If you have changed
+	    window settings use ZoomStat by pressing <c>zoom</c>
+	    <c>9</c>.
+	  </p>
+	  <image
+	      source="images/histogram-from-freq-dist.png"
+	      width="40%"
+	      />
+	</li>
+      </ol>
+    </subsection>
+
+    <reading-questions>
+      <title>Cigarette Tax Rates</title>
+      <p>
+	The table shows the tax in dollars, on a pack of
+	cigarettes in each of the 50 states and Washington D.C.
+	as of January 2014.
+      </p>
+      <table>
+	<caption>Cigarette tax rates in dollars ($)</caption>
+	<tabular top="major">
+	  <row bottom="minor">
+	    <cell>0.425</cell><cell>1.339</cell>
+	    <cell>0.60</cell><cell>0.17</cell>
+	    <cell>0.45</cell> <cell>1.53</cell>
+	    <cell>2.52</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>2.00</cell><cell>0.37</cell>
+	    <cell>0.36</cell><cell>1.70</cell>
+	    <cell>0.44</cell><cell>0.62</cell>
+	    <cell>0.60</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>2.00</cell><cell>3.20</cell>
+	    <cell>2.00</cell><cell>0.64</cell>
+	    <cell>1.25</cell><cell>1.41</cell>
+	    <cell>2.50</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>1.15</cell><cell>0.57</cell>
+	    <cell>2.00</cell><cell>0.80</cell>
+	    <cell>1.03</cell><cell>1.70</cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>0.87</cell><cell>1.98</cell>
+	    <cell>3.51</cell><cell>1.68</cell>
+	    <cell>1.31</cell><cell>2.62</cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>0.84</cell><cell>0.995</cell>
+	    <cell>2.00</cell><cell>2.70</cell>
+	    <cell>1.60</cell><cell>0.30</cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>3.40</cell><cell>1.36</cell>
+	    <cell>2.83</cell><cell>1.66</cell>
+	    <cell>3.50</cell><cell>3.025</cell>
+	    <cell></cell>
+	  </row>
+	  <row bottom="major">
+	    <cell>1.60</cell><cell>0.79</cell>
+	    <cell>0.68</cell><cell>4.35</cell>
+	    <cell>0.57</cell><cell>0.55</cell>
+	    <cell></cell>
+	  </row>
+	</tabular>
+      </table>
+      <p>
+	Note: Normally when doing the following steps by hand,
+	the first two steps are done in reverse, <ie/> you first
+	create a <term>frequency distribution</term>, and then
+	use that data to create a <term>histogram</term>.
+	However, since we will use the TI graphing calculator
+	for the first two steps, we will have the calculator do
+	the counting for us and then just read the
+	<term>frequency distribution</term> data from the
+	histogram.
+      </p>
+      <exercise>
+	<statement>
+	  <p>
+	    Use your TI-84 Plus calculator to construct a
+	    histogram with lower limit $0.00, upper limit $5.00
+	    and class width of $0.50.
+	  </p>
+	  <answer>
+	    <image
+		source="images/cigarette-tax-rates-histogram.png"
+		width="40%"
+		/>
+	  </answer>
+	</statement>
+      </exercise>
+      <exercise>
+	<statement>
+	  <p>
+	    What is the shape of your distribution?
+	  </p>
+	</statement>
+	<answer>
+	  skewed right
+	</answer>
+      </exercise>
+      <exercise>
+	<statement>
+	  <p>
+	    Construct a frequency distribution and relative
+	    frequency distribution. <em>Hint: Use your histogram
+	    to get the frequencies, put them in a list, and use
+	    your calculator to compute the relative
+	    frequencies.</em>
+	  </p>
+	  <answer>
+	    <sidebyside>
+	      <image
+		  source="images/cigarette-tax-rates-freq-dist.png"
+		  width="40%" />
+	      <tabular top="major">
+		<row bottom="major">
+		  <cell halign="center">Class</cell>
+		  <cell halign="right">Freq.</cell>
+		  <cell halign="right">Rel. Freq.</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>0.00<mdash/>0.49</cell>
+		  <cell>7</cell>
+		  <cell>.13725</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>0.50<mdash/>0.99</cell>
+		  <cell>13</cell>
+		  <cell>.2549</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>1.00<mdash/>1.49</cell>
+		  <cell>7</cell>
+		  <cell>.13725</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>1.50<mdash/>1.99</cell>
+		  <cell>8</cell>
+		  <cell>.15686</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>2.00<mdash/>2.49</cell>
+		  <cell>5</cell>
+		  <cell>.09804</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>2.50<mdash/>2.99</cell>
+		  <cell>5</cell>
+		  <cell>.09804</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>3.00<mdash/>3.49</cell>
+		  <cell>3</cell>
+		  <cell>.05882</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>3.50<mdash/>3.99</cell>
+		  <cell>2</cell>
+		  <cell>.03922</cell>
+		</row>
+		<row bottom="minor">
+		  <cell>4.00<mdash/>4.49</cell>
+		  <cell>1</cell>
+		  <cell>.01961</cell>
+		</row>
+		<row bottom="major">
+		  <cell>4.50<mdash/>4.99</cell>
+		  <cell>0</cell>
+		  <cell>.00000</cell>
+		</row>
+	      </tabular>
+	    </sidebyside>
+	  </answer>
+	</statement>
+      </exercise>
+      <exercise>
+	<statement>
+	  <p>
+	    Construct a frequency distribution and relative
+	    frequency distribution. <em>Hint: Use your histogram
+	    to get the frequencies. Remember to use the class
+	    midpoints as your <m>x</m> values.</em>
+	  </p>
+	  <answer>
+	    <sidebyside>
+	      <image
+		  source="images/cigarette-tax-rates-histogram.png"
+		  width="40%"
+		  />
+	      <image
+		  source="images/cigarette-tax-rates-rel-histogram.png"
+		  width="40%"
+		  />
+	    </sidebyside>
+	  </answer>
+	</statement>
+      </exercise>
+
+
+    </reading-questions>
+
+    <figure>
+      <caption>Crash Course Statistics: Visualization Part
+      II</caption>
+      <video
+	  youtube="HMkllhBI91Y"
+	  start="0"
+	  end="218" />
+    </figure>
+
+  </section>
+
+  <section xml:id="sec-graphical-misrepresentations-of-data">
+    <title>Graphical Misrepresentations of Data</title>
+    <p>Placeholder text</p>
+  </section>
+
+</chapter>

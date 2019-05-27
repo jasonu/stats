@@ -1,0 +1,31 @@
+<chapter xml:id="ch-numerical-summaries"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Numerically Summarizing Data</title>
+
+  <section xml:id="sec-measures-central-tendency">
+    <title>Measures of Central Tendency</title>
+    <p>Placeholder text</p>
+  </section>
+
+  <section xml:id="sec-measures-dispersion">
+    <title>Measures of Dispersion</title>
+    <p>Placeholder text</p>
+  </section>
+
+  <section xml:id="sec-measures-grouped-data">
+    <title>Measures of Central Tendency and Dispersion from
+    Grouped Data</title>
+    <p>Placeholder text</p>
+  </section>
+
+  <section xml:id="sec-measures-position-and-outliers">
+    <title>Measures of Position and Outliers</title>
+    <p>Placeholder text</p>
+  </section>
+
+  <section xml:id="sec-five-number-summary-boxplots">
+    <title>The Five--Number Summary and Boxplots</title>
+    <p>Placeholder text</p>
+  </section>
+
+</chapter>
