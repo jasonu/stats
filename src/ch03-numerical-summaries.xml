@@ -55,7 +55,7 @@
 	<p>
 	  The <term>median</term> or <term>middle value</term> is the
 	  value that lies in the middle of the data when the data is
-	  arranged ascending order. Notation: <m>M</m>.
+	  arranged in ascending order. Notation: <m>M</m>.
 	</p>
 	<p>
 	  Algorithm:
@@ -119,6 +119,133 @@
       </solution>
     </example>
 
+    <definition>
+      <title>Resistant</title>
+      <statement>
+	<p>
+	  A statistic is said to be <term>resistant</term> if extreme
+	  values do not affect the value of the statistic.
+	</p>
+      </statement>
+    </definition>
+
+    <definition>
+      <title>Mode</title>
+      <statement>
+	<p>
+	  The <term>mode</term> is the most frequently occuring
+	  observation in a data set. A single data set may have
+	  multiple modes.
+	</p>
+      </statement>
+    </definition>
+
+    <reading-questions>
+      <title>Working Hours</title>
+      <statement>
+	<p>
+	  A random sample of 25 college students was asked, <q>How
+	  many hours per week do you typically work outside your
+	  home?</q> Their responses are recorded in the table below.
+	</p>
+	<table>
+	  <caption>Working hours of 25 college students</caption>
+	  <tabular top="major">
+	    <row bottom="minor">
+	      <cell>0</cell>
+	      <cell>32</cell>
+	      <cell>15</cell>
+	      <cell>20</cell>
+	      <cell>30</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>40</cell>
+	      <cell>30</cell>
+	      <cell>20</cell>
+	      <cell>35</cell>
+	      <cell>35</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>28</cell>
+	      <cell>38</cell>
+	      <cell>36</cell>
+	      <cell>25</cell>
+	      <cell>25</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell>30</cell>
+	      <cell>5</cell>
+	      <cell>28</cell>
+	      <cell>30</cell>
+	      <cell>24</cell>
+	    </row>
+	    <row bottom="major">
+	      <cell>28</cell>
+	      <cell>30</cell>
+	      <cell>35</cell>
+	      <cell>15</cell>
+	      <cell>32</cell>
+	    </row>
+	  </tabular>
+	</table>
+      </statement>
+      <exercise>
+	<statement>
+	  <p>
+	    Determine the distribution of the hours worked by creating
+	    a frequency histogram on your TI-84 Plus calculator. Use 0
+	    as your lower class limit and 5 as your class width.
+	  </p>
+	</statement>
+	<answer>
+	  <p>
+	    First enter the data into any list, press <c>window</c>
+	    and enter the following values:
+	    <ul>
+	      <li>Xmin=0</li>
+	      <li>Xmax=45</li>
+	      <li>Xscl=5</li>
+	      <li>Ymin=0</li>
+	      <li>Ymax=10</li>
+	      <li>Yscl=2</li>
+	    </ul>
+	    Finally after choosing the correct list in STAT PLOT press
+	    <c>graph</c> to plot the histogram with the above
+	    settings.
+	  </p>
+	  <image
+	      source="images/hours-worked-freq-histogram.png"
+	      width="50%" />
+	</answer>
+      </exercise>
+      <exercise>
+	<statement>
+	  <p>
+	    Use your graphing calculator to find the mean and median.
+	    Which measure better describes the hours worked?
+	  </p>
+	</statement>
+	<answer>
+	  <sidebyside>
+	    <image
+		source="images/hours-worked-mean.png"
+		width="40%" />
+	    <image
+		source="images/hours-worked-median.png"
+		width="40%" />
+	  </sidebyside>
+	  <p>
+	    <ul>
+	      <li><m>\bar{x} = 26.64</m></li>
+	      <li><m>M = 30</m></li>
+	    </ul>
+	     Because the data is skewed to the left, the median is a
+	     better measure of the central tendency of the data.
+	  </p>
+	</answer>
+      </exercise>
+    </reading-questions>
+
   </section>
 
 
@@ -135,7 +262,165 @@
 
   <section xml:id="sec-measures-position-and-outliers">
     <title>Measures of Position and Outliers</title>
-    <p>Placeholder text</p>
+    <definition>
+      <title>Z-score</title>
+      <statement>
+	<p>
+	  A <term>z-score</term> of a data point is the number of
+	  standard deviations the point is from the mean.
+	</p>
+	<dl>
+	  <li>
+	    <title>population z-score</title>
+	    <p>
+	      <m>z = \dfrac{x-\mu}{\sigma}</m>
+	    </p>
+	  </li>
+	  <li>
+	    <title>sample z-score</title>
+	    <p>
+	      <m>z = \dfrac{x-\bar{x}}{s}</m>
+	    </p>
+	  </li>
+	</dl>
+	Characteristics of z-scores:
+	<ol>
+	  <li>unitless</li>
+
+	  <li>mean of z-scores = 0</li>
+
+	  <li>std. deviation of z-scores=1</li>
+
+	  <li>If a datum is larger than the mean its z-score is
+	  positive.</li>
+
+	  <li>If a datum is smaller than the mean its z-score is
+	  negative.</li>
+
+	  <li>Z-scores can be used to compare measurements on
+	  different scales.</li>
+	</ol>
+      </statement>
+    </definition>
+
+    <example>
+      <title>Comparing Final Exam Scores</title>
+      <statement>
+	<p>
+	  Final exam scores for a Biology course have a mean of 79 and
+	  a standard deviation of 5. Final exam scores for a
+	  Statistics course have a mean of 82 and a standard deviation
+	  of 7. You scored 86 on the Biology exam and 91 on the
+	  Statistics exam. How many standard deviations above the mean
+	  were you in each course? Relative to the rest of the
+	  students, on which exam did you do better?
+	</p>
+      </statement>
+      <solution>
+	<tabular top="major">
+	  <row bottom="major">
+	    <cell halign="right">statistic</cell>
+	    <cell halign="center">symbol</cell>
+	    <cell halign="center">Biology</cell>
+	    <cell halign="center">Statistics</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell halign="right">test score</cell>
+	    <cell halign="center"><m>x</m></cell>
+	    <cell halign="center">86</cell>
+	    <cell halign="center">91</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell halign="right">mean</cell>
+	    <cell halign="center"><m>\mu</m></cell>
+	    <cell halign="center">79</cell>
+	    <cell halign="center">82</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell halign="right">std. dev.</cell>
+	    <cell halign="center"><m>\sigma</m></cell>
+	    <cell halign="center">5</cell>
+	    <cell halign="center">7</cell>
+	  </row>
+	  <row bottom="major">
+	    <cell halign="right">z-score</cell>
+	    <cell halign="center"><m>z</m></cell>
+	    <cell halign="center">
+	      <m>\dfrac{86-79}{5}</m>
+	    </cell>
+	    <cell halign="center">
+	      <m>\dfrac{91-82}{7}</m>
+	    </cell>
+	  </row>
+	  <row bottom="major">
+	    <cell></cell>
+	    <cell halign="center"><m>z</m></cell>
+	    <cell halign="center">1.4</cell>
+	    <cell halign="center"><m>\approx</m> 1.3</cell>
+	  </row>
+	</tabular>
+	<p>
+	  Thus since, 1.4 &gt; 1.3, you did slightly better on the
+	  Biology exam than you did on your Statistics exam, relative
+	  to your fellow students. This is despite the fact that in
+	  absolute terms, your score in Statistics was higher.
+	</p>
+	<p>
+	  This example demonstrates that it is meaningless to compare
+	  absolute measures which come from different distributions,
+	  in this case, the test scores. However, by rescaling each
+	  test score relative to the mean and the standard deviation
+	  of each distribution <ie/> creating z-scores, we can
+	  meaningfully compare data from different distributions.
+	</p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Triathlon Times</title>
+      <statement>
+	<p>
+	  Roberto finishes a triathlon (750 m swim, 5 km run, and 20
+	  km bicycle) in 63.2 minutes. Among all men in the race, the
+	  mean finishing time was 69.4 minutes with a standard
+	  deviation of 8.0 minutes. Zandra finishes the same triathlon
+	  in 79.3 minutes. Among all women in the race, the mean
+	  finishing time was 84.7 minutes with a standard deviation of
+	  7.4 minutes. Who did better relative to their gender?
+	</p>
+      </statement>
+      <solution>
+	<p>
+	  We compute a z-score for each athlete:
+	</p>
+	<tabular top="major">
+	  <row bottom="minor">
+	    <cell halign="right">statistic</cell>
+	    <cell halign="center">Roberto</cell>
+	    <cell halign="center">Zandra</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell halign="right">z-score</cell>
+	    <cell halign="center"><m>\dfrac{63.2-69.4}{8.0}</m></cell>
+	    <cell halign="center"><m>\dfrac{79.3-84.7}{7.4}</m></cell>
+	  </row>
+	  <row bottom="major">
+	    <cell halign="right">z-score</cell>
+	    <cell halign="center">-0.775</cell>
+	    <cell halign="center"><m>\approx</m> -0.730</cell>
+	  </row>
+	</tabular>
+	<p>
+	  In the case of a race, it is better to have a time below the
+	  mean time of all the racers, thus the more negative the
+	  z-score the better. Since Roberto has the lower z-score,
+	  Roberto did better relative to his competitors than Zandra
+	  did relative to hers.
+	</p>
+      </solution>
+    </example>
+
+
   </section>
 
   <section xml:id="sec-five-number-summary-boxplots">

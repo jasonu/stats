@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-28T14:19:09-06:00    *-->
+<!--*    on 2019-05-28T17:25:42-06:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -145,7 +145,7 @@ var js_version = 0.11;
 </ul></article><article class="definition-like" id="definition-53"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">3.1.2</span>. <span class="title">Median.</span>
 </h6>
-<p id="p-85">The <dfn class="terminology">median</dfn> or <dfn class="terminology">middle value</dfn> is the value that lies in the middle of the data when the data is arranged ascending order. Notation: \(M\text{.}\)</p>
+<p id="p-85">The <dfn class="terminology">median</dfn> or <dfn class="terminology">middle value</dfn> is the value that lies in the middle of the data when the data is arranged in ascending order. Notation: \(M\text{.}\)</p>
 <p id="p-86">Algorithm:</p>
 <ol class="decimal">
 <li id="li-47">Sort the data, from least to greatest.</li>
@@ -162,7 +162,7 @@ var js_version = 0.11;
 </h6>
 <p id="p-88">Find the median of the list: 3, 4, 2, 6, 3.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span></a><div id="hk-solution-8" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-89">The ordered list is: 2, 3, 3, 4, 6, and the middle value is 3, thus the \(M=3\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span></a><div id="hk-solution-8" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-89">The ordered list is: 2, 3, 3, 4, 6, and the middle value is 3, thus \(M=3\text{.}\)</p></div></div>
 </div></article><article class="example-like" id="example-2"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">3.1.4</span>. <span class="title">Computing the Median By Hand II.</span>
 </h6>
@@ -176,7 +176,84 @@ M = \frac{3+4}{2} = 3.5
 \end{gather*}
 </div>
 </div></div>
-</div></article></section></div></main>
+</div></article><article class="definition-like" id="definition-54"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.1.5</span>. <span class="title">Resistant.</span>
+</h6>
+<p id="p-92">A statistic is said to be <dfn class="terminology">resistant</dfn> if extreme values do not affect the value of the statistic.</p></article><article class="definition-like" id="definition-55"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.1.6</span>. <span class="title">Mode.</span>
+</h6>
+<p id="p-93">The <dfn class="terminology">mode</dfn> is the most frequently occuring observation in a data set. A single data set may have multiple modes.</p></article><section class="reading-questions" id="reading-questions-17"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Working Hours</span>
+</h3>
+<p id="p-94">A random sample of 25 college students was asked, “How many hours per week do you typically work outside your home?” Their responses are recorded in the table below.</p>
+<figure class="figure-like" id="table-7"><table>
+<tr>
+<td class="l m b1 r0 l0 t3 lines">0</td>
+<td class="l m b1 r0 l0 t3 lines">32</td>
+<td class="l m b1 r0 l0 t3 lines">15</td>
+<td class="l m b1 r0 l0 t3 lines">20</td>
+<td class="l m b1 r0 l0 t3 lines">30</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">40</td>
+<td class="l m b1 r0 l0 t0 lines">30</td>
+<td class="l m b1 r0 l0 t0 lines">20</td>
+<td class="l m b1 r0 l0 t0 lines">35</td>
+<td class="l m b1 r0 l0 t0 lines">35</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">28</td>
+<td class="l m b1 r0 l0 t0 lines">38</td>
+<td class="l m b1 r0 l0 t0 lines">36</td>
+<td class="l m b1 r0 l0 t0 lines">25</td>
+<td class="l m b1 r0 l0 t0 lines">25</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">30</td>
+<td class="l m b1 r0 l0 t0 lines">5</td>
+<td class="l m b1 r0 l0 t0 lines">28</td>
+<td class="l m b1 r0 l0 t0 lines">30</td>
+<td class="l m b1 r0 l0 t0 lines">24</td>
+</tr>
+<tr>
+<td class="l m b3 r0 l0 t0 lines">28</td>
+<td class="l m b3 r0 l0 t0 lines">30</td>
+<td class="l m b3 r0 l0 t0 lines">35</td>
+<td class="l m b3 r0 l0 t0 lines">15</td>
+<td class="l m b3 r0 l0 t0 lines">32</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span> <span class="codenumber">3.1.7.</span> Working hours of 25 college students</figcaption></figure><article class="exercise-like" id="exercise-69"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-95">Determine the distribution of the hours worked by creating a frequency histogram on your TI-84 Plus calculator. Use 0 as your lower class limit and 5 as your class width.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-65" id="answer-65"><span class="type">Answer</span></a><div id="hk-answer-65" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-96">First enter the data into any list, press <code class="code-inline tex2jax_ignore">window</code> and enter the following values:</p>
+<ul class="disc">
+<li id="li-52">Xmin=0</li>
+<li id="li-53">Xmax=45</li>
+<li id="li-54">Xscl=5</li>
+<li id="li-55">Ymin=0</li>
+<li id="li-56">Ymax=10</li>
+<li id="li-57">Yscl=2</li>
+</ul>
+<p>Finally after choosing the correct list in STAT PLOT press <code class="code-inline tex2jax_ignore">graph</code> to plot the histogram with the above settings.</p>
+<div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/hours-worked-freq-histogram.png" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-70"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-97">Use your graphing calculator to find the mean and median. Which measure better describes the hours worked?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-66" id="answer-66"><span class="type">Answer</span></a><div id="hk-answer-66" class="hidden-content tex2jax_ignore"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="images/hours-worked-mean.png" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="images/hours-worked-median.png" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<ul id="p-98" class="disc">
+<li id="li-58">\(\bar{x} = 26.64\)</li>
+<li id="li-59">\(M = 30\)</li>
+</ul>
+<p>Because the data is skewed to the left, the median is a better measure of the central tendency of the data.</p>
+</div></div>
+</div></article></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>
