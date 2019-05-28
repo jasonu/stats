@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-25T16:05:03-06:00    *-->
+<!--*    on 2019-05-28T14:19:09-06:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -126,7 +126,57 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-measures-central-tendency"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Measures of Central Tendency</span>
 </h2>
-<a href="sec-measures-central-tendency.html" class="permalink">¶</a><p id="p-76">Placeholder text</p></section></div></main>
+<a href="sec-measures-central-tendency.html" class="permalink">¶</a><article class="definition-like" id="definition-52"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.1.1</span>. <span class="title">Mean (Arithmetic Average).</span>
+</h6>
+<p id="p-82">The <dfn class="terminology">mean</dfn> or <dfn class="terminology">arithmetic average</dfn> is computed by adding up all the values and dividing by the number of observations.</p>
+<dl class="description-list">
+<dt id="li-43">population mean</dt>
+<dd> \(\mu = \dfrac{\sum x_i}{N}\) (pronounced “mew”)</dd>
+<dt id="li-44">sample mean</dt>
+<dd><p id="p-83">\(\bar{x} = \dfrac{\sum x_i}{n}\) (pronounced “x bar”)</p></dd>
+</dl>
+<p id="p-84">Note that it is a convention in Statistics to use Greek letters to represent population statistics while we use Roman letters to denote sample statistics.</p>
+<ul class="disc">
+<li id="li-45">
+<em class="alert">Advantage:</em> the mean is used as a starting point for computing several other useful statistics e.g. std. deviation.</li>
+<li id="li-46">
+<em class="alert">Disadvantage:</em> If the data is skewed or contains outliers, then the mean is not the best way to measure the center of your data.</li>
+</ul></article><article class="definition-like" id="definition-53"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.1.2</span>. <span class="title">Median.</span>
+</h6>
+<p id="p-85">The <dfn class="terminology">median</dfn> or <dfn class="terminology">middle value</dfn> is the value that lies in the middle of the data when the data is arranged ascending order. Notation: \(M\text{.}\)</p>
+<p id="p-86">Algorithm:</p>
+<ol class="decimal">
+<li id="li-47">Sort the data, from least to greatest.</li>
+<li id="li-48">Find the single middle element, or middle two elements if the list has an even number of elements.</li>
+<li id="li-49">If there is one value in the middle (\(n\) odd), then that value is the median. If there are two values in the middle (\(n\) even) then the median is the average of the two middle values.</li>
+</ol>
+<ul id="p-87" class="disc">
+<li id="li-50">
+<em class="alert">Advantage:</em> Resistant to outliers and or skewed data.</li>
+<li id="li-51">
+<em class="alert">Disadvantage:</em> Hard to compute by hand when you have a large data set.</li>
+</ul></article><article class="example-like" id="example-1"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.3</span>. <span class="title">Computing the Median By Hand I.</span>
+</h6>
+<p id="p-88">Find the median of the list: 3, 4, 2, 6, 3.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span></a><div id="hk-solution-8" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-89">The ordered list is: 2, 3, 3, 4, 6, and the middle value is 3, thus the \(M=3\text{.}\)</p></div></div>
+</div></article><article class="example-like" id="example-2"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.4</span>. <span class="title">Computing the Median By Hand II.</span>
+</h6>
+<p id="p-90">Find the median of the list: 3, 4, 2, 6, 3, 7</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-9" id="solution-9"><span class="type">Solution</span></a><div id="hk-solution-9" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-91">The ordered list is: 2, 3, 3, 4, 6, 7, but it has an even number of elements, so we compute the average or mean of the middle two elements, thus the median is:</p>
+<div class="displaymath">
+\begin{gather*}
+M = \frac{3+4}{2} = 3.5
+\end{gather*}
+</div>
+</div></div>
+</div></article></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>

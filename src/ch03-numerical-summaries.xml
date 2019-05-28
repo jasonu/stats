@@ -4,8 +4,123 @@
 
   <section xml:id="sec-measures-central-tendency">
     <title>Measures of Central Tendency</title>
-    <p>Placeholder text</p>
+
+    <definition>
+      <title>Mean (Arithmetic Average)</title>
+      <statement>
+	<p>
+	  The <term>mean</term> or <term>arithmetic average</term> is
+	  computed by adding up all the values and dividing by the
+	  number of observations.
+	</p>
+	<dl width="wide">
+	  <li>
+	    <title>population mean</title>
+	      <m>\mu = \dfrac{\sum x_i}{N}</m>
+	      (pronounced <q>mew</q>)
+	  </li>
+
+	  <li>
+	    <title>sample mean</title>
+	    <p>
+	      <m>\bar{x} = \dfrac{\sum x_i}{n}</m>
+	      (pronounced <q>x bar</q>)
+	    </p>
+	  </li>
+	</dl>
+
+	<p>
+	  Note that it is a convention in Statistics to use Greek
+	  letters to represent population statistics while we use
+	  Roman letters to denote sample statistics.
+	</p>
+	<ul>
+	  <li>
+	    <alert>Advantage:</alert> the mean is used as a starting
+	    point for computing several other useful statistics <eg/>
+	    std. deviation.
+	  </li>
+	  <li>
+	    <alert>Disadvantage:</alert> If the data is skewed or
+	    contains outliers, then the mean is not the best way to
+	    measure the center of your data.
+	  </li>
+	</ul>
+      </statement>
+    </definition>
+
+    <definition>
+      <title>Median</title>
+      <statement>
+	<p>
+	  The <term>median</term> or <term>middle value</term> is the
+	  value that lies in the middle of the data when the data is
+	  arranged ascending order. Notation: <m>M</m>.
+	</p>
+	<p>
+	  Algorithm:
+	  <ol>
+	    <li>Sort the data, from least to greatest.</li>
+	    <li>Find the single middle element, or middle two elements
+	    if the list has an even number of elements.</li>
+	    <li>If there is one value in the middle (<m>n</m> odd),
+	    then that value is the median. If there are two values in
+	    the middle (<m>n</m> even) then the median is the average
+	    of the two middle values.</li>
+	  </ol>
+	</p>
+	<p>
+	  <ul>
+	    <li>
+	      <alert>Advantage:</alert> Resistant to outliers and or
+	      skewed data.
+	    </li>
+	    <li>
+	      <alert>Disadvantage:</alert> Hard to compute by hand
+	      when you have a large data set.
+	    </li>
+	  </ul>
+	</p>
+      </statement>
+    </definition>
+
+    <example>
+      <title>Computing the Median By Hand I</title>
+      <statement>
+	<p>
+	  Find the median of the list: 3, 4, 2, 6, 3.
+	</p>
+      </statement>
+      <solution>
+	<p>
+	  The ordered list is: 2, 3, 3, 4, 6, and the middle value is
+	  3, thus <m>M=3</m>.
+	</p>
+      </solution>
+    </example>
+    <example>
+      <title>Computing the Median By Hand II</title>
+      <statement>
+	<p>
+	  Find the median of the list: 3, 4, 2, 6, 3, 7
+	</p>
+      </statement>
+      <solution>
+	<p>
+	  The ordered list is: 2, 3, 3, 4, 6, 7, but it has an even
+	  number of elements, so we compute the average or mean of the
+	  middle two elements, thus the median is:
+	  <md>
+	    <mrow>
+	      M = \frac{3+4}{2} = 3.5
+	    </mrow>
+	  </md>
+	</p>
+      </solution>
+    </example>
+
   </section>
+
 
   <section xml:id="sec-measures-dispersion">
     <title>Measures of Dispersion</title>

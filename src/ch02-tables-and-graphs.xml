@@ -849,11 +849,15 @@
 	<statement>
 	  <p>
 	    Construct a frequency distribution and relative
-	    frequency distribution. <em>Hint: Use your histogram
-	    to get the frequencies, put them in a list, and use
-	    your calculator to compute the relative
-	    frequencies.</em>
+	    frequency distribution.
 	  </p>
+	  <hint>
+	    <p>
+	      Use your histogram to get the frequencies, put them in a
+	      list, and use your calculator to compute the relative
+	      frequencies.
+	    </p>
+	  </hint>
 	  <answer>
 	    <sidebyside>
 	      <image
@@ -923,26 +927,46 @@
       <exercise>
 	<statement>
 	  <p>
-	    Construct a frequency distribution and relative
-	    frequency distribution. <em>Hint: Use your histogram
-	    to get the frequencies. Remember to use the class
-	    midpoints as your <m>x</m> values.</em>
+	    Construct a relative frequency histogram with
+	    <c>window</c> settings:
+	    <ul>
+	      <li>Xmin = 0</li>
+	      <li>Xmax = 5</li>
+	      <li>Xscl = 0.5</li>
+	      <li>Ymin = 0</li>
+	      <li>Ymax = 0.3</li>
+	      <li>Yscl = 0.05</li>
+	    </ul>
 	  </p>
-	  <answer>
-	    <sidebyside>
-	      <image
-		  source="images/cigarette-tax-rates-histogram.png"
-		  width="40%"
-		  />
-	      <image
-		  source="images/cigarette-tax-rates-rel-histogram.png"
-		  width="40%"
-		  />
-	    </sidebyside>
-	  </answer>
 	</statement>
+	<answer>
+	  <image source="images/cigarette-tax-rel-freq-histogram.png"
+		 width="40%" />
+	</answer>
       </exercise>
 
+      <exercise>
+	<statement>
+	  <p>
+	    What percentage of states have a tax of $3 or more on a
+	    pack of cigarettes?
+	  </p>
+	</statement>
+	<answer>
+	  <p>
+	    We can use the calculator to answer this:
+	  </p>
+	  <image
+	      source="images/cigarette-tax-rate-percentage.png"
+	      width="40%"
+	      />
+	  <p>
+	    Thus about 11.8% of states have a tax of $3 or more per
+	    pack of cigarettes.
+	  </p>
+	</answer>
+
+      </exercise>
 
     </reading-questions>
 
@@ -954,6 +978,26 @@
 	  start="0"
 	  end="218" />
     </figure>
+
+    <definition>
+      <statement>
+	<p>
+	  A <term>stem and leaf plot</term> is another way to display
+	  quantitative data where the rightmost or last digit of a
+	  datum is called a <term>leaf</term> and the other digits
+	  form the <term>stem</term>.
+	</p>
+      </statement>
+    </definition>
+
+    <reading-questions>
+      <title>Grams of Fat in McDonalds' Breakfast Menu Items</title>
+
+      <statement>
+	<p>
+	</p>
+      </statement>
+    </reading-questions>
 
   </section>
 
