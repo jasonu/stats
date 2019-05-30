@@ -140,6 +140,11 @@
       </statement>
     </definition>
 
+    <figure>
+      <caption>Crash Course Statistics: Mean, Median and Mode: Measures of Central Tendency</caption>
+      <video youtube="kn83BA7cRNM" />
+    </figure>
+
     <reading-questions>
       <title>Working Hours</title>
       <statement>
@@ -152,39 +157,39 @@
 	  <caption>Working hours of 25 college students</caption>
 	  <tabular top="major">
 	    <row bottom="minor">
-	      <cell>0</cell>
-	      <cell>32</cell>
-	      <cell>15</cell>
-	      <cell>20</cell>
-	      <cell>30</cell>
+	      <cell halign="right">0</cell>
+	      <cell halign="right">32</cell>
+	      <cell halign="right">15</cell>
+	      <cell halign="right">20</cell>
+	      <cell halign="right">30</cell>
 	    </row>
 	    <row bottom="minor">
-	      <cell>40</cell>
-	      <cell>30</cell>
-	      <cell>20</cell>
-	      <cell>35</cell>
-	      <cell>35</cell>
+	      <cell halign="right">40</cell>
+	      <cell halign="right">30</cell>
+	      <cell halign="right">20</cell>
+	      <cell halign="right">35</cell>
+	      <cell halign="right">35</cell>
 	    </row>
 	    <row bottom="minor">
-	      <cell>28</cell>
-	      <cell>38</cell>
-	      <cell>36</cell>
-	      <cell>25</cell>
-	      <cell>25</cell>
+	      <cell halign="right">28</cell>
+	      <cell halign="right">38</cell>
+	      <cell halign="right">36</cell>
+	      <cell halign="right">25</cell>
+	      <cell halign="right">25</cell>
 	    </row>
 	    <row bottom="minor">
-	      <cell>30</cell>
-	      <cell>5</cell>
-	      <cell>28</cell>
-	      <cell>30</cell>
-	      <cell>24</cell>
+	      <cell halign="right">30</cell>
+	      <cell halign="right">5</cell>
+	      <cell halign="right">28</cell>
+	      <cell halign="right">30</cell>
+	      <cell halign="right">24</cell>
 	    </row>
 	    <row bottom="major">
-	      <cell>28</cell>
-	      <cell>30</cell>
-	      <cell>35</cell>
-	      <cell>15</cell>
-	      <cell>32</cell>
+	      <cell halign="right">28</cell>
+	      <cell halign="right">30</cell>
+	      <cell halign="right">35</cell>
+	      <cell halign="right">15</cell>
+	      <cell halign="right">32</cell>
 	    </row>
 	  </tabular>
 	</table>
@@ -251,7 +256,18 @@
 
   <section xml:id="sec-measures-dispersion">
     <title>Measures of Dispersion</title>
-    <p>Placeholder text</p>
+    <p>
+      The video below mentions the inter-quartile range or IQR which
+      we cover in section <xref
+      ref="sec-measures-position-and-outliers" />. The IQR is simply
+      the middle 50% of the data.
+    </p>
+
+    <figure>
+      <caption>Crash Course Statistics: Measures of Spread</caption>
+      <video youtube="R4yfNi_8Kqw" />
+    </figure>
+
   </section>
 
   <section xml:id="sec-measures-grouped-data">
@@ -302,6 +318,12 @@
 	</ol>
       </statement>
     </definition>
+
+    <figure>
+      <caption>Crash Course Statistics: Z-Scores and
+      Percentiles</caption>
+      <video youtube="uAxyI_XfqXk" />
+    </figure>
 
     <example>
       <title>Comparing Final Exam Scores</title>
@@ -419,7 +441,6 @@
 	</p>
       </solution>
     </example>
-
 
   </section>
 

@@ -82,6 +82,11 @@
       </statement>
     </definition>
 
+    <figure>
+      <caption>Crash Course Statistics: What Is Statistics</caption>
+      <video youtube="sxQaBpKfDRk" />
+    </figure>
+
     <reading-questions>
       <title>Statistic or Parameter?</title>
       <p>For each
@@ -338,6 +343,11 @@
       </exercise>
     </reading-questions>
 
+    <figure>
+      <caption>Crash Course Statistics: Mathematical Thinking</caption>
+      <video youtube="tN9Xl1AcSv8" />
+    </figure>
+
   </section>
 
   <section xml:id="sec-observational-vs-designed">
@@ -425,6 +435,13 @@
       <statement>list of information from all individuals in a
       population</statement>
     </definition>
+
+
+    <figure>
+      <caption>Crash Course Statistics: Controlled
+      Experiments</caption>
+      <video youtube="kkBDa-ICvyY" />
+    </figure>
 
     <reading-questions>
       <title>Observational Study or Designed Experiment?</title>
@@ -1192,6 +1209,12 @@
       This section is only three pages but is a must read
       section!
     </p>
+
+    <figure>
+      <caption>Crash Course Statistics: Sampling Methods and Bias in
+      Surveys</caption>
+      <video youtube="Rf-fIpB4D50" />
+    </figure>
 
   </section>
 </chapter>
