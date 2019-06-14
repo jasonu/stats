@@ -60,6 +60,7 @@ html: .check_install .check_xsltproc
 	-rm $(HTML)/*.html
 	cd $(HTML); \
 	xsltproc -xinclude \
+		-stringparam debug.colors blue_grey \
 	        -stringparam numbering.maximum.level 3 \
 		-stringparam html.knowl.example no \
 		$(MBXSL)/mathbook-html.xsl $(SRC)/stats.xml

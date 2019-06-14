@@ -1,6 +1,6 @@
 %**************************************%
 %*    Generated from PreTeXt source   *%
-%*    on 2019-05-16T15:13:39-06:00    *%
+%*    on 2019-05-29T22:02:12-06:00    *%
 %*                                    *%
 %*      https://pretextbook.org       *%
 %*                                    *%
@@ -294,8 +294,14 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Semantic Macros
 %% To preserve meaning in a LaTeX file
 %% Only defined here if required in this document
+%% Used for warnings, typically bold and italic
+\newcommand{\alert}[1]{\textbf{\textit{#1}}}
 %% Used for inline definitions of terms
 \newcommand{\terminology}[1]{\textbf{#1}}
+%% Used for fillin answer blank
+%% Argument is length in em
+%% Length may compress for output to fit in one line
+\newcommand{\fillin}[1]{\leavevmode\leaders\vrule height -1.2pt depth 1.5pt \hskip #1em minus #1em \null}
 %% Division Numbering: Chapters, Sections, Subsections, etc
 %% Division numbers may be turned off at some level ("depth")
 %% A section *always* has depth 1, contrary to us counting from the document root
@@ -331,6 +337,12 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% computation: fairly simple numbered block/structure
 \tcbset{ computationstyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, } }
 \newtcolorbox[use counter*=cthm]{computation}[2]{title={{Computation~\thecthm\notblank{#1}{\space\space#1}{}}}, phantomlabel={#2}, breakable, parbox=false, computationstyle, }
+%%
+%% tcolorbox, with styles, for EXAMPLE-LIKE
+%%
+%% example: fairly simple numbered block/structure
+\tcbset{ examplestyle/.style={bwminimalstyle, runintitlestyle, blockspacingstyle, after title={\space}, after upper={\space\space\hspace*{\stretch{1}}\(\square\)}, } }
+\newtcolorbox[use counter*=cthm]{example}[2]{title={{Example~\thecthm\notblank{#1}{\space\space#1}{}}}, phantomlabel={#2}, breakable, parbox=false, examplestyle, }
 %% Divisional exercises (and worksheet) as LaTeX environments
 %% Third argument is option for extra workspace in worksheets
 %% Hanging indent occupies a 5ex width slot prior to left margin
@@ -399,6 +411,42 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \makeatletter
 \let\c@table\c@cthm
 \makeatother
+%% QR Code Support
+%% Videos and other interactives
+\usepackage{qrcode}
+\newlength{\qrsize}
+\newlength{\previewwidth}
+%% tcolorbox styles for interactive previews
+%% changing size= and/or colback can aid in debugging
+\tcbset{ previewstyle/.style={bwminimalstyle, halign=center} }
+\tcbset{ qrstyle/.style={bwminimalstyle, hbox} }
+\tcbset{ captionstyle/.style={bwminimalstyle, left=1em, width=\linewidth} }
+%% Generic red play button (from SVG)
+%% tikz package should be loaded by now
+\definecolor{playred}{RGB}{230,33,23}
+\newcommand{\genericpreview}{
+        \begin{tikzpicture}[y=0.80pt, x=0.80pt, yscale=-1.000000, xscale=1.000000, inner sep=0pt, outer sep=0pt]
+        \path[fill=playred] (94.9800,28.8400) .. controls (94.9800,28.8400) and
+        (94.0400,22.2400) .. (91.1700,19.3400) .. controls (87.5300,15.5300) and
+        (83.4500,15.5100) .. (81.5800,15.2900) .. controls (68.1800,14.3200) and
+        (48.0600,14.4400) .. (48.0600,14.4400) .. controls (48.0600,14.4400) and
+        (27.9400,14.3200) .. (14.5400,15.2900) .. controls (12.6700,15.5100) and
+        (8.5900,15.5300) .. (4.9500,19.3400) .. controls (2.0800,22.2400) and
+        (1.1400,28.8400) .. (1.1400,28.8400) .. controls (1.1400,28.8400) and
+        (0.1800,36.5800) .. (0.0000,44.3300) -- (0.0000,51.5900) .. controls
+        (0.1800,59.3400) and (1.1400,67.0800) .. (1.1400,67.0800) .. controls
+        (1.1400,67.0800) and (2.0700,73.6800) .. (4.9500,76.5800) .. controls
+        (8.5900,80.3900) and (13.3800,80.2700) .. (15.5100,80.6700) .. controls
+        (23.0400,81.3900) and (47.2100,81.5600) .. (48.0500,81.5700) .. controls
+        (48.0600,81.5700) and (68.1900,81.6000) .. (81.5900,80.6300) .. controls
+        (83.4600,80.4100) and (87.5400,80.3900) .. (91.1800,76.5800) .. controls
+        (94.0500,73.6800) and (94.9900,67.0800) .. (94.9900,67.0800) .. controls
+        (94.9900,67.0800) and (95.9500,59.3300) .. (96.0100,51.5900) --
+        (96.0100,44.3300) .. controls (95.9400,36.5800) and (94.9800,28.8400) ..
+        (94.9800,28.8400) -- cycle(38.2800,61.4100) -- (38.2800,34.4100) --
+        (64.0200,47.9100) -- (38.2800,61.4100) -- cycle;
+        \end{tikzpicture}
+        }
 %% Fancy Verbatim for consoles, preformatted, code display, literate programming
 \usepackage{fancyvrb}
 %% code display (cd), by analogy with math display (md)
@@ -421,6 +469,25 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% If you manually remove hyperref, leave in this next command
 \providecommand\phantomsection{}
 %% If tikz has been loaded, replace ampersand with \amp macro
+%% tcolorbox styles for sidebyside layout
+\tcbset{ sbsstyle/.style={raster equal height=rows,raster force size=false} }
+\tcbset{ sbsheadingstyle/.style={bwminimalstyle, halign=center, fontupper=\bfseries} }
+\tcbset{ sbspanelstyle/.style={bwminimalstyle} }
+\tcbset{ sbscaptionstyle/.style={bwminimalstyle, halign=center} }
+%% Enviroments for side-by-side and components
+%% Necessary to use \NewTColorBox for boxes of the panels
+%% "newfloat" environment to squash page-breaks within a single sidebyside
+%% \leavevmode necessary when a side-by-side comes first, right after a heading
+%% "xparse" environment for entire sidebyside
+\NewDocumentEnvironment{sidebyside}{mmmm}
+  {\begin{tcbraster}
+    [sbsstyle,raster columns=#1,
+    raster left skip=#2\linewidth,raster right skip=#3\linewidth,raster column skip=#4\linewidth]}
+  {\end{tcbraster}}
+%% "tcolorbox" environments for three components of a panel
+\NewTColorBox{sbsheading}{m}{sbsheadingstyle,width=#1\linewidth}
+\NewTColorBox{sbspanel}{mO{top}}{sbspanelstyle,width=#1\linewidth,valign=#2}
+\NewTColorBox{sbscaption}{m}{sbscaptionstyle,width=#1\linewidth}
 %% extpfeil package for certain extensible arrows,
 %% as also provided by MathJax extension of the same name
 %% NB: this package loads mtools, which loads calc, which redefines
@@ -468,7 +535,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 {\Huge Statistics Lecture Notes}\\[3\baselineskip]
 {\Large Jason D. Underdown}\\[0.5\baselineskip]
 {\Large SLCC}\\[3\baselineskip]
-{\Large May 16, 2019 15:13:39 (-06:00)}\\}
+{\Large May 29, 2019 22:02:12 (-06:00)}\\}
 \clearpage
 %% end:   title page
 %% begin: copyright-page
@@ -512,7 +579,7 @@ Studying these lecture notes alone is usually not sufficient to achieve an A gra
 \typeout{Chapter 1 Data Collection}
 \typeout{************************************************}
 %
-\begin{chapterptx}{Data Collection}{}{Data Collection}{}{}{ch-collection}
+\begin{chapterptx}{Data Collection}{}{Data Collection}{}{}{ch-data-collection}
 %
 %
 \typeout{************************************************}
@@ -546,6 +613,23 @@ responses are numerical measures, with a natural ordering i.e.\@ it makes sense 
 finite or countable number of possible values e.g.\@ number of children\end{definition}
 \begin{definition}{continuous variable.}{definition-13}%
 infinite number of possible values e.g.\@ height\end{definition}
+\begin{figure}
+\centering
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-1.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=sxQaBpKfDRk}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=sxQaBpKfDRk}\end{tcolorbox}%
+\end{tcbraster}%
+\caption{Crash Course Statistics: What Is Statistics\label{figure-1}}
+\end{figure}
 %
 %
 \typeout{************************************************}
@@ -689,6 +773,23 @@ What is the sample? \textbf{Answer}.\hypertarget{answer-25}{}\quad%
 What are the descriptive statistics? \textbf{Answer}.\hypertarget{answer-26}{}\quad%
 IQ, smoking status\end{divisionexercise}%
 \end{reading-questions-subsection-numberless}
+\begin{figure}
+\centering
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-2.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=tN9Xl1AcSv8}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=tN9Xl1AcSv8}\end{tcolorbox}%
+\end{tcbraster}%
+\caption{Crash Course Statistics: Mathematical Thinking\label{figure-2}}
+\end{figure}
 \end{sectionptx}
 %
 %
@@ -716,11 +817,28 @@ in a study occurs when the effects of two or more explanatory variables are not 
 \begin{definition}{lurking variable.}{definition-22}%
 a variable that was not considered in the study, but affects the response variable\end{definition}
 \hypertarget{p-6}{}%
-IMPORTANT COMMENT: Because of lurking variables, observational studies \emph{DO NOT} allow a researcher to claim causation, only \emph{association}.%
+\alert{IMPORTANT: Because of the possibility of lurking variables, observational studies \emph{DO NOT} allow a researcher to claim causation, only \emph{association}.}%
 \begin{definition}{confounding variable.}{definition-23}%
 a variable in the study where you can’t tell the difference between its effect and another explanatory variable’s effect\end{definition}
 \begin{definition}{census.}{definition-24}%
 list of information from all individuals in a population\end{definition}
+\begin{figure}
+\centering
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-3.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=kkBDa-ICvyY}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=kkBDa-ICvyY}\end{tcolorbox}%
+\end{tcbraster}%
+\caption{Crash Course Statistics: Controlled Experiments\label{figure-3}}
+\end{figure}
 %
 %
 \typeout{************************************************}
@@ -729,7 +847,7 @@ list of information from all individuals in a population\end{definition}
 %
 \begin{reading-questions-subsection-numberless}{Observational Study or Designed Experiment?}{}{Observational Study or Designed Experiment?}{}{}{reading-questions-6}
 \begin{divisionexercise}{1}{}{}{exercise-27}%
-Rats with cancer are divided into two groups. One group received 5 milligrams of a medication that is thought to fight cancer, and the other received 10 milligrams. After 2 years, the spread of cancer is measured. \textbf{Answer}.\hypertarget{answer-27}{}\quad%
+Rats with cancer are divided into two groups. One group receives 5 milligrams of a medication that is thought to fight cancer, and the other receives 10 milligrams. After 2 years, the spread of cancer is measured. \textbf{Answer}.\hypertarget{answer-27}{}\quad%
 designed experiment\end{divisionexercise}%
 \begin{divisionexercise}{2}{}{}{exercise-28}%
 Conservation agents netted 250 large-mouth bass in a lake and determined how many were carrying parasites. \textbf{Answer}.\hypertarget{answer-28}{}\quad%
@@ -749,15 +867,15 @@ observational study\end{divisionexercise}%
 %
 \begin{reading-questions-subsection-numberless}{Daily Coffee Consumption}{}{Daily Coffee Consumption}{}{}{reading-questions-7}
 \hypertarget{p-7}{}%
-Is there an association between daily coffee consumption and the occurrence of skin cancer? Reasearchers asked 93,676 women to disclose their coffee-drinking habits and also determined which of the women had nonmelanoma skin cancer. The researchers concluded that consumption of 6 or more cups of caffeinated coffee per day was associated with a reduction in nonmelanoma skin cancer.%
+Is there an association between daily coffee consumption and the occurrence of skin cancer? Reasearchers asked 93,676 women to disclose their coffee drinking habits and also determined which of the women had nonmelanoma skin cancer. The researchers concluded that consumption of 6 or more cups of caffeinated coffee per day was associated with a reduction in nonmelanoma skin cancer.%
 \begin{divisionexercise}{1}{}{}{exercise-31}%
-Whas this an oberservational study or experiment? If observational, what type of observational study was it? \textbf{Answer}.\hypertarget{answer-31}{}\quad%
+Was this an oberservational study or experiment? If observational, what type of observational study was it? \textbf{Answer}.\hypertarget{answer-31}{}\quad%
 observational, cross-section\end{divisionexercise}%
 \begin{divisionexercise}{2}{}{}{exercise-32}%
 What is the response variable? What is the explanatory variable? \textbf{Answer}.\hypertarget{answer-32}{}\quad%
 response: skin cancer, explanatory: coffee consumption\end{divisionexercise}%
 \begin{divisionexercise}{3}{}{}{exercise-33}%
-Can we conclude drinking six or more cups of coffee reduces the change of nonmelanoma skin cancer? \textbf{Answer}.\hypertarget{answer-33}{}\quad%
+Can we conclude drinking six or more cups of coffee reduces the chance of nonmelanoma skin cancer? \textbf{Answer}.\hypertarget{answer-33}{}\quad%
 No, because observational studies never allow us to determine causation, just association.\end{divisionexercise}%
 \end{reading-questions-subsection-numberless}
 %
@@ -768,19 +886,19 @@ No, because observational studies never allow us to determine causation, just as
 %
 \begin{reading-questions-subsection-numberless}{Get Married, Gain Weight}{}{Get Married, Gain Weight}{}{}{reading-questions-8}
 \hypertarget{p-8}{}%
-Are young couples who marry or cohabitate more likely to gian weight than those who stay single? Researchers followed 8000 men and women for 7 years. At the start of the study, none of the participants were married or living with a romantic partner. The researchers found that women who married or cohabitated during the study period gained 9 pounds more then sinlge women, and married or cohabitating men gained, on average, 6 pounds more than single men.%
+Are young couples who marry or cohabitate more likely to gain weight than those who stay single? Researchers followed 8000 men and women for 7 years. At the start of the study, none of the participants were married or living with a romantic partner. The researchers found that women who married or cohabitated during the study period gained 9 pounds more then single women, and married or cohabitating men gained, on average, 6 pounds more than single men.%
 \begin{divisionexercise}{1}{}{}{exercise-34}%
-Why is this an oberational study? What type of observational study is it? \textbf{Answer}.\hypertarget{answer-34}{}\quad%
-No manipulation of explanatory variable: marital status; cohort study\end{divisionexercise}%
+Why is this an observational study? What type of observational study is it? \textbf{Answer}.\hypertarget{answer-34}{}\quad%
+No manipulation of explanatory variable; cohort study\end{divisionexercise}%
 \begin{divisionexercise}{2}{}{}{exercise-35}%
 What is the response variable in the study? What is the explanatory variable? \textbf{Answer}.\hypertarget{answer-35}{}\quad%
 response: weight, explanatory: marital status\end{divisionexercise}%
 \begin{divisionexercise}{3}{}{}{exercise-36}%
 Identify some of the potential lurking variables in the study. \textbf{Answer}.\hypertarget{answer-36}{}\quad%
-diet, exercise\end{divisionexercise}%
+diet, exercise, stress, pregnancy\end{divisionexercise}%
 \begin{divisionexercise}{4}{}{}{exercise-37}%
 Can we conclude that getting married or cohabitating causes one to gain weight? \textbf{Answer}.\hypertarget{answer-37}{}\quad%
-No, because it is an observational study, not an experiment.\end{divisionexercise}%
+No, because it is an observational study, not an experiment. We can only conclude that they are associated.\end{divisionexercise}%
 \end{reading-questions-subsection-numberless}
 \end{sectionptx}
 %
@@ -822,11 +940,11 @@ To generate a random integer between 1 and 10:\leavevmode%
 \item\hypertarget{li-3}{}Fill out the StatWizard so it looks like below%
 \begin{codedisplay}
 
-		      lower:1
-		      upper:10
-		      n:
-		      Paste
-		    
+		lower:1
+		upper:10
+		n:
+		Paste
+	      
 \end{codedisplay}
 Highlight \mono{Paste} and press \mono{enter}.%
 \item\hypertarget{li-4}{}Press \mono{enter} to execute the function you previously pasted into the command window.%
@@ -843,11 +961,11 @@ To generate a list of 4 random integers between 1 and 10:\leavevmode%
 \item\hypertarget{li-7}{}Fill out the StatWizard so it looks like below%
 \begin{codedisplay}
 
-		      lower:1
-		      upper:10
-		      n:4
-		      Paste
-		    
+		lower:1
+		upper:10
+		n:4
+		Paste
+	      
 \end{codedisplay}
 Highlight \mono{Paste} and press \mono{enter}.%
 \item\hypertarget{li-8}{}Press \mono{enter} to execute the function you previously pasted into the command window.%
@@ -864,11 +982,11 @@ To generate a list of 10 random integers between 1 and 20 with \emph{no repeats}
 \item\hypertarget{li-11}{}Fill out the StatWizard so it looks like below%
 \begin{codedisplay}
 
-		      lower:1
-		      upper:20
-		      n:10
-		      Paste
-		    
+		lower:1
+		upper:20
+		n:10
+		Paste
+	      
 \end{codedisplay}
 Highlight \mono{Paste} and press \mono{enter}.%
 \item\hypertarget{li-12}{}Press \mono{enter} to execute the function you previously pasted into the command window.%
@@ -964,7 +1082,7 @@ p, p+k, p+2k, p+3k, \ldots, p+(n-1)k
 %
 \par
 \hypertarget{p-21}{}%
-Works best when individuals are arranged sequentially but you’re not sure how many total individuals there are because you don’t have a frame of the population (files in a drawer, people coming out of a building e.g.\@ exit polling, etc.\@).%
+Works best when individuals are arranged sequentially but you’re not sure how many total individuals there are because you don’t have a frame of the population (e.g.\@ files in a drawer, people coming out of a building exit polling, etc.\@).%
 \end{definition}
 \begin{definition}{cluster sampling.}{definition-34}%
 \hypertarget{p-22}{}%
@@ -980,20 +1098,99 @@ sampling subjects who are easy to get (bad sampling method).%
 \hypertarget{p-25}{}%
 Works best when: NEVER!! (not random)%
 \end{definition}
-\begin{definition}{self-selected.}{definition-36}%
+\begin{definition}{self-selected sampling.}{definition-36}%
 \hypertarget{p-26}{}%
 a convenience sample where individuals are self-selected (another bad sampling method).%
 \par
 \hypertarget{p-27}{}%
 Works best when: NEVER!! (not random, favors those with stronger opinions)%
 \end{definition}
-\begin{definition}{multi-stage sample.}{definition-37}%
+\begin{definition}{multi-stage sampling.}{definition-37}%
 \hypertarget{p-28}{}%
 a sample that is selected in multiple stages, each of which might use a different method of sampling.%
 \par
 \hypertarget{p-29}{}%
 Works best when: The population is organized hierarchically but no list exists.%
 \end{definition}
+%
+%
+\typeout{************************************************}
+\typeout{Reading Questions 1.4 Identify the Sampling Method Part I}
+\typeout{************************************************}
+%
+\begin{reading-questions-subsection-numberless}{Identify the Sampling Method Part I}{}{Identify the Sampling Method Part I}{}{}{reading-questions-11}
+\begin{divisionexercise}{1}{}{}{exercise-41}%
+The fifth person exiting the student center and every 12th person afterward is interviewed. \textbf{Answer}.\hypertarget{answer-42}{}\quad%
+systematic sampling\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{exercise-42}%
+Two out of the six parking lots on campus are randomly selected and every driver in the two lots receives a questionnaire. \textbf{Answer}.\hypertarget{answer-43}{}\quad%
+cluster sampling\end{divisionexercise}%
+\begin{divisionexercise}{3}{}{}{exercise-43}%
+Each registered student is assigned a number, 20 numbers are randomly generated and the corresponding students are interviewed. \textbf{Answer}.\hypertarget{answer-44}{}\quad%
+simple random sampling\end{divisionexercise}%
+\begin{divisionexercise}{4}{}{}{exercise-44}%
+Six buildings on campus are randomly selected and every 4th person who exits each building is included in the sample. \textbf{Answer}.\hypertarget{answer-45}{}\quad%
+multi-stage sampling; (cluster sampling followed by systematic sampling)\end{divisionexercise}%
+\begin{divisionexercise}{5}{}{}{exercise-45}%
+Randomly select 10 males and 10 females in the activity center to be interviewed. \textbf{Answer}.\hypertarget{answer-46}{}\quad%
+stratified sampling\end{divisionexercise}%
+\begin{divisionexercise}{6}{}{}{exercise-46}%
+Every person in my class that sits next to me in Math 1040 is interviewed. \textbf{Answer}.\hypertarget{answer-47}{}\quad%
+convenience sampling\end{divisionexercise}%
+\begin{divisionexercise}{7}{}{}{exercise-47}%
+A pile of questionnaires is left on a table in the library with a sign that says, “Please complete.” \textbf{Answer}.\hypertarget{answer-48}{}\quad%
+self-selected sampling\end{divisionexercise}%
+\end{reading-questions-subsection-numberless}
+%
+%
+\typeout{************************************************}
+\typeout{Reading Questions 1.4 Identify the Sampling Method Part II}
+\typeout{************************************************}
+%
+\begin{reading-questions-subsection-numberless}{Identify the Sampling Method Part II}{}{Identify the Sampling Method Part II}{}{}{reading-questions-12}
+\hypertarget{p-30}{}%
+For each scenario determine which type of sampling is used.%
+\begin{divisionexercise}{1}{}{}{exercise-48}%
+To estimate the percentage of defects in a recent manufacturing batch, a quality control manager selects every 8th chip that comes of the assemply line starting with the 3rd until she obtains 140 chips. \textbf{Answer}.\hypertarget{answer-49}{}\quad%
+systematic sampling\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{exercise-49}%
+To determine customer opinion of its boarding policy, Southwest Airlines randomly selects 60 flights during a certain week and surveys all passengers on the flights. \textbf{Answer}.\hypertarget{answer-50}{}\quad%
+cluster sampling\end{divisionexercise}%
+\begin{divisionexercise}{3}{}{}{exercise-50}%
+A member of Congress wishes to determine her constituency’s opinions regarding estate taxes. She first divides her constituency into three income classes: low-income households, middle-income households, and upper-income households. She then takes a simple random sample of households from each income class. \textbf{Answer}.\hypertarget{answer-51}{}\quad%
+stratified sampling\end{divisionexercise}%
+\begin{divisionexercise}{4}{}{}{exercise-51}%
+In an effort to identify whether an advertising campaign has been effective, a marketing firm conducts a nation wide poll by randomly selecting individuals from a list of known users of the product. \textbf{Answer}.\hypertarget{answer-52}{}\quad%
+simple random sampling\end{divisionexercise}%
+\begin{divisionexercise}{5}{}{}{exercise-52}%
+A radio station asks its listeners to call in their opinion regarding the use of U.S. forces in peace keeping missions. \textbf{Answer}.\hypertarget{answer-53}{}\quad%
+self-selected sampling\end{divisionexercise}%
+\begin{divisionexercise}{6}{}{}{exercise-53}%
+A college official divides the student population into five classes: freshman, sophomore, junior, senior and graduate student. The official takes a simple random sample from each class and asks the members’ opinions regarding student services. \textbf{Answer}.\hypertarget{answer-54}{}\quad%
+stratified sampling\end{divisionexercise}%
+\end{reading-questions-subsection-numberless}
+%
+%
+\typeout{************************************************}
+\typeout{Reading Questions 1.4 Systematic Sampling Example}
+\typeout{************************************************}
+%
+\begin{reading-questions-subsection-numberless}{Systematic Sampling Example}{}{Systematic Sampling Example}{}{}{reading-questions-13}
+\hypertarget{p-31}{}%
+The human resources department at a company wants to conduct a survey regarding employee morale. The department has a list of all 400 employees at the company and wants to do a systematic sample of size 20. To do this they randomly select the 8th employee and then select every 20th person. Which workers will be surveyed?%
+\begin{divisionexercise}{1}{}{}{exercise-54}%
+1st = \fillin{4.545454545454546}\textbf{Answer}.\hypertarget{answer-55}{}\quad%
+\(8 = p\)\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{exercise-55}%
+2nd = \fillin{4.545454545454546}\textbf{Answer}.\hypertarget{answer-56}{}\quad%
+\(28 = p + k = 8 + 20\)\end{divisionexercise}%
+\begin{divisionexercise}{3}{}{}{exercise-56}%
+3rd = \fillin{4.545454545454546}\textbf{Answer}.\hypertarget{answer-57}{}\quad%
+\(48 = p + 2k = 8 + 40\)\end{divisionexercise}%
+\begin{divisionexercise}{4}{}{}{exercise-57}%
+20th = \fillin{4.545454545454546}\textbf{Answer}.\hypertarget{answer-58}{}\quad%
+\(388 = p + (n-1)k = 8 + (19)20\)\end{divisionexercise}%
+\end{reading-questions-subsection-numberless}
 \end{sectionptx}
 %
 %
@@ -1002,8 +1199,52 @@ Works best when: The population is organized hierarchically but no list exists.%
 \typeout{************************************************}
 %
 \begin{sectionptx}{Bias in Sampling}{}{Bias in Sampling}{}{}{sec-bias-in-sampling}
-\hypertarget{p-30}{}%
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt lectus nec gravida mattis. Donec viverra bibendum felis, in egestas neque commodo vel. Duis id consectetur sapien. Etiam vel ante ut quam fringilla faucibus. Pellentesque a dictum enim, sed molestie quam. Morbi finibus facilisis orci, a tempor quam hendrerit sit amet. Phasellus eget maximus enim. Pellentesque fermentum nulla lectus, sed blandit risus tempus sed. Praesent bibendum facilisis maximus. Fusce vestibulum nulla in tincidunt vulputate. Sed at velit non orci molestie vulputate. Donec auctor risus vel purus auctor laoreet quis a mi. In eget tempor quam.%
+\begin{definition}{bias.}{definition-38}%
+when sample results are not representative of the population\end{definition}
+\begin{definition}{sample bias.}{definition-39}%
+bias because the technique used to select the sample favors some individuals over others (not random)\end{definition}
+\begin{definition}{undercoverage.}{definition-40}%
+type of sampling bias where part of the population has a lower chance or no chance of being in the sample (e.g.\@ if the frame is incomplete)\end{definition}
+\begin{definition}{nonresponse bias.}{definition-41}%
+bias because individuals in the sample do not respond\end{definition}
+\begin{definition}{response bias.}{definition-42}%
+bias because responses do not reflect the true feelings or beliefs of the respondent.~\hypertarget{p-32}{}%
+\terminology{Response bias} can occur in a number of different ways:\leavevmode%
+\begin{itemize}[label=\textbullet]
+\item{}From the interviewer\textemdash{}the nature or wording of the interviewer can affect the truthfulness of responses.%
+\item{}Misrepresented answers\textemdash{}when the results of a survey misrepresent facts or are flat out lies.%
+\item{}Wording of questions\textemdash{}the way a question is worded can lead to response bias in a survey.%
+\item{}Ordering of questions or choices\textemdash{}many surveys will rearrange the order of the questions so that responses are not influenced by prior answers.%
+\end{itemize}
+%
+\end{definition}
+\begin{definition}{open question.}{definition-43}%
+allows a respondent to choose his or her own response e.g.\@ "What is the most important problem facing youth today?"\end{definition}
+\begin{definition}{closed question.}{definition-44}%
+requires the respondent to choose from a list of predetermined responses.\end{definition}
+\begin{definition}{nonsampling errors.}{definition-45}%
+errors that result from undercoverage, non-response bias, response bias or data-entry error.\end{definition}
+\begin{definition}{sampling errors.}{definition-46}%
+errors that result from using a sample to estimate information about a population.\end{definition}
+\hypertarget{p-33}{}%
+I will leave it for you to read section 1.5 for examples. This section is only three pages but is a must read section!%
+\begin{figure}
+\centering
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-4.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=Rf-fIpB4D50}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=Rf-fIpB4D50}\end{tcolorbox}%
+\end{tcbraster}%
+\caption{Crash Course Statistics: Sampling Methods and Bias in Surveys\label{figure-4}}
+\end{figure}
 \end{sectionptx}
 \end{chapterptx}
 \end{partptx}
@@ -1028,8 +1269,141 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt lectus 
 \typeout{************************************************}
 %
 \begin{sectionptx}{Organizing Qualitative Data}{}{Organizing Qualitative Data}{}{}{sec-organizing-qualitative-data}
-\hypertarget{p-31}{}%
-Placeholder text%
+\begin{definition}{frequency distribution.}{definition-47}%
+\hypertarget{p-34}{}%
+lists each category of data and the number of occurrences for each category.%
+\end{definition}
+\begin{definition}{relative frequency distribution.}{definition-48}%
+\hypertarget{p-35}{}%
+lists each category of data and the proportion (or percent) of obervations in that category.%
+\par
+\hypertarget{p-36}{}%
+relative frequency = count\slash{}total%
+\end{definition}
+\begin{definition}{pie chart.}{definition-49}%
+\hypertarget{p-37}{}%
+is a circle divided into sectors. Each sector represents a category of data and its area is proportional to the frequency.%
+\end{definition}
+\begin{figure}
+\centering
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-5.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=hEWY6kkBdpo}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=hEWY6kkBdpo}\end{tcolorbox}%
+\end{tcbraster}%
+\caption{Crash Course Statistics: Data Visualization Part 1\label{figure-5}}
+\end{figure}
+%
+%
+\typeout{************************************************}
+\typeout{Reading Questions 2.1 Favorite Day to Eat Out}
+\typeout{************************************************}
+%
+\begin{reading-questions-subsection-numberless}{Favorite Day to Eat Out}{}{Favorite Day to Eat Out}{}{}{reading-questions-14}
+\hypertarget{p-38}{}%
+A survey was conducted by Wakefield Research in which 40 particpants were asked to give their favorite night to go out to dinner. The following data are the results.%
+\begin{table}
+\centering
+\begin{tabular}{lllll}\hrulethick
+Thursday&Saturday&Friday&Friday&Sunday\tabularnewline\hrulethin
+Wednesday&Saturday&Friday&Tuesday&Friday\tabularnewline\hrulethin
+Saturday&Monday&Friday&Friday&Sunday\tabularnewline\hrulethin
+Friday&Tuesday&Wednesday&Saturday&Friday\tabularnewline\hrulethin
+Wednesday&Monday&Wednesday&Wednesday&Friday\tabularnewline\hrulethin
+Friday&Wednesday&Thursday&Tuesday&Friday\tabularnewline\hrulethin
+Tuesday&Saturday&Friday&Tuesday&Friday\tabularnewline\hrulethin
+Saturday&Saturday&Saturday&Sunday&Friday\tabularnewline\hrulethin
+\end{tabular}
+\caption{Data from Wakefield Research\label{table-2}}
+\end{table}
+\begin{divisionexercise}{1}{}{}{exercise-58}%
+\hypertarget{p-39}{}%
+Construct a frequency distribution%
+\begin{tabular}{lll}\hrulethick
+Day&Tally&Frequency\tabularnewline\hrulethick
+Sunday& ~~~~~ ~~~~~ ~~~~~ ~~~~~ ~~~~~&\tabularnewline\hrulethin
+Monday&&\tabularnewline\hrulethin
+Tuesday&&\tabularnewline\hrulethin
+Wednesday&&\tabularnewline\hrulethin
+Thursday&&\tabularnewline\hrulethin
+Friday&&\tabularnewline\hrulethin
+Saturday&&\tabularnewline\hrulethick
+Sum:&&\tabularnewline\hrulethick
+\end{tabular}
+\textbf{Solution}.\hypertarget{solution-3}{}\quad%
+\begin{tabular}{ll}\hrulethick
+Day&\multicolumn{1}{c}{Frequency}\tabularnewline\hrulethick
+Sunday&\multicolumn{1}{c}{3}\tabularnewline\hrulethin
+Monday&\multicolumn{1}{c}{2}\tabularnewline\hrulethin
+Tuesday&\multicolumn{1}{c}{5}\tabularnewline\hrulethin
+Wednesday&\multicolumn{1}{c}{6}\tabularnewline\hrulethin
+Thursday&\multicolumn{1}{c}{2}\tabularnewline\hrulethin
+Friday&\multicolumn{1}{c}{14}\tabularnewline\hrulethin
+Saturday&\multicolumn{1}{c}{8}\tabularnewline\hrulethick
+Sum:&\multicolumn{1}{c}{40}\tabularnewline\hrulethick
+\end{tabular}
+\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{exercise-59}%
+\hypertarget{p-40}{}%
+Construct a relative frequency distribution%
+\begin{tabular}{ll}\hrulethick
+Day&\multicolumn{1}{c}{Relative Frequency}\tabularnewline\hrulethick
+Sunday&\multicolumn{1}{c}{}\tabularnewline\hrulethin
+Monday&\multicolumn{1}{c}{}\tabularnewline\hrulethin
+Tuesday&\multicolumn{1}{c}{}\tabularnewline\hrulethin
+Wednesday&\multicolumn{1}{c}{}\tabularnewline\hrulethin
+Thursday&\multicolumn{1}{c}{}\tabularnewline\hrulethin
+Friday&\multicolumn{1}{c}{}\tabularnewline\hrulethin
+Saturday&\multicolumn{1}{c}{}\tabularnewline\hrulethick
+Sum:&\multicolumn{1}{c}{}\tabularnewline\hrulethick
+\end{tabular}
+\textbf{Solution}.\hypertarget{solution-4}{}\quad%
+\begin{tabular}{ll}\hrulethick
+Day&\multicolumn{1}{r}{Relative Frequency}\tabularnewline\hrulethick
+Sunday&\multicolumn{1}{r}{0.075}\tabularnewline\hrulethin
+Monday&\multicolumn{1}{r}{0.050}\tabularnewline\hrulethin
+Tuesday&\multicolumn{1}{r}{0.125}\tabularnewline\hrulethin
+Wednesday&\multicolumn{1}{r}{0.150}\tabularnewline\hrulethin
+Thursday&\multicolumn{1}{r}{0.050}\tabularnewline\hrulethin
+Friday&\multicolumn{1}{r}{0.350}\tabularnewline\hrulethin
+Saturday&\multicolumn{1}{r}{0.200}\tabularnewline\hrulethick
+Sum:&\multicolumn{1}{r}{1.000}\tabularnewline\hrulethick
+\end{tabular}
+\end{divisionexercise}%
+\begin{divisionexercise}{3}{}{}{exercise-60}%
+\hypertarget{p-41}{}%
+Construct a frequency bar chart%
+\textbf{Solution}.\hypertarget{solution-5}{}\quad%
+\begin{figure}\centering\includegraphics[width=1\linewidth]{images/eat-out-bar-chart.png}
+\end{figure}\end{divisionexercise}%
+\begin{divisionexercise}{4}{}{}{exercise-61}%
+\hypertarget{p-42}{}%
+Construct a relative frequency bar chart%
+\textbf{Solution}.\hypertarget{solution-6}{}\quad%
+\begin{figure}\centering\includegraphics[width=1\linewidth]{images/eat-out-rel-freq-bar-chart.png}
+\end{figure}\end{divisionexercise}%
+\begin{divisionexercise}{5}{}{}{exercise-62}%
+\hypertarget{p-43}{}%
+Construct a pie chart%
+\textbf{Solution}.\hypertarget{solution-7}{}\quad%
+\begin{figure}\centering\includegraphics[width=1\linewidth]{images/eat-out-pie-chart.png}
+\end{figure}\end{divisionexercise}%
+\begin{divisionexercise}{6}{}{}{exercise-63}%
+\hypertarget{p-44}{}%
+If you own a restaurant, which days would you purchase an advertisement on the local radio? Are there days that you should avoid?%
+\textbf{Answer}.\hypertarget{answer-59}{}\quad%
+\hypertarget{p-45}{}%
+It would be good to advertise on Fridays and Saturdays, but not so worthwhile to advertise on Mondays and Thursdays.%
+\end{divisionexercise}%
+\end{reading-questions-subsection-numberless}
 \end{sectionptx}
 %
 %
@@ -1038,8 +1412,314 @@ Placeholder text%
 \typeout{************************************************}
 %
 \begin{sectionptx}{Organizing Quantitative Data}{}{Organizing Quantitative Data}{}{}{sec-organizing-quantitative-data}
-\hypertarget{p-32}{}%
-Placeholder text%
+\begin{definition}{}{definition-50}%
+\hypertarget{p-46}{}%
+A \terminology{bar graph} is for qualitative data while a \terminology{histogram} is used for quantitative data. In a histogram, data is grouped into \terminology{classes} or \terminology{bins}.%
+\par
+\hypertarget{p-47}{}%
+Notes on histograms:\leavevmode%
+\begin{enumerate}
+\item\hypertarget{li-21}{}Bars have equal widths%
+\item\hypertarget{li-22}{}Bars are touching%
+\end{enumerate}
+%
+\par
+\hypertarget{p-48}{}%
+Terminology related to histograms:\leavevmode%
+\begin{itemize}[label=\textbullet]
+\item{}\terminology{lower class limit}: smallest value in a class%
+\item{}\terminology{upper class limit}: largest value in a class%
+\item{}\terminology{class width (bin width)}: difference between consecutive lower class limits (or upper class limits)%
+\item{}\terminology{open ended}: a table where the first class has no lower limit and\slash{}or the last class has no upper limit.%
+\end{itemize}
+%
+\end{definition}
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 2.2.1 The Shape of a Distribution}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{The Shape of a Distribution}{}{The Shape of a Distribution}{}{}{sub-distribution-shapes}
+\hypertarget{p-49}{}%
+One reason for going through the trouble of displaying data in a histogram is to determine the basic shape of your data. The four most common shapes are:%
+\begin{figure}
+\centering
+\includegraphics[width=0.8\linewidth]{images/four-distribution-shapes.png}
+\caption{Four most common distribution shapes.\label{figure-6}}
+\end{figure}
+\end{subsectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 2.2.2 Create Histograms and Frequency Distributions from Data Using the TI-84 Plus}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{Create Histograms and Frequency Distributions from Data Using the TI-84 Plus}{}{Create Histograms and Frequency Distributions from Data Using the TI-84 Plus}{}{}{sub-histogram-from-data}
+\hypertarget{p-50}{}%
+The TI-84 Plus calculator can generate histograms and frequency distributions from raw data. Normally, one would first sort their data, separate it into classes to create a frequency distribution and then plot the frequency distribution with vertical bars to generate a histogram. However, when we use the calculator, we will first generate the histogram and then read off the frequencies from the height of each bar to create the frequency distribution.%
+\par
+\hypertarget{p-51}{}%
+The data below was generated by asking each student from a statistics class to give their height in inches.%
+\begin{table}
+\centering
+\begin{tabular}{llllll}\hrulethick
+62&79&63&68&62&69\tabularnewline\hrulethin
+69&64&62&63&68&71\tabularnewline\hrulethin
+72&68&63&70&63&67\tabularnewline\hrulethin
+60&66&71&69&70&71\tabularnewline\hrulethick
+\end{tabular}
+\caption{Student heights (inches)\label{tab-student-heights}}
+\end{table}
+\hypertarget{p-52}{}%
+To create a histogram of the height data above do the following:%
+\leavevmode%
+\begin{enumerate}
+\item\hypertarget{li-27}{}Enter the data in the above table into list 1. This can be done by pressing \mono{stat}, \mono{1} and then using the cursor to select list 1.%
+\item\hypertarget{li-28}{}\hypertarget{p-53}{}%
+Press \mono{2nd}, \mono{y=} to enter the STAT PLOTS menu. (Make sure Plot2 and Plot3 are OFF by pressing \mono{4} (PlotsOff) if necessary.) Choose Plot1 by pressing \mono{1}.%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/stat-plots-menu.png}
+\end{figure}\item\hypertarget{li-29}{}\hypertarget{p-54}{}%
+Make your screen match the image below:%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/stat-plot-histogram-from-list.png}
+\end{figure}\item\hypertarget{li-30}{}\hypertarget{p-55}{}%
+Press \mono{zoom}, \mono{9}. This will cause the calculator to bin the data according to its internal algorithm and display the histogram.%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/heights-histogram-1.png}
+\end{figure}\hypertarget{p-56}{}%
+You can press \mono{trace} and move the cursor to check the class\slash{}bin limits the calculator chose.%
+\item\hypertarget{li-31}{}\hypertarget{p-57}{}%
+Press \mono{window} and modify Xmin, Xmax, Xscl, Ymin and Ymax to match the screen below. Setting Xscl to 2 changes the class\slash{}bin width to 2 (inches).%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/heights-histogram-window.png}
+\end{figure}\item\hypertarget{li-32}{}\hypertarget{p-58}{}%
+Press \mono{graph} to display the new histogram.%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/heights-histogram-2.png}
+\end{figure}\hypertarget{p-59}{}%
+You can use the \mono{trace} and cursor keys to check the lower and upper class limits for each class as well as the count or frequency. The screenshot above indicates that the class of heights between 62 and 64 inches contains 7 individuals.%
+\item\hypertarget{li-33}{}\hypertarget{p-60}{}%
+If you use the \mono{trace} feature to determine the frequency for each bar (class) you can generate a \terminology{frequency distribution}. On the TI-84 Plus calculator, instead of using the \terminology{classes} we instead enter the \terminology{class midpoints} in list 2 and the \terminology{frequencies} in list 3.%
+\begin{sidebyside}{2}{0}{0}{0}%
+\begin{sbspanel}{0.5}%
+{\centering%
+\begin{tabular}{ll}\hrulethick
+\multicolumn{1}{c}{Height}&\multicolumn{1}{c}{Freq.}\tabularnewline\hrulethick
+\multicolumn{1}{c}{60\textendash{}\textless{}62}&\multicolumn{1}{c}{1}\tabularnewline\hrulethin
+\multicolumn{1}{c}{62\textendash{}\textless{}64}&\multicolumn{1}{c}{7}\tabularnewline\hrulethin
+\multicolumn{1}{c}{64\textendash{}\textless{}66}&\multicolumn{1}{c}{1}\tabularnewline\hrulethin
+\multicolumn{1}{c}{66\textendash{}\textless{}68}&\multicolumn{1}{c}{2}\tabularnewline\hrulethin
+\multicolumn{1}{c}{68\textendash{}\textless{}70}&\multicolumn{1}{c}{6}\tabularnewline\hrulethin
+\multicolumn{1}{c}{70\textendash{}\textless{}72}&\multicolumn{1}{c}{5}\tabularnewline\hrulethin
+\multicolumn{1}{c}{72\textendash{}\textless{}74}&\multicolumn{1}{c}{1}\tabularnewline\hrulethin
+\multicolumn{1}{c}{74\textendash{}\textless{}76}&\multicolumn{1}{c}{0}\tabularnewline\hrulethin
+\multicolumn{1}{c}{76\textendash{}\textless{}78}&\multicolumn{1}{c}{0}\tabularnewline\hrulethin
+\multicolumn{1}{c}{78\textendash{}\textless{}80}&\multicolumn{1}{c}{1}\tabularnewline\hrulethick
+\multicolumn{1}{r}{Sum:}&\multicolumn{1}{c}{24}\tabularnewline\hrulethick
+\end{tabular}
+\par}
+\end{sbspanel}%
+\begin{sbspanel}{0.5}%
+\includegraphics[width=1\linewidth]{images/heights-freq-dist.png}
+\end{sbspanel}%
+\nopagebreak%
+\begin{sbscaption}{0.5}%
+\captionof{table}{Height frequency distribution\label{table-4}}
+\end{sbscaption}%
+\begin{sbscaption}{0.5}%
+\end{sbscaption}%
+\end{sidebyside}%
+\item\hypertarget{li-34}{}\hypertarget{p-61}{}%
+Next, we can have the TI-84 Plus calculator generate \terminology{relative frequencies} for us. Let's store the relative frequencies in list 4. Go to \mono{stat}, \mono{1} and edit list 4. Cursor to the list 4 header, i.e.\@ cursor up until the header is highlighted (shaded black) and press the following: \begin{sidebyside}{1}{0.2}{0.2}{0}%
+\begin{sbspanel}{0.6}%
+\hypertarget{p-62}{}%
+\mono{2nd}\mono{3}\mono{÷}\mono{2nd}\mono{stat},%
+\end{sbspanel}%
+\end{sidebyside}%
+ choose CALC and then press the following keys: \begin{sidebyside}{1}{0.2}{0.2}{0}%
+\begin{sbspanel}{0.6}%
+\hypertarget{p-63}{}%
+\mono{5}\mono{2nd}\mono{3}\mono{)}\mono{enter}%
+\end{sbspanel}%
+\end{sidebyside}%
+ \begin{sidebyside}{2}{0}{0}{0}%
+\begin{sbspanel}{0.5}%
+\includegraphics[width=1\linewidth]{images/generate-rel-freq.png}
+\end{sbspanel}%
+\begin{sbspanel}{0.5}%
+\includegraphics[width=1\linewidth]{images/generated-rel-freq.png}
+\end{sbspanel}%
+\end{sidebyside}%
+ The resulting frequency and relative frequency distiributions are reproduced here.%
+\begin{table}
+\centering
+\begin{tabular}{lll}\hrulethick
+\multicolumn{1}{c}{Height}&\multicolumn{1}{r}{Freq.}&\multicolumn{1}{r}{Rel. Freq.}\tabularnewline\hrulethick
+\multicolumn{1}{c}{60\textendash{}\textless{}62}&\multicolumn{1}{r}{1}&\multicolumn{1}{r}{.04167}\tabularnewline\hrulethin
+\multicolumn{1}{c}{62\textendash{}\textless{}64}&\multicolumn{1}{r}{7}&\multicolumn{1}{r}{.29167}\tabularnewline\hrulethin
+\multicolumn{1}{c}{64\textendash{}\textless{}66}&\multicolumn{1}{r}{1}&\multicolumn{1}{r}{.04167}\tabularnewline\hrulethin
+\multicolumn{1}{c}{66\textendash{}\textless{}68}&\multicolumn{1}{r}{2}&\multicolumn{1}{r}{.08333}\tabularnewline\hrulethin
+\multicolumn{1}{c}{68\textendash{}\textless{}70}&\multicolumn{1}{r}{6}&\multicolumn{1}{r}{.25000}\tabularnewline\hrulethin
+\multicolumn{1}{c}{70\textendash{}\textless{}72}&\multicolumn{1}{r}{5}&\multicolumn{1}{r}{.20833}\tabularnewline\hrulethin
+\multicolumn{1}{c}{72\textendash{}\textless{}74}&\multicolumn{1}{r}{1}&\multicolumn{1}{r}{.04167}\tabularnewline\hrulethin
+\multicolumn{1}{c}{74\textendash{}\textless{}76}&\multicolumn{1}{r}{0}&\multicolumn{1}{r}{.00000}\tabularnewline\hrulethin
+\multicolumn{1}{c}{76\textendash{}\textless{}78}&\multicolumn{1}{r}{0}&\multicolumn{1}{r}{.00000}\tabularnewline\hrulethin
+\multicolumn{1}{c}{78\textendash{}\textless{}80}&\multicolumn{1}{r}{1}&\multicolumn{1}{r}{.04167}\tabularnewline\hrulethick
+\multicolumn{1}{r}{Sum:}&\multicolumn{1}{r}{24}&\multicolumn{1}{r}{1.00000}\tabularnewline\hrulethick
+\end{tabular}
+\caption{Height frequency\slash{}relative frequency distribution\label{table-5}}
+\end{table}
+\end{enumerate}
+\end{subsectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Subsection 2.2.3 Creating Histograms from Frequency Distributions Using the TI-84 Plus}
+\typeout{************************************************}
+%
+\begin{subsectionptx}{Creating Histograms from Frequency Distributions Using the TI-84 Plus}{}{Creating Histograms from Frequency Distributions Using the TI-84 Plus}{}{}{sub-histogram-from-freq-dist}
+\hypertarget{p-64}{}%
+Perhaps you don't have access to raw data, but you do have a frequency distribution of the data, then you can still create a histogram of the data.%
+\par
+\hypertarget{p-65}{}%
+In this section, we will continue using the height data in table \hyperref[tab-student-heights]{Table~\ref{tab-student-heights}}. Further, we will assume you have the same list data generated in that example in lists 2,3 and 4 of your calculator.%
+\par
+\hypertarget{p-66}{}%
+To create a histogram from a frequency distribution:%
+\leavevmode%
+\begin{enumerate}
+\item\hypertarget{li-35}{}\hypertarget{p-67}{}%
+Go to STAT PLOTS by pressing \mono{2nd} \mono{y=} and choosing Plot1. Assuming you have the class midpoints in list 2 and the frequencies in list 3, we can generate a histogram by filling out the Plot1 menu to look like below:%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/stat-plot-histogram-from-freq-dist.png}
+\end{figure}\item\hypertarget{li-36}{}\hypertarget{p-68}{}%
+If you have not changed any settings in \mono{window}, then you can just press \mono{graph} to generate the histogram. If you have changed window settings use ZoomStat by pressing \mono{zoom} \mono{9}.%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/histogram-from-freq-dist.png}
+\end{figure}\end{enumerate}
+\end{subsectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Reading Questions 2.2.4 Cigarette Tax Rates}
+\typeout{************************************************}
+%
+\begin{reading-questions-subsection}{Cigarette Tax Rates}{}{Cigarette Tax Rates}{}{}{reading-questions-15}
+\hypertarget{p-69}{}%
+The table shows the tax in dollars, on a pack of cigarettes in each of the 50 states and Washington D.C. as of January 2014.%
+\begin{table}
+\centering
+\begin{tabular}{lllllll}\hrulethick
+0.425&1.339&0.60&0.17&0.45&1.53&2.52\tabularnewline\hrulethin
+2.00&0.37&0.36&1.70&0.44&0.62&0.60\tabularnewline\hrulethin
+2.00&3.20&2.00&0.64&1.25&1.41&2.50\tabularnewline\hrulethin
+1.15&0.57&2.00&0.80&1.03&1.70&\tabularnewline\hrulethin
+0.87&1.98&3.51&1.68&1.31&2.62&\tabularnewline\hrulethin
+0.84&0.995&2.00&2.70&1.60&0.30&\tabularnewline\hrulethin
+3.40&1.36&2.83&1.66&3.50&3.025&\tabularnewline\hrulethin
+1.60&0.79&0.68&4.35&0.57&0.55&\tabularnewline\hrulethick
+\end{tabular}
+\caption{Cigarette tax rates in dollars (\textdollar{})\label{table-6}}
+\end{table}
+\hypertarget{p-70}{}%
+Note: Normally when doing the following steps by hand, the first two steps are done in reverse, i.e.\@ you first create a \terminology{frequency distribution}, and then use that data to create a \terminology{histogram}. However, since we will use the TI graphing calculator for the first two steps, we will have the calculator do the counting for us and then just read the \terminology{frequency distribution} data from the histogram.%
+\begin{divisionexercise}{1}{}{}{exercise-64}%
+\hypertarget{p-71}{}%
+Use your TI-84 Plus calculator to construct a histogram with lower limit \textdollar{}0.00, upper limit \textdollar{}5.00 and class width of \textdollar{}0.50.%
+\textbf{Answer}.\quad%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/cigarette-tax-rates-histogram.png}
+\end{figure}\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{exercise-65}%
+\hypertarget{p-72}{}%
+What is the shape of your distribution?%
+\par\smallskip%
+\noindent\textbf{Answer}.\hypertarget{answer-61}{}\quad%
+skewed right\end{divisionexercise}%
+\begin{divisionexercise}{3}{}{}{exercise-66}%
+\hypertarget{p-73}{}%
+Construct a frequency distribution and relative frequency distribution.%
+\textbf{Hint}.\quad%
+\hypertarget{p-74}{}%
+Use your histogram to get the frequencies, put them in a list, and use your calculator to compute the relative frequencies.%
+\textbf{Answer}.\quad%
+\leavevmode%
+\begin{sidebyside}{2}{0}{0}{0}%
+\begin{sbspanel}{0.5}%
+\includegraphics[width=1\linewidth]{images/cigarette-tax-rates-freq-dist.png}
+\end{sbspanel}%
+\begin{sbspanel}{0.5}%
+{\centering%
+\begin{tabular}{lll}\hrulethick
+\multicolumn{1}{c}{Class}&\multicolumn{1}{r}{Freq.}&\multicolumn{1}{r}{Rel. Freq.}\tabularnewline\hrulethick
+0.00\textemdash{}0.49&7&.13725\tabularnewline\hrulethin
+0.50\textemdash{}0.99&13&.2549\tabularnewline\hrulethin
+1.00\textemdash{}1.49&7&.13725\tabularnewline\hrulethin
+1.50\textemdash{}1.99&8&.15686\tabularnewline\hrulethin
+2.00\textemdash{}2.49&5&.09804\tabularnewline\hrulethin
+2.50\textemdash{}2.99&5&.09804\tabularnewline\hrulethin
+3.00\textemdash{}3.49&3&.05882\tabularnewline\hrulethin
+3.50\textemdash{}3.99&2&.03922\tabularnewline\hrulethin
+4.00\textemdash{}4.49&1&.01961\tabularnewline\hrulethin
+4.50\textemdash{}4.99&0&.00000\tabularnewline\hrulethick
+\end{tabular}
+\par}
+\end{sbspanel}%
+\end{sidebyside}%
+\end{divisionexercise}%
+\begin{divisionexercise}{4}{}{}{exercise-67}%
+\hypertarget{p-75}{}%
+Construct a relative frequency histogram with \mono{window} settings:\leavevmode%
+\begin{itemize}[label=\textbullet]
+\item{}Xmin = 0%
+\item{}Xmax = 5%
+\item{}Xscl = 0.5%
+\item{}Ymin = 0%
+\item{}Ymax = 0.3%
+\item{}Yscl = 0.05%
+\end{itemize}
+%
+\par\smallskip%
+\noindent\textbf{Answer}.\hypertarget{answer-63}{}\quad%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/cigarette-tax-rel-freq-histogram.png}
+\end{figure}\end{divisionexercise}%
+\begin{divisionexercise}{5}{}{}{exercise-68}%
+\hypertarget{p-76}{}%
+What percentage of states have a tax of \textdollar{}3 or more on a pack of cigarettes?%
+\par\smallskip%
+\noindent\textbf{Answer}.\hypertarget{answer-64}{}\quad%
+\hypertarget{p-77}{}%
+We can use the calculator to answer this:%
+\begin{figure}\centering\includegraphics[width=0.4\linewidth]{images/cigarette-tax-rate-percentage.png}
+\end{figure}\hypertarget{p-78}{}%
+Thus about 11.8\% of states have a tax of \textdollar{}3 or more per pack of cigarettes.%
+\end{divisionexercise}%
+\end{reading-questions-subsection}
+\begin{figure}
+\centering
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-6.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=HMkllhBI91Y\&start=0\&end=218}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=HMkllhBI91Y}\end{tcolorbox}%
+\end{tcbraster}%
+\caption{Crash Course Statistics: Visualization Part II\label{figure-7}}
+\end{figure}
+\begin{definition}{}{definition-51}%
+\hypertarget{p-79}{}%
+A \terminology{stem and leaf plot} is another way to display quantitative data where the rightmost or last digit of a datum is called a \terminology{leaf} and the other digits form the \terminology{stem}.%
+\end{definition}
+%
+%
+\typeout{************************************************}
+\typeout{Reading Questions 2.2.5 Grams of Fat in McDonalds' Breakfast Menu Items}
+\typeout{************************************************}
+%
+\begin{reading-questions-subsection}{Grams of Fat in McDonalds' Breakfast Menu Items}{}{Grams of Fat in McDonalds' Breakfast Menu Items}{}{}{reading-questions-16}
+\hypertarget{p-80}{}%
+%
+\end{reading-questions-subsection}
 \end{sectionptx}
 %
 %
@@ -1048,7 +1728,7 @@ Placeholder text%
 \typeout{************************************************}
 %
 \begin{sectionptx}{Graphical Misrepresentations of Data}{}{Graphical Misrepresentations of Data}{}{}{sec-graphical-misrepresentations-of-data}
-\hypertarget{p-33}{}%
+\hypertarget{p-81}{}%
 Placeholder text%
 \end{sectionptx}
 \end{chapterptx}
@@ -1066,8 +1746,150 @@ Placeholder text%
 \typeout{************************************************}
 %
 \begin{sectionptx}{Measures of Central Tendency}{}{Measures of Central Tendency}{}{}{sec-measures-central-tendency}
-\hypertarget{p-34}{}%
-Placeholder text%
+\begin{definition}{Mean (Arithmetic Average).}{definition-52}%
+\hypertarget{p-82}{}%
+The \terminology{mean} or \terminology{arithmetic average} is computed by adding up all the values and dividing by the number of observations.%
+\leavevmode%
+\begin{description}
+\item[{population mean}]\hypertarget{li-43}{} \(\mu = \dfrac{\sum x_i}{N}\) (pronounced ``mew'')\item[{sample mean}]\hypertarget{li-44}{}\hypertarget{p-83}{}%
+\(\bar{x} = \dfrac{\sum x_i}{n}\) (pronounced ``x bar'')%
+\end{description}
+\hypertarget{p-84}{}%
+Note that it is a convention in Statistics to use Greek letters to represent population statistics while we use Roman letters to denote sample statistics.%
+\leavevmode%
+\begin{itemize}[label=\textbullet]
+\item{}\alert{Advantage:} the mean is used as a starting point for computing several other useful statistics e.g.\@ std. deviation.%
+\item{}\alert{Disadvantage:} If the data is skewed or contains outliers, then the mean is not the best way to measure the center of your data.%
+\end{itemize}
+\end{definition}
+\begin{definition}{Median.}{definition-53}%
+\hypertarget{p-85}{}%
+The \terminology{median} or \terminology{middle value} is the value that lies in the middle of the data when the data is arranged in ascending order. Notation: \(M\).%
+\par
+\hypertarget{p-86}{}%
+Algorithm:\leavevmode%
+\begin{enumerate}
+\item\hypertarget{li-47}{}Sort the data, from least to greatest.%
+\item\hypertarget{li-48}{}Find the single middle element, or middle two elements if the list has an even number of elements.%
+\item\hypertarget{li-49}{}If there is one value in the middle (\(n\) odd), then that value is the median. If there are two values in the middle (\(n\) even) then the median is the average of the two middle values.%
+\end{enumerate}
+%
+\par
+\hypertarget{p-87}{}%
+\leavevmode%
+\begin{itemize}[label=\textbullet]
+\item{}\alert{Advantage:} Resistant to outliers and or skewed data.%
+\item{}\alert{Disadvantage:} Hard to compute by hand when you have a large data set.%
+\end{itemize}
+%
+\end{definition}
+\begin{example}{Computing the Median By Hand I.}{example-1}%
+\hypertarget{p-88}{}%
+Find the median of the list: 3, 4, 2, 6, 3.%
+\par\smallskip%
+\noindent\textbf{Solution}.\hypertarget{solution-8}{}\quad%
+\hypertarget{p-89}{}%
+The ordered list is: 2, 3, 3, 4, 6, and the middle value is 3, thus \(M=3\).%
+\end{example}
+\begin{example}{Computing the Median By Hand II.}{example-2}%
+\hypertarget{p-90}{}%
+Find the median of the list: 3, 4, 2, 6, 3, 7%
+\par\smallskip%
+\noindent\textbf{Solution}.\hypertarget{solution-9}{}\quad%
+\hypertarget{p-91}{}%
+The ordered list is: 2, 3, 3, 4, 6, 7, but it has an even number of elements, so we compute the average or mean of the middle two elements, thus the median is:%
+\begin{gather*}
+M = \frac{3+4}{2} = 3.5
+\end{gather*}
+%
+\end{example}
+\begin{definition}{Resistant.}{definition-54}%
+\hypertarget{p-92}{}%
+A statistic is said to be \terminology{resistant} if extreme values do not affect the value of the statistic.%
+\end{definition}
+\begin{definition}{Mode.}{definition-55}%
+\hypertarget{p-93}{}%
+The \terminology{mode} is the most frequently occuring observation in a data set. A single data set may have multiple modes.%
+\end{definition}
+\begin{figure}
+\centering
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-7.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=kn83BA7cRNM}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=kn83BA7cRNM}\end{tcolorbox}%
+\end{tcbraster}%
+\caption{Crash Course Statistics: Mean, Median and Mode: Measures of Central Tendency\label{figure-8}}
+\end{figure}
+%
+%
+\typeout{************************************************}
+\typeout{Reading Questions 3.1 Working Hours}
+\typeout{************************************************}
+%
+\begin{reading-questions-subsection-numberless}{Working Hours}{}{Working Hours}{}{}{reading-questions-17}
+\hypertarget{p-94}{}%
+A random sample of 25 college students was asked, ``How many hours per week do you typically work outside your home?'' Their responses are recorded in the table below.%
+\begin{table}
+\centering
+\begin{tabular}{lllll}\hrulethick
+\multicolumn{1}{r}{0}&\multicolumn{1}{r}{32}&\multicolumn{1}{r}{15}&\multicolumn{1}{r}{20}&\multicolumn{1}{r}{30}\tabularnewline\hrulethin
+\multicolumn{1}{r}{40}&\multicolumn{1}{r}{30}&\multicolumn{1}{r}{20}&\multicolumn{1}{r}{35}&\multicolumn{1}{r}{35}\tabularnewline\hrulethin
+\multicolumn{1}{r}{28}&\multicolumn{1}{r}{38}&\multicolumn{1}{r}{36}&\multicolumn{1}{r}{25}&\multicolumn{1}{r}{25}\tabularnewline\hrulethin
+\multicolumn{1}{r}{30}&\multicolumn{1}{r}{5}&\multicolumn{1}{r}{28}&\multicolumn{1}{r}{30}&\multicolumn{1}{r}{24}\tabularnewline\hrulethin
+\multicolumn{1}{r}{28}&\multicolumn{1}{r}{30}&\multicolumn{1}{r}{35}&\multicolumn{1}{r}{15}&\multicolumn{1}{r}{32}\tabularnewline\hrulethick
+\end{tabular}
+\caption{Working hours of 25 college students\label{table-7}}
+\end{table}
+\begin{divisionexercise}{1}{}{}{exercise-69}%
+\hypertarget{p-95}{}%
+Determine the distribution of the hours worked by creating a frequency histogram on your TI-84 Plus calculator. Use 0 as your lower class limit and 5 as your class width.%
+\par\smallskip%
+\noindent\textbf{Answer}.\hypertarget{answer-65}{}\quad%
+\hypertarget{p-96}{}%
+First enter the data into any list, press \mono{window} and enter the following values:\leavevmode%
+\begin{itemize}[label=\textbullet]
+\item{}Xmin=0%
+\item{}Xmax=45%
+\item{}Xscl=5%
+\item{}Ymin=0%
+\item{}Ymax=10%
+\item{}Yscl=2%
+\end{itemize}
+Finally after choosing the correct list in STAT PLOT press \mono{graph} to plot the histogram with the above settings.%
+\begin{figure}\centering\includegraphics[width=0.5\linewidth]{images/hours-worked-freq-histogram.png}
+\end{figure}\end{divisionexercise}%
+\begin{divisionexercise}{2}{}{}{exercise-70}%
+\hypertarget{p-97}{}%
+Use your graphing calculator to find the mean and median. Which measure better describes the hours worked?%
+\par\smallskip%
+\noindent\textbf{Answer}.\hypertarget{answer-66}{}\quad%
+\leavevmode%
+\begin{sidebyside}{2}{0}{0}{0}%
+\begin{sbspanel}{0.5}%
+\includegraphics[width=1\linewidth]{images/hours-worked-mean.png}
+\end{sbspanel}%
+\begin{sbspanel}{0.5}%
+\includegraphics[width=1\linewidth]{images/hours-worked-median.png}
+\end{sbspanel}%
+\end{sidebyside}%
+\par
+\hypertarget{p-98}{}%
+\leavevmode%
+\begin{itemize}[label=\textbullet]
+\item{}\(\bar{x} = 26.64\)%
+\item{}\(M = 30\)%
+\end{itemize}
+Because the data is skewed to the left, the median is a better measure of the central tendency of the data.%
+\end{divisionexercise}%
+\end{reading-questions-subsection-numberless}
 \end{sectionptx}
 %
 %
@@ -1076,8 +1898,25 @@ Placeholder text%
 \typeout{************************************************}
 %
 \begin{sectionptx}{Measures of Dispersion}{}{Measures of Dispersion}{}{}{sec-measures-dispersion}
-\hypertarget{p-35}{}%
-Placeholder text%
+\hypertarget{p-99}{}%
+The video below mentions the inter-quartile range or IQR which we cover in section \hyperref[sec-measures-position-and-outliers]{Section~\ref{sec-measures-position-and-outliers}}. The IQR is simply the middle 50\% of the data.%
+\begin{figure}
+\centering
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-8.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=R4yfNi_8Kqw}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=R4yfNi\_8Kqw}\end{tcolorbox}%
+\end{tcbraster}%
+\caption{Crash Course Statistics: Measures of Spread\label{figure-9}}
+\end{figure}
 \end{sectionptx}
 %
 %
@@ -1086,7 +1925,7 @@ Placeholder text%
 \typeout{************************************************}
 %
 \begin{sectionptx}{Measures of Central Tendency and Dispersion from Grouped Data}{}{Measures of Central Tendency and Dispersion from Grouped Data}{}{}{sec-measures-grouped-data}
-\hypertarget{p-36}{}%
+\hypertarget{p-100}{}%
 Placeholder text%
 \end{sectionptx}
 %
@@ -1096,8 +1935,77 @@ Placeholder text%
 \typeout{************************************************}
 %
 \begin{sectionptx}{Measures of Position and Outliers}{}{Measures of Position and Outliers}{}{}{sec-measures-position-and-outliers}
-\hypertarget{p-37}{}%
-Placeholder text%
+\begin{definition}{Z-score.}{definition-56}%
+\hypertarget{p-101}{}%
+A \terminology{z-score} of a data point is the number of standard deviations the point is from the mean.%
+\leavevmode%
+\begin{description}
+\item[{population z-score}]\hypertarget{li-60}{}\hypertarget{p-102}{}%
+\(z = \dfrac{x-\mu}{\sigma}\)%
+\item[{sample z-score}]\hypertarget{li-61}{}\hypertarget{p-103}{}%
+\(z = \dfrac{x-\bar{x}}{s}\)%
+\end{description}
+ Characteristics of z-scores: \leavevmode%
+\begin{enumerate}
+\item\hypertarget{li-62}{}unitless%
+\item\hypertarget{li-63}{}mean of z-scores = 0%
+\item\hypertarget{li-64}{}std. deviation of z-scores=1%
+\item\hypertarget{li-65}{}If a datum is larger than the mean its z-score is positive.%
+\item\hypertarget{li-66}{}If a datum is smaller than the mean its z-score is negative.%
+\item\hypertarget{li-67}{}Z-scores can be used to compare measurements on different scales.%
+\end{enumerate}
+\end{definition}
+\begin{figure}
+\centering
+\setlength{\qrsize}{9em}
+\setlength{\previewwidth}{\linewidth}
+\addtolength{\previewwidth}{-\qrsize}
+\begin{tcbraster}[raster columns=2, raster column skip=1pt, raster halign=center, raster force size=false, raster left skip=0pt, raster right skip=0pt]%
+\begin{tcolorbox}[previewstyle, width=\previewwidth]%
+\includegraphics[width=0.80\linewidth,height=\qrsize,keepaspectratio]{images/video-9.jpg}%
+\end{tcolorbox}%
+\begin{tcolorbox}[qrstyle]%
+{\hypersetup{urlcolor=black}\qrcode[height=\qrsize]{https://www.youtube.com/watch?v=uAxyI_XfqXk}}%
+\end{tcolorbox}%
+\begin{tcolorbox}[captionstyle]%
+\small YouTube: \mono{https://www.youtube.com/watch?v=uAxyI\_XfqXk}\end{tcolorbox}%
+\end{tcbraster}%
+\caption{Crash Course Statistics: Z-Scores and Percentiles\label{figure-10}}
+\end{figure}
+\begin{example}{Comparing Final Exam Scores.}{example-3}%
+\hypertarget{p-104}{}%
+Final exam scores for a Biology course have a mean of 79 and a standard deviation of 5. Final exam scores for a Statistics course have a mean of 82 and a standard deviation of 7. You scored 86 on the Biology exam and 91 on the Statistics exam. How many standard deviations above the mean were you in each course? Relative to the rest of the students, on which exam did you do better?%
+\par\smallskip%
+\noindent\textbf{Solution}.\hypertarget{solution-10}{}\quad%
+\begin{tabular}{llll}\hrulethick
+\multicolumn{1}{r}{statistic}&\multicolumn{1}{c}{symbol}&\multicolumn{1}{c}{Biology}&\multicolumn{1}{c}{Statistics}\tabularnewline\hrulethick
+\multicolumn{1}{r}{test score}&\multicolumn{1}{c}{\(x\)}&\multicolumn{1}{c}{86}&\multicolumn{1}{c}{91}\tabularnewline\hrulethin
+\multicolumn{1}{r}{mean}&\multicolumn{1}{c}{\(\mu\)}&\multicolumn{1}{c}{79}&\multicolumn{1}{c}{82}\tabularnewline\hrulethin
+\multicolumn{1}{r}{std. dev.}&\multicolumn{1}{c}{\(\sigma\)}&\multicolumn{1}{c}{5}&\multicolumn{1}{c}{7}\tabularnewline\hrulethin
+\multicolumn{1}{r}{z-score}&\multicolumn{1}{c}{\(z\)}&\multicolumn{1}{c}{\(\dfrac{86-79}{5}\)}&\multicolumn{1}{c}{\(\dfrac{91-82}{7}\)}\tabularnewline\hrulethick
+&\multicolumn{1}{c}{\(z\)}&\multicolumn{1}{c}{1.4}&\multicolumn{1}{c}{\(\approx\) 1.3}\tabularnewline\hrulethick
+\end{tabular}
+\hypertarget{p-105}{}%
+Thus since, 1.4 \textgreater{} 1.3, you did slightly better on the Biology exam than you did on your Statistics exam, relative to your fellow students. This is despite the fact that in absolute terms, your score in Statistics was higher.%
+\par
+\hypertarget{p-106}{}%
+This example demonstrates that it is meaningless to compare absolute measures which come from different distributions, in this case, the test scores. However, by rescaling each test score relative to the mean and the standard deviation of each distribution i.e.\@ creating z-scores, we can meaningfully compare data from different distributions.%
+\end{example}
+\begin{example}{Triathlon Times.}{example-4}%
+\hypertarget{p-107}{}%
+Roberto finishes a triathlon (750 m swim, 5 km run, and 20 km bicycle) in 63.2 minutes. Among all men in the race, the mean finishing time was 69.4 minutes with a standard deviation of 8.0 minutes. Zandra finishes the same triathlon in 79.3 minutes. Among all women in the race, the mean finishing time was 84.7 minutes with a standard deviation of 7.4 minutes. Who did better relative to their gender?%
+\par\smallskip%
+\noindent\textbf{Solution}.\hypertarget{solution-11}{}\quad%
+\hypertarget{p-108}{}%
+We compute a z-score for each athlete:%
+\begin{tabular}{lll}\hrulethick
+\multicolumn{1}{r}{statistic}&\multicolumn{1}{c}{Roberto}&\multicolumn{1}{c}{Zandra}\tabularnewline\hrulethin
+\multicolumn{1}{r}{z-score}&\multicolumn{1}{c}{\(\dfrac{63.2-69.4}{8.0}\)}&\multicolumn{1}{c}{\(\dfrac{79.3-84.7}{7.4}\)}\tabularnewline\hrulethin
+\multicolumn{1}{r}{z-score}&\multicolumn{1}{c}{-0.775}&\multicolumn{1}{c}{\(\approx\) -0.730}\tabularnewline\hrulethick
+\end{tabular}
+\hypertarget{p-109}{}%
+In the case of a race, it is better to have a time below the mean time of all the racers, thus the more negative the z-score the better. Since Roberto has the lower z-score, Roberto did better relative to his competitors than Zandra did relative to hers.%
+\end{example}
 \end{sectionptx}
 %
 %
@@ -1106,7 +2014,7 @@ Placeholder text%
 \typeout{************************************************}
 %
 \begin{sectionptx}{The Five-{}-{}Number Summary and Boxplots}{}{The Five-{}-{}Number Summary and Boxplots}{}{}{sec-five-number-summary-boxplots}
-\hypertarget{p-38}{}%
+\hypertarget{p-110}{}%
 Placeholder text%
 \end{sectionptx}
 \end{chapterptx}

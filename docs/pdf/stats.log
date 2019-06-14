@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 MAY 2019 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 MAY 2019 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1283,27 +1283,58 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@ContinuedFloat=\count176
 Package caption Info: float package is loaded.
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/qrcode/qrcode.sty
+Package: qrcode 2015/01/08 v1.51 QR code generation
+\c@qr@i=\count177
+\c@qr@j=\count178
+\qr@a=\count179
+\qr@b=\count180
+\qr@c=\count181
+\qr@for@depth=\count182
+\qr@for@maxdepth=\count183
+\qr@for@start=\count184
+\qr@for@end=\count185
+\qr@for@step=\count186
+\qr@newforcount=\count187
+\qr@newforcount=\count188
+\qr@desiredheight=\skip61
+\qr@modulesize=\skip62
+\qr@minipagewidth=\skip63
+\c@maski=\count189
+\c@maskj=\count190
+\c@totalones=\count191
+\c@penaltyi=\count192
+\c@penaltyii=\count193
+\c@penaltyiii=\count194
+\c@penaltyiv=\count195
+\c@qr@hexchars=\count196
+\qr@newforcount=\count197
+\c@qr@divisionsremaining=\count198
+)
+\qrsize=\skip64
+\previewwidth=\skip65
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count177
+\FV@CodeLineNo=\count199
 \FV@InFile=\read3
 \FV@TabBox=\box70
-\c@FancyVerbLine=\count178
-\FV@StepNumber=\count179
+\c@FancyVerbLine=\count266
+\FV@StepNumber=\count267
 \FV@OutFile=\write6
 )
 \codedisplaybox=\box71
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip61
+\labelindent=\skip66
 \enit@outerparindent=\dimen269
 \enit@toks=\toks51
 \enit@inbox=\box72
-\enitdp@description=\count180
+\enitdp@description=\count268
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
@@ -1356,15 +1387,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen270
-\Hy@linkcounter=\count181
-\Hy@pagecounter=\count182
+\Hy@linkcounter=\count269
+\Hy@pagecounter=\count270
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count183
+\Hy@SavedSpaceFactor=\count271
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1377,7 +1408,7 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count184
+\c@Hy@tempcnt=\count272
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -1385,7 +1416,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen271
-\Fld@menulength=\count185
+\Fld@menulength=\count273
 \Field@Width=\dimen272
 \Fld@charsize=\dimen273
 Package hyperref Info: Hyper figures OFF on input line 6358.
@@ -1397,25 +1428,45 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count186
-\c@Item=\count187
+\Hy@abspage=\count274
+\c@Item=\count275
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count188
-\c@bookmark@seq@number=\count189
+\Fld@listcount=\count276
+\c@bookmark@seq@number=\count277
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip62
+\Hy@SectionHShift=\skip67
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 419.
+Package hyperref Info: Option `colorlinks' set `true' on input line 467.
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'sidebyside' with sig. 'mmmm' on line 486.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'sbsheading' with sig. 'm' on line 488.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'sbspanel' with sig. 'mO{top}' on line 489.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'sbscaption' with sig. 'm' on line 490.
+.................................................
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/extpfeil/extpfeil.sty
 Package: extpfeil 2009/10/31 v0.4 Extensible Pfeile (PE)
@@ -1425,16 +1476,16 @@ Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count190
-\calc@Bcount=\count191
+\calc@Acount=\count278
+\calc@Bcount=\count279
 \calc@Adimen=\dimen274
 \calc@Bdimen=\dimen275
-\calc@Askip=\skip63
-\calc@Bskip=\skip64
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count192
-\calc@Cskip=\skip65
+\calc@Ccount=\count280
+\calc@Cskip=\skip70
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
@@ -1443,9 +1494,9 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count193
+\g_MT_multlinerow_int=\count281
 \l_MT_multwidth_dim=\dimen276
-\origjot=\skip66
+\origjot=\skip71
 \l_MT_shortvdotswithinadjustabove_dim=\dimen277
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen278
 \l_MT_above_intertext_sep=\dimen279
@@ -1462,28 +1513,28 @@ LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (./stats.aux)
 \openout1 = `stats.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 447.
-LaTeX Font Info:    ... okay on input line 447.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 447.
-LaTeX Font Info:    ... okay on input line 447.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 447.
-LaTeX Font Info:    ... okay on input line 447.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 447.
-LaTeX Font Info:    ... okay on input line 447.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 447.
-LaTeX Font Info:    ... okay on input line 447.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 447.
-LaTeX Font Info:    ... okay on input line 447.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 447.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 447.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 514.
+LaTeX Font Info:    ... okay on input line 514.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 514.
+LaTeX Font Info:    ... okay on input line 514.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 514.
+LaTeX Font Info:    ... okay on input line 514.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 514.
+LaTeX Font Info:    ... okay on input line 514.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 514.
+LaTeX Font Info:    ... okay on input line 514.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 514.
+LaTeX Font Info:    ... okay on input line 514.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 514.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 514.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 447.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 447.
-LaTeX Font Info:    ... okay on input line 447.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 447.
+LaTeX Font Info:    ... okay on input line 514.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 514.
+LaTeX Font Info:    ... okay on input line 514.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 514.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1524,16 +1575,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count194
+\scratchcounter=\count282
 \scratchdimen=\dimen283
 \scratchbox=\box73
-\nofMPsegments=\count195
-\nofMParguments=\count196
+\nofMPsegments=\count283
+\nofMParguments=\count284
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count197
+\MPscratchCnt=\count285
 \MPscratchDim=\dimen284
-\MPnumerator=\count198
-\makeMPintoPDFobject=\count199
+\MPnumerator=\count286
+\makeMPintoPDFobject=\count287
 \everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1561,7 +1612,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box74
-Package hyperref Info: Link coloring ON on input line 447.
+Package hyperref Info: Link coloring ON on input line 514.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1569,11 +1620,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count266
+\c@section@level=\count288
 )
-LaTeX Info: Redefining \ref on input line 447.
-LaTeX Info: Redefining \pageref on input line 447.
-LaTeX Info: Redefining \nameref on input line 447.
+LaTeX Info: Redefining \ref on input line 514.
+LaTeX Info: Redefining \pageref on input line 514.
+LaTeX Info: Redefining \nameref on input line 514.
 
 (./stats.out) (./stats.out)
 \@outlinefile=\write7
@@ -1587,7 +1638,7 @@ LaTeX Info: Redefining \nameref on input line 447.
 ] [3
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 478.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 545.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -1622,534 +1673,54 @@ Chapter 1.
 ************************************************
 Section 1.1 Introduction to the Practice of Statistics
 ************************************************
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 524.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 591.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 524.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 591.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 524
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 591
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 524
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 591
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 524.
+(Font)              <10> on input line 591.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 524.
+(Font)              <7> on input line 591.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 524.
-LaTeX Font Info:    Try loading font information for U+msa on input line 524.
+(Font)              <5> on input line 591.
+LaTeX Font Info:    Try loading font information for U+msa on input line 591.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 524.
+LaTeX Font Info:    Try loading font information for U+msb on input line 591.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 524.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 591.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-************************************************
-Reading Questions 1.1 Statistic or Parameter?
-************************************************
-[2
 
-]
-************************************************
-Reading Questions 1.1 Discrete or Continuous Variable?
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 572--580
-
- []
+LaTeX Warning: File `images/video-1.jpg' not found on input line 623.
 
 
-Overfull \hbox (6.26117pt too wide) in paragraph at lines 584--586
-[] [][]\T1/lmr/m/n/10 The num-ber of heads ob-tained af-ter flip-ping a coin fi
-ve times \T1/lmr/bx/n/10 An-swer\T1/lmr/m/n/10 .[] dis-
- []
+! Package pdftex.def Error: File `images/video-1.jpg' not found.
 
-************************************************
-Reading Questions 1.1 Qualitative or Quantitative Variable?
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--609
-
- []
-
-************************************************
-Reading Questions 1.1 2011 BMW Models
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 636--644
-
- []
-
-[3]
-Overfull \hbox (0.79019pt too wide) in paragraph at lines 663--671
-[] [][]\T1/lmr/m/n/10 Variable(s): \T1/lmr/bx/n/10 An-swer\T1/lmr/m/n/10 .[] []
- 
- []
-
-************************************************
-Reading Questions 1.1 Smoker's IQ
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--679
-
- []
-
-************************************************
-Section 1.2 Observational Studies Vs. Designed Experiments
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 690--699
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{cthm.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.700 ...ition}{response variable.}{definition-14}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.2}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.702 ...on}{explanatory variable.}{definition-15}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.3}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.704 ...ion}{observational study.}{definition-16}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.4}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.706 ...{cross-sectional studies.}{definition-17}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.5}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.708 ...on}{case-control studies.}{definition-18}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.6}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.710 ...finition}{cohort studies.}{definition-19}
-                                                  % [4]pdfTeX warning (ext4): d
-estination with the same identifier (name{cthm.7}) has been already used, dupli
-cate ignored
-<to be read again> 
-                   \relax 
-l.712 ...ion}{designed experiment.}{definition-20}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.8}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.714 ...{definition}{confounding.}{definition-21}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.9}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.716 ...nition}{lurking variable.}{definition-22}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.10}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.720 ...on}{confounding variable.}{definition-23}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.11}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.722 \begin{definition}{census.}{definition-24}
-                                                %
-************************************************
-Reading Questions 1.2 Observational Study or Designed Experiment?
-************************************************
-************************************************
-Reading Questions 1.2 Daily Coffee Consumption
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 742--750
-
- []
-
-************************************************
-Reading Questions 1.2 Get Married, Gain Weight
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 761--769
-
- []
-
-[5]
-Overfull \hbox (8.67015pt too wide) in paragraph at lines 778--780
-[] [][]\T1/lmr/m/n/10 Identify some of the po-ten-tial lurk-ing vari-ables in t
-he study. \T1/lmr/bx/n/10 An-swer\T1/lmr/m/n/10 .[] diet,
- []
-
-************************************************
-Section 1.3 Simple Random Sampling
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 783--792
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{cthm.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.793 ...inition}{random sampling.}{definition-25}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.2}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.795 ...on}{simple random sample.}{definition-26}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.3}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.797 \begin{definition}{\(N\).}{definition-27}
-                                               %pdfTeX warning (ext4): destinat
-ion with the same identifier (name{cthm.4}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.799 \begin{definition}{\(n\).}{definition-28}
-                                               %pdfTeX warning (ext4): destinat
-ion with the same identifier (name{cthm.5}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.801 \begin{definition}{frame.}{definition-29}
-                                               %pdfTeX warning (ext4): destinat
-ion with the same identifier (name{cthm.6}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.803 ...ling without replacement.}{definition-30}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.7}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.805 ...ampling with replacement.}{definition-31}
-                                                  %
-************************************************
-Subsection 1.3.1 Generating Random Numbers on the TI-84 Plus Calculator
-************************************************
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 815.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-File: t1zi4.fd 2016/12/29 T1/zi4 (Inconsolata)
-)
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 815.
-pdfTeX warning (ext4): destination with the same identifier (name{cthm.8}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.816 ...Generate Random Integers.}{computation-1}
-                                                  %
-<images/randInt-single.png, id=261, 323.2075pt x 242.9075pt>
-File: images/randInt-single.png Graphic file (type png)
-
-<use images/randInt-single.png>
-Package pdftex.def Info: images/randInt-single.png used on input line 835.
-(pdftex.def)             Requested size: 136.23792pt x 102.39108pt.
- [6]pdfTeX warning (ext4): destination with the same identifier (name{cthm.9}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.837 ...{List of Random Integers.}{computation-2}
-                                                  %
-<images/randInt-list.png, id=295, 323.2075pt x 242.9075pt>
-File: images/randInt-list.png Graphic file (type png)
-
-<use images/randInt-list.png>
-Package pdftex.def Info: images/randInt-list.png used on input line 856.
-(pdftex.def)             Requested size: 136.23792pt x 102.39108pt.
-pdfTeX warning (ext4): destination with the same identifier (name{cthm.10}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.858 ...Integers with No Repeats.}{computation-3}
-                                                  %
-<images/randIntNoRep.png, id=296, 323.2075pt x 242.9075pt>
-File: images/randIntNoRep.png Graphic file (type png)
-
-<use images/randIntNoRep.png>
-Package pdftex.def Info: images/randIntNoRep.png used on input line 877.
-(pdftex.def)             Requested size: 136.23792pt x 102.39108pt.
- [7 <./images/randInt-single.png (PNG copy)> <./images/randInt-list.png (PNG co
-py)>]
-************************************************
-Reading Questions 1.3.2 Four Tickets for Friends
-************************************************
-<images/four-friends.png, id=322, 323.2075pt x 242.9075pt>
-File: images/four-friends.png Graphic file (type png)
-
-<use images/four-friends.png>
-Package pdftex.def Info: images/four-friends.png used on input line 907.
-(pdftex.def)             Requested size: 127.62706pt x 95.9159pt.
-
-<images/four-friends-sorted.png, id=323, 323.2075pt x 242.9075pt>
-File: images/four-friends-sorted.png Graphic file (type png)
-
-<use images/four-friends-sorted.png>
-Package pdftex.def Info: images/four-friends-sorted.png used on input line 913.
-
-(pdftex.def)             Requested size: 127.62706pt x 95.9159pt.
- [8 <./images/randIntNoRep.png (PNG copy)> <./images/four-friends.png (PNG copy
-)>]
-************************************************
-Reading Questions 1.3.3 Employee Survey
-************************************************
-<images/employee-survey.png, id=348, 323.2075pt x 242.9075pt>
-File: images/employee-survey.png Graphic file (type png)
-
-<use images/employee-survey.png>
-Package pdftex.def Info: images/employee-survey.png used on input line 939.
-(pdftex.def)             Requested size: 127.62706pt x 95.9159pt.
-
-************************************************
-Section 1.4 Other Effective Sampling Methods
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 940--949
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{cthm.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.950 ...ion}{stratified sampling.}{definition-32}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.2}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.954 ...ion}{systematic sampling.}{definition-33}
-                                                  % [9 <./images/four-friends-s
-orted.png (PNG copy)> <./images/employee-survey.png (PNG copy)>]pdfTeX warning 
-(ext4): destination with the same identifier (name{cthm.3}) has been already us
-ed, duplicate ignored
-<to be read again> 
-                   \relax 
-l.969 ...nition}{cluster sampling.}{definition-34}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.4}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.976 ...on}{convenience sampling.}{definition-35}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.5}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.983 ...efinition}{self-selected.}{definition-36}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{cthm.6}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.990 ...tion}{multi-stage sample.}{definition-37}
-                                                  %
-************************************************
-Section 1.5 Bias in Sampling
-************************************************
-************************************************
-Part II Descriptive Statistics
-************************************************
-[10] [11
-
-]
-************************************************
-Chapter 2 Summarizing Data in Tables and Graphs
-************************************************
-Chapter 2.
-************************************************
-Section 2.1 Organizing Qualitative Data
-************************************************
-************************************************
-Section 2.2 Organizing Quantitative Data
-************************************************
-************************************************
-Section 2.3 Graphical Misrepresentations of Data
-************************************************
-************************************************
-Chapter 3 Numerically Summarizing Data
-************************************************
-[12
-
-]
-Chapter 3.
-
-Overfull \hbox (41.42068pt too wide) in paragraph at lines 1061--1061
-|\T1/lmr/bx/n/24.88 Numerically Sum-ma-riz-ing Data| 
- []
-
-************************************************
-Section 3.1 Measures of Central Tendency
-************************************************
-************************************************
-Section 3.2 Measures of Dispersion
-************************************************
-************************************************
-Section 3.3 Measures of Central Tendency and Dispersion from Grouped Data
-************************************************
-************************************************
-Section 3.4 Measures of Position and Outliers
-************************************************
-************************************************
-Section 3.5 The Five-{}-{}Number Summary and Boxplots
-************************************************
-************************************************
-Chapter 4 Describing the Relation between Two Variables
-************************************************
-[13
-
-]
-Chapter 4.
-************************************************
-Part III Probability and Probability Distributions
-************************************************
-[14
-
-] [15
-
-]
-************************************************
-Chapter 5 Probability
-************************************************
-Chapter 5.
-************************************************
-Chapter 6 Discrete Probability Distributions
-************************************************
-[16
-
-]
-Chapter 6.
-************************************************
-Chapter 7 The Normal Probability Distribution
-************************************************
-[17
-
-]
-Chapter 7.
-
-Overfull \hbox (5.52298pt too wide) in paragraph at lines 1151--1151
-|\T1/lmr/bx/n/24.88 The Nor-mal Prob-a-bil-ity Dis-
- []
-
-************************************************
-Part IV Inference: From Samples to Population
-************************************************
-[18
-
-] [19
-
-]
-************************************************
-Chapter 8 Sampling Distributions
-************************************************
-Chapter 8.
-************************************************
-Chapter 9 Estimating the Value of a Parameter
-************************************************
-[20
-
-]
-Chapter 9.
-
-Overfull \hbox (9.45398pt too wide) in paragraph at lines 1175--1175
-|\T1/lmr/bx/n/24.88 Estimating the Value of a Pa-
- []
-
-************************************************
-Chapter 10 Hypothesis Tests Regarding a Parameter
-************************************************
-[21
-
-]
-Chapter 10.
-************************************************
-Chapter 11 Inferences on Two Samples
-************************************************
-[22
-
-]
-Chapter 11.
-[23
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1194.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1194.
- (./stats.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1194.
-
-Package rerunfilecheck Info: File `stats.out' has not changed.
-(rerunfilecheck)             Checksum: CF1ECCBD49593D2A2B9500E9D350A7E0;1104.
- ) 
-Here is how much of TeX's memory you used:
- 32309 strings out of 492995
- 625923 string characters out of 6132704
- 716198 words of memory out of 5000000
- 35089 multiletter control sequences out of 15000+600000
- 55227 words of font info for 48 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 54i,10n,92p,10414b,1300s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
-cal/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
-17/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc}{/usr/local/texlive/2017/
-texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist
-/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvi
-ps/lm/lm-ts1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/inconso
-lata/Inconsolata-zi4r.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
-c/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx1
-2.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
-/public/lm/lmro10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm
-/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msam10.pfb>
-Output written on stats.pdf (29 pages, 273122 bytes).
-PDF statistics:
- 564 PDF objects out of 1000 (max. 8388607)
- 510 compressed objects within 6 object streams
- 274 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+See the pdftex.def package documentation for explanation.
+Typ

@@ -20,7 +20,7 @@
       <colophon>
 	<website>
           <name>Statistics Lecture Notes</name>
-          <address>http://www.math.utah.edu/~jasonu/stats/</address>
+          <address>https://jasonu.github.io/stats/</address>
 	</website>
 
 	<copyright>
@@ -60,27 +60,16 @@
 
     <part xml:id="part-descriptive-stats">
       <title>Descriptive Statistics</title>
-
       <xi:include href="./ch02-tables-and-graphs.xml" />
-
       <xi:include href="./ch03-numerical-summaries.xml" />
-
-      <chapter xml:id="ch-relations-between-two-varibles">
-	<title>Describing the Relation between Two Variables</title>
-      </chapter>
+      <xi:include href="./ch04-two-variables.xml" />
     </part>
 
     <part xml:id="part-probability">
       <title>Probability and Probability Distributions</title>
-      <chapter xml:id="ch-probability">
-	<title>Probability</title>
-      </chapter>
-      <chapter xml:id="ch-discrete-probability">
-	<title>Discrete Probability Distributions</title>
-      </chapter>
-      <chapter xml:id="ch-normal-probability">
-	<title>The Normal Probability Distribution</title>
-      </chapter>
+      <xi:include href="./ch05-probability.xml" />
+      <xi:include href="./ch06-discrete-probability-distributions.xml" />
+      <xi:include href="./ch07-normal-probability-distribution.xml" />
     </part>
 
     <part xml:id="part-inferential-stats">

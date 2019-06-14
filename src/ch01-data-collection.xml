@@ -101,7 +101,7 @@
       </exercise>
 
       <exercise>
-	A recent survey of a sample of MBAs reported that the
+	A recent survey of a sample of MBA's reported that the
 	average salary for an MBA is more than $82,000. (Source:
 	The Wall Street Journal)
 	<answer>statistic</answer>
@@ -482,16 +482,16 @@
 
       <p>
 	Is there an association between daily coffee consumption
-	and the occurrence of skin cancer? Reasearchers asked
+	and the occurrence of skin cancer? Researchers asked
 	93,676 women to disclose their coffee drinking habits
-	and also determined which of the women had nonmelanoma
+	and also determined which of the women had non-melanoma
 	skin cancer. The researchers concluded that consumption
 	of 6 or more cups of caffeinated coffee per day was
-	associated with a reduction in nonmelanoma skin cancer.
+	associated with a reduction in non-melanoma skin cancer.
       </p>
 
       <exercise>
-	Was this an oberservational study or experiment? If
+	Was this an observational study or experiment? If
 	observational, what type of observational study was it?
 	<answer>observational, cross-section</answer>
       </exercise>
@@ -504,7 +504,7 @@
 
       <exercise>
 	Can we conclude drinking six or more cups of coffee
-	reduces the chance of nonmelanoma skin cancer?
+	reduces the chance of non-melanoma skin cancer?
 	<answer>No, because observational studies never allow us
 	to determine causation, just association.</answer>
       </exercise>
@@ -513,14 +513,14 @@
     <reading-questions>
       <title>Get Married, Gain Weight</title>
       <p>
-	Are young couples who marry or cohabitate more likely to
+	Are young couples who marry or cohabit more likely to
 	gain weight than those who stay single? Researchers
 	followed 8000 men and women for 7 years. At the start of
 	the study, none of the participants were married or
 	living with a romantic partner. The researchers found
-	that women who married or cohabitated during the study
+	that women who married or cohabited during the study
 	period gained 9 pounds more then single women, and
-	married or cohabitating men gained, on average, 6 pounds
+	married or cohabiting men gained, on average, 6 pounds
 	more than single men.
       </p>
 
@@ -543,7 +543,7 @@
       </exercise>
 
       <exercise>
-	Can we conclude that getting married or cohabitating
+	Can we conclude that getting married or cohabiting
 	causes one to gain weight? <answer>No, because it is an
 	observational study, not an experiment. We can only
 	conclude that they are associated.</answer>
@@ -860,7 +860,7 @@
     <definition>
       <title>stratified sampling</title>
       <statement>
-	a simple random sample is drawn from each nonoverlapping
+	a simple random sample is drawn from each non-overlapping
 	subgroup (or <term>stratum</term>) into which the
 	population has been separated.
       </statement>
@@ -1017,7 +1017,7 @@
       <exercise>
 	To estimate the percentage of defects in a recent
 	manufacturing batch, a quality control manager selects
-	every 8th chip that comes of the assemply line starting
+	every 8th chip that comes of the assembly line starting
 	with the 3rd until she obtains 140 chips.
 
 	<answer>systematic sampling</answer>
@@ -1118,7 +1118,7 @@
     </definition>
 
     <definition>
-      <title>undercoverage</title>
+      <title>under-coverage</title>
       <statement>
 	type of sampling bias where part of the population has a
 	lower chance or no chance of being in the sample (<eg />
@@ -1127,7 +1127,7 @@
     </definition>
 
     <definition>
-      <title>nonresponse bias</title>
+      <title>non-response bias</title>
       <statement>
 	bias because individuals in the sample do not respond
       </statement>
@@ -1189,9 +1189,9 @@
     </definition>
 
     <definition>
-      <title>nonsampling errors</title>
+      <title>non-sampling errors</title>
       <statement>
-	errors that result from undercoverage, non-response
+	errors that result from under-coverage, non-response
 	bias, response bias or data-entry error.
       </statement>
     </definition>

@@ -1,0 +1,71 @@
+<chapter xml:id="ch-two-variables"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Describing the Relation between Two Variables</title>
+
+  <section xml:id="sec-scatter-diagrams-correlation">
+    <title>Scatter Diagrams and Correlation</title>
+
+    <definition>
+      <title>Mean (Arithmetic Average)</title>
+      <statement>
+	<p>
+	  The <term>mean</term> or <term>arithmetic average</term> is
+	  computed by adding up all the values and dividing by the
+	  number of observations.
+	</p>
+
+      </statement>
+    </definition>
+
+  </section>
+
+  <section xml:id="sec-least-squares-regression">
+    <title>Least-Squares Regression</title>
+
+    <definition>
+      <title>Mean (Arithmetic Average)</title>
+      <statement>
+	<p>
+	  The <term>mean</term> or <term>arithmetic average</term> is
+	  computed by adding up all the values and dividing by the
+	  number of observations.
+	</p>
+
+      </statement>
+    </definition>
+
+  </section>
+
+  <section xml:id="sec-coefficient-determination">
+    <title>The Coefficient of Determination</title>
+
+    <definition>
+      <title>Mean</title>
+      <statement>
+	<p>
+	  The <term>mean</term>
+	</p>
+
+      </statement>
+    </definition>
+
+  </section>
+
+  <section xml:id="sec-contingency-tables">
+    <title>Contingency Tables and Association</title>
+
+    <definition>
+      <title>Mean</title>
+      <statement>
+	<p>
+	  The <term>mean</term>
+	</p>
+
+      </statement>
+    </definition>
+
+  </section>
+
+
+
+</chapter>

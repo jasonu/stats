@@ -133,7 +133,7 @@
       <title>Mode</title>
       <statement>
 	<p>
-	  The <term>mode</term> is the most frequently occuring
+	  The <term>mode</term> is the most frequently occurring
 	  observation in a data set. A single data set may have
 	  multiple modes.
 	</p>
@@ -390,7 +390,7 @@
 	<p>
 	  This example demonstrates that it is meaningless to compare
 	  absolute measures which come from different distributions,
-	  in this case, the test scores. However, by rescaling each
+	  in this case, the test scores. However, by scaling each
 	  test score relative to the mean and the standard deviation
 	  of each distribution <ie/> creating z-scores, we can
 	  meaningfully compare data from different distributions.

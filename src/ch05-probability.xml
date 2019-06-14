@@ -1,0 +1,870 @@
+<chapter xml:id="ch-probability"
+	 xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Probability</title>
+
+  <section xml:id="sec-probability-rules">
+    <title>Probability Rules</title>
+
+  </section>
+
+  <section xml:id="sec-addition-rule">
+    <title>The Addition Rule and Complements</title>
+
+  </section>
+
+  <section xml:id="sec-multiplication-rule">
+    <title>Independence and the Multiplication Rule</title>
+
+    <definition>
+      <statement>
+	<p>
+	  Two events <m>E</m> and <m>F</m> are
+	  <term>independent</term> if the occurrence of event <m>E</m>
+	  in a probability experiment does not affect the probability
+	  of event <m>F</m>. Two events are <term>dependent</term> if
+	  the occurrence of event <m>E</m> in a probability experiment
+	  affects the probability of event <m>F</m>.
+	</p>
+      </statement>
+    </definition>
+
+    <reading-questions>
+      <statement>
+	<p>
+	  Determine if the following pairs of events are independent
+	  or dependent.
+	</p>
+      </statement>
+      <exercise>
+	<p>
+	  You are late for work. Your car runs out of gas.
+	</p>
+	<answer>
+	  dependent
+	</answer>
+      </exercise>
+      <exercise>
+	<p>
+	  Winning a game of Monopoly. Winning the lottery
+	</p>
+	<answer>
+	  independent
+	</answer>
+      </exercise>
+      <exercise>
+	<p>
+	  You gain weight. You eat fast food for dinner every night.
+	</p>
+	<answer>
+	  dependent
+	</answer>
+      </exercise>
+      <exercise>
+	<p>
+	  Speeding on the interstate highway. Getting pulled over by a
+	  police officer.
+	</p>
+	<answer>
+	  dependent
+	</answer>
+      </exercise>
+      <exercise>
+	<p>
+          Owning a dog. Growing an herb garden.
+	</p>
+	<answer>
+	  independent
+	</answer>
+      </exercise>
+      <exercise>
+	<p>
+	  Robbing a bank. Going to jail.
+	</p>
+	<answer>
+	  dependent
+	</answer>
+      </exercise>
+    </reading-questions>
+
+    <remark>
+      <p>
+	Knowing two events are <term>disjoint</term> means that the
+	events are <term>dependent</term>. Why? Consider the example
+	of pulling chips numbered 0-9 out of a bag. Suppose event
+	<m>E</m> corresponds with pulling a chip labelled with a 1 or
+	a 2 out of the bag, <ie/> <m>E=\{1,2\}</m> and suppose
+	<m>F=\{3,4\}</m>, <ie/> <m>F</m> corresponds with pulling a 3
+	or 4 chip out of the bag. Notice that these events are
+	<term>disjoint</term> because they have no outcomes in common.
+	Finally, notice that if we know that event <m>E</m> occurred
+	(a 1 or 2 is drawn), then we know for certain that <m>F</m>
+	(drawing a 3 or 4) did <em>not</em> occur. Thus the occurrence
+	of <m>E</m> affects the probability of event <m>F</m> and vice
+	versa.
+      </p>
+    </remark>
+
+    <fact>
+      <title>Multiplication Rule for Independent Events</title>
+      <md>
+	<mrow>
+	  P(E \text{ and } F) = P(E) \cdot P(F)
+	</mrow>
+	<mrow>
+	  P(E \text{ and } F \text{ and } G) = P(E) \cdot P(F) \cdot P(G)
+	</mrow>
+      </md>
+    </fact>
+
+    <example>
+      <title>Flipping Two Heads in a Row</title>
+      <statement>
+	<p>
+	  What is the probability that you flip a fair coin twice and
+	  get heads twice?
+	</p>
+      </statement>
+      <solution>
+	Since these events are independent we can use the
+	multiplication rule:
+	<md>
+	  <mrow>
+	    P(H \text{ and } H) \amp = P(H) \cdot P(H)
+	  </mrow>
+	  <mrow>
+	    \amp = \frac{1}{2} \cdot \frac{1}{2}
+	  </mrow>
+	  <mrow>
+	    \amp = \frac{1}{4} = 0.25 = 25 \%
+	  </mrow>
+	</md>
+      </solution>
+    </example>
+
+    <example>
+      <title>Rolling Four Ones in a Row</title>
+      <statement>
+	<p>
+	  What is the probability that you roll 4 ones in a row when
+	  you roll a fair, six sided die four times?
+	</p>
+      </statement>
+      <solution>
+	Since these events are independent we can use the
+	multiplication rule:
+	<md>
+	  <mrow>
+	    P(1 \text{ and } 1 \text{ and } 1 \text{ and } 1)
+	    \amp = P(1) \cdot P(1) \cdot P(1) \cdot P(1)
+	  </mrow>
+	  <mrow>
+	    \amp = \frac{1}{6} \cdot \frac{1}{6} \cdot
+	    \frac{1}{6} \cdot \frac{1}{6}
+	  </mrow>
+	  <mrow>
+	    \amp = \frac{1}{1296} \approx 0.000716 = .0716 \%
+	  </mrow>
+	</md>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+	<p>
+	  What is the probability of selecting a two or a club from a
+	  deck of cards?
+	</p>
+      </statement>
+      <solution>
+	These events are not disjoint, because there is one card that
+	is both a 2 and a club, thus we must use the general addition
+	rule.
+	<md>
+	  <mrow>
+	    P(2 \text{ or club} ) \amp = P(2) + P(\text{club})
+	    - P(2\cap \text{club})
+	  </mrow>
+	  <mrow>
+	    \amp = \frac{4}{52} + \frac{13}{52} - \frac{1}{52}
+	  </mrow>
+	  <mrow>
+	    \amp = \frac{16}{52} = \frac{4}{13} \approx 31\%
+	  </mrow>
+	</md>
+      </solution>
+    </example>
+
+  </section>
+
+  <section xml:id="sec-conditional-probability">
+    <title>Conditional Probability and the General Multiplication
+    Rule</title>
+
+    <definition>
+      <statement>
+	<p>
+	  The notation <term><m>P(F|E)</m></term> is read <q>the
+	  probability of event <m>F</m> given event <m>E</m>.</q> It
+	  is the probability that event <m>F</m> occurs, given that
+	  event <m>E</m> occurred.
+	</p>
+      </statement>
+    </definition>
+
+    <fact>
+      <title>Conditional Probability Rule</title>
+      <md>
+	<mrow>
+	  P(F|E) = \frac{P(E \text{ and } F)}{P(E)}
+	</mrow>
+      </md>
+    </fact>
+    <fact>
+      <title>General Multiplication Rule</title>
+      <md>
+	<mrow>
+	  P(E \text{ and } F) = P(E) \cdot P(F|E)
+	</mrow>
+      </md>
+      <p>
+	Notice that the general multiplication rule follows from the
+	conditional probability rule.
+      </p>
+      <p>
+	Two events E and F are independent if <m>P(E|F) = P(E)</m> or,
+	equivalently, if <m>P(F|E) = P(F)</m>. This is the same thing
+	as saying that knowing that one event occurred does not affect
+	the probability of the other event occurring (this is the
+	definition of <term>independence</term> from <xref
+	ref="sec-multiplication-rule" />).
+      </p>
+    </fact>
+
+    <reading-questions>
+      <title>Colored Marbles in a Bag</title>
+      <statement>
+	<p>
+	  A bag contains 6 blue marbles, 5 red marbles, and 2 green
+	  marbles. If two marbles are randomly selected from the bag,
+	  what is the probability that:
+	</p>
+      </statement>
+      <exercise>
+	<statement>
+	  <p>
+	    both are blue?
+	  </p>
+	</statement>
+	<solution>
+	  <md>
+	    <mrow>
+	      P(B_1 \text{ and } B_2) \amp = P(B_1)\cdot P(B_2 | B_1)
+	    </mrow>
+	    <mrow>
+	      \amp = \frac{6}{13} \cdot \frac{5}{12} = \frac{5}{26}
+	    </mrow>
+	    <mrow>
+	      \amp \approx 0.192
+	    </mrow>
+	  </md>
+	</solution>
+      </exercise>
+
+      <exercise>
+	<statement>
+	  <p>
+	    the first is blue and the second is green?
+	  </p>
+	</statement>
+	<solution>
+	  <md>
+	    <mrow>
+	      P(B_1 \text{ and } G_2) \amp = P(B_1)\cdot P(G_2 | B_1)
+	    </mrow>
+	    <mrow>
+	      \amp = \frac{6}{13} \cdot \frac{2}{12} = \frac{1}{13}
+	    </mrow>
+	    <mrow>
+	      \amp \approx 0.077
+	    </mrow>
+	  </md>
+	</solution>
+      </exercise>
+
+      <exercise>
+	<statement>
+	  <p>
+	    the first is green and the second is blue?
+	  </p>
+	</statement>
+	<solution>
+	  <md>
+	    <mrow>
+	      P(G_1 \text{ and } B_2) \amp = P(G_1)\cdot P(B_2 | G_1)
+	    </mrow>
+	    <mrow>
+	      \amp = \frac{2}{13} \cdot \frac{6}{12} = \frac{1}{13}
+	    </mrow>
+	    <mrow>
+	      \amp \approx 0.077
+	    </mrow>
+	  </md>
+	</solution>
+      </exercise>
+
+      <exercise>
+	<statement>
+	  <p>
+	    one is red, one is blue (order is not specified)?
+	  </p>
+	</statement>
+	<solution>
+	  <md>
+	    <mrow>
+	      P(R_1 \text{ and } B_2) + P(B_1 \text{ and } R_2)
+	      \amp = P(R_1)\cdot P(B_2 | R_1) + P(B_1)\cdot P(R_2 | B_1)
+	    </mrow>
+	    <mrow>
+	      \amp = \frac{5}{13} \cdot \frac{6}{12} +
+	      \frac{6}{13} \cdot \frac{5}{12}
+	    </mrow>
+	    <mrow>
+	      \amp = \frac{5}{26} + \frac{5}{26}
+	    </mrow>
+	    <mrow>
+	      \amp = \frac{5}{13} \approx 0.385
+	    </mrow>
+	  </md>
+	</solution>
+      </exercise>
+    </reading-questions>
+
+    <reading-questions>
+      <title>Guessing on a Multiple Choice Quiz</title>
+      <statement>
+	<p>
+	  Suppose a student guesses every answer on a multiple choice
+	  quiz. There are four questions and each question has four
+	  choices: A, B, C or D.
+	</p>
+      </statement>
+
+      <exercise>
+	<statement>
+	  <p>
+	    Find the probability that all four answers are correct.
+	  </p>
+	</statement>
+	<solution>
+	  <p>
+	    Multiple choice questions are <term>independent</term>
+	    because the answer you give on one does not affect your
+	    probability of getting any other question correct.
+	  </p>
+	  <md>
+	    <mrow>
+	      P(C \text{ and } C \text{ and } C \text{ and } C)
+	      \amp = P(C) \cdot P(C) \cdot P(C) \cdot P(C)
+	    </mrow>
+	    <mrow>
+	      \amp = \frac{1}{4} \cdot \frac{1}{4} \cdot \frac{1}{4}
+	      \cdot \frac{1}{4}
+	    </mrow>
+	    <mrow>
+	      \amp = \left( \frac{1}{4} \right)^4 = \frac{1}{256}
+	      \approx 0.0039
+	    </mrow>
+	  </md>
+	</solution>
+      </exercise>
+
+      <exercise>
+	<statement>
+	  <p>
+	    Find the probability that all four answers are incorrect.
+	  </p>
+	</statement>
+	<solution>
+	  <md>
+	    <mrow>
+	      P(C^c \text{ and } C^c \text{ and } C^c \text{ and } C^c)
+	      \amp = P(C^c) \cdot P(C^c) \cdot P(C^c) \cdot P(C^c)
+	    </mrow>
+	    <mrow>
+	      \amp = \frac{3}{4} \cdot \frac{3}{4} \cdot \frac{3}{4}
+	      \cdot \frac{3}{4}
+	    </mrow>
+	    <mrow>
+	      \amp = \left( \frac{3}{4} \right)^4 = \frac{81}{256}
+	      \approx 0.3164
+	    </mrow>
+	  </md>
+	</solution>
+      </exercise>
+
+      <exercise>
+	<statement>
+	  <p>
+	    Find the probability that at least one answer is correct.
+	  </p>
+	</statement>
+	<solution>
+	  <p>
+	    This first solution will take advantage of our solution to
+	    the last problem.
+	  </p>
+	  <md>
+	    <mrow>
+	      P(\text{at least one correct})
+	      \amp = 1-P(\text{none correct})
+	    </mrow>
+	    <mrow>
+	      \amp = 1 - \frac{81}{256}
+	    </mrow>
+	    <mrow>
+	      \amp = \frac{175}{256} \approx 0.6836
+	    </mrow>
+	  </md>
+	  <p>
+	    We can also approach this problem by summing the
+	    probabilities of <term>disjoint</term> events. This
+	    solution won't make sense until you read <xref
+	    ref="sec-counting-techniques" />.
+	  </p>
+	  <md>
+	    <mrow>
+	      P(\text{at least one correct}) = \amp
+	      P(\text{1}) + P(\text{2}) + P(\text{3}) + P(\text{4})
+	    </mrow>
+	    <mrow>
+	      = \amp
+	      4
+	      \left(
+	      \frac{1}{4}\cdot \frac{3}{4}\cdot \frac{3}{4}\cdot \frac{3}{4}
+	      \right) +
+	    </mrow>
+	    <mrow>
+	      \amp
+	      6
+	      \left(
+	      \frac{1}{4}\cdot \frac{1}{4}\cdot \frac{3}{4}\cdot \frac{3}{4}
+	      \right) +
+	    </mrow>
+	    <mrow>
+	      \amp
+	      4
+	      \left(
+	      \frac{1}{4}\cdot \frac{1}{4}\cdot \frac{1}{4}\cdot \frac{3}{4}
+	      \right) +
+	    </mrow>
+	    <mrow>
+	      \amp
+	      1
+	      \left(
+	      \frac{1}{4}\cdot \frac{1}{4}\cdot \frac{1}{4}\cdot \frac{1}{4}
+	      \right)
+	    </mrow>
+	    <mrow>
+	      = \amp
+	      \frac{108}{256} +
+	      \frac{54}{256} +
+	      \frac{12}{256} +
+	      \frac{1}{256}
+	    </mrow>
+	    <mrow>
+	      = \amp \frac{175}{256} \approx .6836
+	    </mrow>
+	  </md>
+	</solution>
+      </exercise>
+
+      <exercise>
+	<statement>
+	  <p>
+	    Find the probability that one is wrong and 3 are correct.
+	  </p>
+	</statement>
+	<solution>
+	  <md>
+	    <mrow>
+	      P(\text{1 wrong, 3 correct})
+	      = \amp
+	      P(C^cCCC \text{ or } CC^cCC \text{ or } CCC^cC \text{ or } CCCC^c)
+	    </mrow>
+	    <mrow>
+	      = \amp
+	      \frac{3}{4}\cdot \frac{1}{4}\cdot
+	      \frac{1}{4}\cdot \frac{1}{4} +
+	    </mrow>
+	    <mrow>
+	      \amp
+	      \frac{1}{4}\cdot \frac{3}{4}\cdot
+	      \frac{1}{4}\cdot \frac{1}{4} +
+	    </mrow>
+	    <mrow>
+	      \amp
+	      \frac{1}{4}\cdot \frac{1}{4}\cdot
+	      \frac{3}{4}\cdot \frac{1}{4} +
+	    </mrow>
+	    <mrow>
+	      \amp
+	      \frac{1}{4}\cdot \frac{1}{4}\cdot
+	      \frac{1}{4}\cdot \frac{3}{4}
+	    </mrow>
+	    <mrow>
+	      = \amp 4
+	      \left(
+	      \frac{3}{256}
+	      \right)
+	    </mrow>
+	    <mrow>
+	      = \amp
+	      \frac{12}{256} \approx 0.0469
+	    </mrow>
+	  </md>
+	</solution>
+      </exercise>
+
+    </reading-questions>
+
+  </section>
+
+  <section xml:id="sec-counting-techniques">
+    <title>Counting Techniques</title>
+
+    <fact>
+      <title>Multiplication Rule of Counting</title>
+      <statement>
+	<p>
+	  If there are <m>p</m> selections for the first choice,
+	  <m>q</m> selections for the second choice, <m>r</m>
+	  selections for the third choice, and so on, then the
+	  selections for all choices can be done in <m>pqr</m>
+	  different ways.
+	</p>
+      </statement>
+    </fact>
+
+    <example>
+      <title>Committee Selection</title>
+      <statement>
+	<p>
+	  Three members from a 14 member committee are to be randomly
+	  selected to serve as chair, vice chair, and secretary. The
+	  first person selected is the chair, the second is the vice
+	  chair, and the third is the secretary. How many different
+	  committee structures are possible?
+	</p>
+      </statement>
+      <solution>
+	<md>
+	  <mrow>
+	    14 \cdot 13 \cdot 12 = 2184
+	  </mrow>
+	</md>
+      </solution>
+    </example>
+
+    <example>
+      <title>Security Codes</title>
+      <statement>
+	<p>
+	  Outside a garage, there is a 10 digit keypad numbered 0
+	  through 9. The correct 4 digit code will open the garage
+	  door. The numbers on the keypad can be repeated. How many
+	  codes are possible? What is the probability of getting the
+	  correct code on the first try assuming the person doesn’t
+	  know the code?
+	</p>
+      </statement>
+      <solution>
+	<md>
+	  <mrow>
+	    10 \cdot 10 \cdot 10 \cdot 10 = 10^4 = 10,000
+	  </mrow>
+	</md>
+	<p>
+	  Thus a person has a one in 10,000 chance of guessing the
+	  correct code.
+	</p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Outfits</title>
+      <statement>
+	<p>
+	  A gentleman has 7 shirts, 3 vests and 5 suits. Assuming they
+	  all match, how many different combinations can he wear?
+	  </p>
+      </statement>
+      <solution>
+	<md>
+	  <mrow>
+	    7 \cdot 3 \cdot 5 = 105
+	  </mrow>
+	</md>
+      </solution>
+    </example>
+
+    <fact>
+      <title>Factorials</title>
+      <statement>
+	<p>
+	  A collection of <m>n</m> different items can be arranged in
+	  <m>n!</m> different ways, where <m>n! = n(n – 1)(n – 2)
+	  \cdots (3)(2)(1)</m>
+	</p>
+      </statement>
+    </fact>
+
+    <reading-questions>
+      <statement>
+	<p>
+	  Find the value of each factorial.
+	</p>
+      </statement>
+      <exercise>
+	<statement>
+	  <m>4!</m>
+	</statement>
+	<answer>
+	  <m>
+	    4! = 4\cdot 3\cdot 2\cdot 1 = 24
+	  </m>
+	</answer>
+      </exercise>
+      <exercise>
+	<statement>
+	  <m>12!</m>
+	</statement>
+	<answer>
+	  <m>
+	    12! = 12\cdot 11\cdot 10\cdot 9\cdot 8\cdot 7\cdot 6\cdot
+	    5\cdot 4\cdot 3\cdot 2\cdot 1 = 479,001,600
+	  </m>
+	</answer>
+      </exercise>
+    </reading-questions>
+
+    <example>
+      <title>How Many Routes?</title>
+      <statement>
+	<p>
+	  You have just been hired as a book representative for
+	  Pearson Education. On your first day, you must travel to
+	  five schools to introduce yourself. How many different
+	  routes are possible?
+	</p>
+      </statement>
+      <solution>
+	<m>
+	  5! = 5\cdot 4\cdot 3\cdot 2\cdot 1 = 120
+	</m>
+      </solution>
+    </example>
+
+    <example>
+      <title>Scrabble Tile Combinations</title>
+      <statement>
+	<p>
+	  While playing Scrabble you have the letter tiles: A, E, I,
+	  S, D, P, L, R. How many tile combinations can you create?
+	</p>
+      </statement>
+      <solution>
+	<m>
+	  8! = 8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1 =
+	  40,320
+	</m>
+      </solution>
+    </example>
+
+    <definition>
+      <statement>
+	<p>
+	  A <term>permutation</term> of objects is an ordered
+	  arrangement of the objects.
+	</p>
+	<ol>
+	  <li>The <m>n</m> objects are distinct (all different).</li>
+	  <li>Repetition of objects is <em>not</em> allowed.</li>
+	  <li>Order is important.</li>
+	</ol>
+	<me>
+	  nPr = \frac{n!}{(n-r)!}
+	</me>
+      </statement>
+    </definition>
+
+    <definition>
+      <statement>
+	<p>
+	  A <term>combination</term> is a collection, without regard
+	  to order, of objects.
+	</p>
+	<ol>
+	  <li>The <m>n</m> objects are distinct.</li>
+	  <li>Repetition of objects is <em>not</em> allowed.</li>
+	  <li>Order is <em>not</em> important.</li>
+	</ol>
+	<me>
+	  nCr = \frac{n!}{(n-r)!r!}
+	</me>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+	<p>
+	  How many ways can different students from a class of 10 be
+	  assigned to work the first three homework problems on the
+	  board? Does order matter?
+	</p>
+      </statement>
+      <solution>
+	<p>
+	  Order does matter, so we must compute the number of
+	  <term>permutations</term>.
+	</p>
+	<me>
+	  10 P 3 = \frac{10!}{(10-3)!} = \frac{10!}{7!} =
+	  \frac{10\cdot 9\cdot 8\cdot 7!}{7!} = 10\cdot 9\cdot 8 = 720
+	</me>
+      </solution>
+    </example>
+
+    <example>
+      <title>Focus Group</title>
+      <statement>
+	<p>
+	  How many ways can a focus group of 5 consumers be selected
+	  from a list of 25 people who purchased a particular product?
+	  Notice that order doesn’t matter since we are just forming a
+	  focus group, so changing the order in which people are
+	  selected does not change the group.
+	</p>
+      </statement>
+      <solution>
+	<md>
+	  <mrow>
+	    25 C 5 =\amp \frac{25!}{(25-5)!5!}
+	  </mrow>
+	  <mrow>
+	    =\amp \frac{25!}{20!5!}
+	  </mrow>
+	  <mrow>
+	    =\amp
+	    \frac{25\cdot 24\cdot 23\cdot 22\cdot 21\cdot 20!}{20!5!}
+	  </mrow>
+	  <mrow>
+	    =\amp \frac{25\cdot 24\cdot 23\cdot 22\cdot 21}
+	    {5\cdot 4\cdot 3\cdot 2\cdot 1}
+	  </mrow>
+	  <mrow>
+	    =\amp 53,130
+	  </mrow>
+	</md>
+      </solution>
+    </example>
+
+    <example>
+      <title>Volleyball Teams</title>
+      <statement>
+	<p>
+	  A group of four friends (Alan, Becky, Curtis and Dylan) is
+	  going to play volleyball by dividing up into two teams. How
+	  many different combinations of the 4 friends taken 2 at a
+	  time are there? List all the combinations.
+	</p>
+      </statement>
+      <solution>
+	<p>
+	  Notice that order does not matter, and further notice that
+	  by picking one team, the other team is also determined.
+	</p>
+	<me>
+	  4 C 2 = \frac{4!}{(4-2)!\,2!} = \frac{4!}{2!\,2!} =
+	  \frac{4\cdot 3\cdot 2!}{2!\,2!} = 6
+	</me>
+	<p>
+	  If we use the first letter of each name to represent each
+	  person, then the possible pairings are:
+	</p>
+	<ol>
+	  <li><m>\{(A,B), (C,D)\}</m></li>
+	  <li><m>\{(A,C), (B,D)\}</m></li>
+	  <li><m>\{(A,D), (B,C)\}</m></li>
+	  <li><m>\{(B,C), (A,D)\}</m></li>
+	  <li><m>\{(B,D), (A,C)\}</m></li>
+	  <li><m>\{(C,D), (A,B)\}</m></li>
+	</ol>
+	<p>
+	  However, the last three pairings are repeats of the first
+	  three, so there are exactly 3 possible team pairs. Because
+	  choosing a team of two also forces the pairing of the other
+	  team, we get exactly half of <m>4C2</m>.
+	</p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Speed Skaters</title>
+      <statement>
+	<p>
+	  Suppose 24 speed skaters are competing in the Olympics. How
+	  many ways can the top 3 racers finish the race?
+	</p>
+      </statement>
+      <solution>
+	<me>
+	  24 P 3 = \frac{24!}{(24-3)!} = \frac{24!}{21!} =
+	  \frac{24\cdot 23\cdot 22\cdot 21!}{21!} = 12,144
+	</me>
+      </solution>
+    </example>
+
+
+    <definition>
+      <title>Permutations with Non Distinct Items</title>
+      <me>
+	\frac{n!}{n_1! \, n_2!\, \cdots \, n_k!}
+      </me>
+      <ol>
+	<li>
+	  The <m>n</m> objects are <em>not</em> distinct, with
+	  <m>k</m> different types of objects.
+	</li>
+	<li><m>n_1</m> is the number of the first type, <m>n_2</m> the
+	number of the second type, <etc/></li>
+	<li>Repetition of objects is <em>not</em> allowed.</li>
+	<li>Order is important.</li>
+      </ol>
+    </definition>
+
+    <example>
+      <title>Flag Arrangements</title>
+      <statement>
+	<p>
+	  How many different vertical arrangements are there of 10
+	  flags if 5 are white, 3 are blue, and 2 are red?
+	</p>
+      </statement>
+      <solution>
+	<me>
+	  \frac{10!}{5!\, 3!\, 2!} =
+	  \frac{10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5!}
+	  {5!\, (3\cdot 2\cdot 1)(2\cdot 1)} = 2,520
+	</me>
+      </solution>
+    </example>
+
+
+  </section>
+
+  <section xml:id="sec-putting-it-together">
+    <title>Putting It Together: Which Method Do I Use?</title>
+
+  </section>
+
+</chapter>

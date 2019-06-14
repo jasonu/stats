@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-06-13T18:45:20-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Independence and the Multiplication Rule</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Statistics Lecture Notes</span></a></h1>
+<p class="byline">Jason D. Underdown</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-addition-rule.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-probability.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-conditional-probability.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-addition-rule.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-probability.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-conditional-probability.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+</ul>
+</li>
+<li class="link"><a href="part-getting-information.html" data-scroll="part-getting-information"><span class="codenumber">I</span> <span class="title">Getting the Information You Need</span></a></li>
+<li class="link">
+<a href="ch-data-collection.html" data-scroll="ch-data-collection"><span class="codenumber">1</span> <span class="title">Data Collection</span></a><ul>
+<li><a href="sec-practice-of-stats.html" data-scroll="sec-practice-of-stats">Introduction to the Practice of Statistics</a></li>
+<li><a href="sec-observational-vs-designed.html" data-scroll="sec-observational-vs-designed">Observational Studies Vs. Designed Experiments</a></li>
+<li><a href="sec-simple-random-sampling.html" data-scroll="sec-simple-random-sampling">Simple Random Sampling</a></li>
+<li><a href="sec-other-sampling-methods.html" data-scroll="sec-other-sampling-methods">Other Effective Sampling Methods</a></li>
+<li><a href="sec-bias-in-sampling.html" data-scroll="sec-bias-in-sampling">Bias in Sampling</a></li>
+</ul>
+</li>
+<li class="link"><a href="part-descriptive-stats.html" data-scroll="part-descriptive-stats"><span class="codenumber">II</span> <span class="title">Descriptive Statistics</span></a></li>
+<li class="link">
+<a href="ch-tables-and-graphs.html" data-scroll="ch-tables-and-graphs"><span class="codenumber">2</span> <span class="title">Summarizing Data in Tables and Graphs</span></a><ul>
+<li><a href="sec-organizing-qualitative-data.html" data-scroll="sec-organizing-qualitative-data">Organizing Qualitative Data</a></li>
+<li><a href="sec-organizing-quantitative-data.html" data-scroll="sec-organizing-quantitative-data">Organizing Quantitative Data</a></li>
+<li><a href="sec-graphical-misrepresentations-of-data.html" data-scroll="sec-graphical-misrepresentations-of-data">Graphical Misrepresentations of Data</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-numerical-summaries.html" data-scroll="ch-numerical-summaries"><span class="codenumber">3</span> <span class="title">Numerically Summarizing Data</span></a><ul>
+<li><a href="sec-measures-central-tendency.html" data-scroll="sec-measures-central-tendency">Measures of Central Tendency</a></li>
+<li><a href="sec-measures-dispersion.html" data-scroll="sec-measures-dispersion">Measures of Dispersion</a></li>
+<li><a href="sec-measures-grouped-data.html" data-scroll="sec-measures-grouped-data">Measures of Central Tendency and Dispersion from Grouped Data</a></li>
+<li><a href="sec-measures-position-and-outliers.html" data-scroll="sec-measures-position-and-outliers">Measures of Position and Outliers</a></li>
+<li><a href="sec-five-number-summary-boxplots.html" data-scroll="sec-five-number-summary-boxplots">The Five--Number Summary and Boxplots</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-two-variables.html" data-scroll="ch-two-variables"><span class="codenumber">4</span> <span class="title">Describing the Relation between Two Variables</span></a><ul>
+<li><a href="sec-scatter-diagrams-correlation.html" data-scroll="sec-scatter-diagrams-correlation">Scatter Diagrams and Correlation</a></li>
+<li><a href="sec-least-squares-regression.html" data-scroll="sec-least-squares-regression">Least-Squares Regression</a></li>
+<li><a href="sec-coefficient-determination.html" data-scroll="sec-coefficient-determination">The Coefficient of Determination</a></li>
+<li><a href="sec-contingency-tables.html" data-scroll="sec-contingency-tables">Contingency Tables and Association</a></li>
+</ul>
+</li>
+<li class="link"><a href="part-probability.html" data-scroll="part-probability"><span class="codenumber">III</span> <span class="title">Probability and Probability Distributions</span></a></li>
+<li class="link">
+<a href="ch-probability.html" data-scroll="ch-probability"><span class="codenumber">5</span> <span class="title">Probability</span></a><ul>
+<li><a href="sec-probability-rules.html" data-scroll="sec-probability-rules">Probability Rules</a></li>
+<li><a href="sec-addition-rule.html" data-scroll="sec-addition-rule">The Addition Rule and Complements</a></li>
+<li><a href="sec-multiplication-rule.html" data-scroll="sec-multiplication-rule" class="active">Independence and the Multiplication Rule</a></li>
+<li><a href="sec-conditional-probability.html" data-scroll="sec-conditional-probability">Conditional Probability and the General Multiplication Rule</a></li>
+<li><a href="sec-counting-techniques.html" data-scroll="sec-counting-techniques">Counting Techniques</a></li>
+<li><a href="sec-putting-it-together.html" data-scroll="sec-putting-it-together">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-discrete-probability-distributions.html" data-scroll="ch-discrete-probability-distributions"><span class="codenumber">6</span> <span class="title">Discrete Probability Distributions</span></a><ul>
+<li><a href="sec-discrete-random-variables.html" data-scroll="sec-discrete-random-variables">Discrete Random Variables</a></li>
+<li><a href="sec-binomial-probability-distribution.html" data-scroll="sec-binomial-probability-distribution">The Binomial Probability Distribution</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-normal-probability-distribution.html" data-scroll="ch-normal-probability-distribution"><span class="codenumber">7</span> <span class="title">The Normal Probability Distribution</span></a><ul>
+<li><a href="sec-properties-normal-distribution.html" data-scroll="sec-properties-normal-distribution">Properties of the Normal Distribution</a></li>
+<li><a href="sec-applications-normal-distribution.html" data-scroll="sec-applications-normal-distribution">Applications of the Normal Distribution</a></li>
+<li><a href="sec-assessing-normality.html" data-scroll="sec-assessing-normality">Assessing Normality</a></li>
+</ul>
+</li>
+<li class="link"><a href="part-inferential-stats.html" data-scroll="part-inferential-stats"><span class="codenumber">IV</span> <span class="title">Inference: From Samples to Population</span></a></li>
+<li class="link"><a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></li>
+<li class="link"><a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a></li>
+<li class="link"><a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a></li>
+<li class="link"><a href="ch-inferences-on-two-samples.html" data-scroll="ch-inferences-on-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-multiplication-rule"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Independence and the Multiplication Rule</span>
+</h2>
+<a href="sec-multiplication-rule.html" class="permalink">¶</a><article class="definition-like" id="definition-61"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">5.3.1</span>.</h6>
+<p id="p-115">Two events \(E\) and \(F\) are <dfn class="terminology">independent</dfn> if the occurrence of event \(E\) in a probability experiment does not affect the probability of event \(F\text{.}\) Two events are <dfn class="terminology">dependent</dfn> if the occurrence of event \(E\) in a probability experiment affects the probability of event \(F\text{.}\)</p></article><section class="reading-questions" id="reading-questions-18"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Reading Questions</span>
+</h3>
+<p id="p-116">Determine if the following pairs of events are independent or dependent.</p>
+<article class="exercise-like" id="exercise-71"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-117">You are late for work. Your car runs out of gas.</p>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-67" id="answer-67"><span class="type">Answer</span></a><div id="hk-answer-67" class="hidden-content tex2jax_ignore"><div class="solution">dependent</div></div></article><article class="exercise-like" id="exercise-72"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-118">Winning a game of Monopoly. Winning the lottery</p>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-68" id="answer-68"><span class="type">Answer</span></a><div id="hk-answer-68" class="hidden-content tex2jax_ignore"><div class="solution">independent</div></div></article><article class="exercise-like" id="exercise-73"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<p id="p-119">You gain weight. You eat fast food for dinner every night.</p>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-69" id="answer-69"><span class="type">Answer</span></a><div id="hk-answer-69" class="hidden-content tex2jax_ignore"><div class="solution">dependent</div></div></article><article class="exercise-like" id="exercise-74"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<p id="p-120">Speeding on the interstate highway. Getting pulled over by a police officer.</p>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-70" id="answer-70"><span class="type">Answer</span></a><div id="hk-answer-70" class="hidden-content tex2jax_ignore"><div class="solution">dependent</div></div></article><article class="exercise-like" id="exercise-75"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<p id="p-121">Owning a dog. Growing an herb garden.</p>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-71" id="answer-71"><span class="type">Answer</span></a><div id="hk-answer-71" class="hidden-content tex2jax_ignore"><div class="solution">independent</div></div></article><article class="exercise-like" id="exercise-76"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<p id="p-122">Robbing a bank. Going to jail.</p>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-72" id="answer-72"><span class="type">Answer</span></a><div id="hk-answer-72" class="hidden-content tex2jax_ignore"><div class="solution">dependent</div></div></article></section><article class="remark-like" id="remark-1"><h6 class="heading">
+<span class="type">Remark</span> <span class="codenumber">5.3.2</span>.</h6>
+<p id="p-123">Knowing two events are <dfn class="terminology">disjoint</dfn> means that the events are <dfn class="terminology">dependent</dfn>. Why? Consider the example of pulling chips numbered 0-9 out of a bag. Suppose event \(E\) corresponds with pulling a chip labelled with a 1 or a 2 out of the bag, i.e. \(E=\{1,2\}\) and suppose \(F=\{3,4\}\text{,}\) i.e. \(F\) corresponds with pulling a 3 or 4 chip out of the bag. Notice that these events are <dfn class="terminology">disjoint</dfn> because they have no outcomes in common. Finally, notice that if we know that event \(E\) occurred (a 1 or 2 is drawn), then we know for certain that \(F\) (drawing a 3 or 4) did <em class="emphasis">not</em> occur. Thus the occurrence of \(E\) affects the probability of event \(F\) and vice versa.</p></article><article class="theorem-like" id="fact-1"><h6 class="heading">
+<span class="type">Fact</span> <span class="codenumber">5.3.3</span>. <span class="title">Multiplication Rule for Independent Events.</span>
+</h6>
+<div class="displaymath">
+\begin{gather*}
+P(E \text{ and } F) = P(E) \cdot P(F)\\
+P(E \text{ and } F \text{ and } G) = P(E) \cdot P(F) \cdot P(G)
+\end{gather*}
+</div></article><article class="example-like" id="example-5"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.3.4</span>. <span class="title">Flipping Two Heads in a Row.</span>
+</h6>
+<p id="p-124">What is the probability that you flip a fair coin twice and get heads twice?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-12" id="solution-12"><span class="type">Solution</span></a><div id="hk-solution-12" class="hidden-content tex2jax_ignore"><div class="solution">Since these events are independent we can use the multiplication rule:<div class="displaymath">
+\begin{align*}
+P(H \text{ and } H) \amp = P(H) \cdot P(H)\\
+\amp = \frac{1}{2} \cdot \frac{1}{2}\\
+\amp = \frac{1}{4} = 0.25 = 25 \%
+\end{align*}
+</div>
+</div></div>
+</div></article><article class="example-like" id="example-6"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.3.5</span>. <span class="title">Rolling Four Ones in a Row.</span>
+</h6>
+<p id="p-125">What is the probability that you roll 4 ones in a row when you roll a fair, six sided die four times?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution</span></a><div id="hk-solution-13" class="hidden-content tex2jax_ignore"><div class="solution">Since these events are independent we can use the multiplication rule:<div class="displaymath">
+\begin{align*}
+P(1 \text{ and } 1 \text{ and } 1 \text{ and } 1)
+\amp = P(1) \cdot P(1) \cdot P(1) \cdot P(1)\\
+\amp = \frac{1}{6} \cdot \frac{1}{6} \cdot
+\frac{1}{6} \cdot \frac{1}{6}\\
+\amp = \frac{1}{1296} \approx 0.000716 = .0716 \%
+\end{align*}
+</div>
+</div></div>
+</div></article><article class="example-like" id="example-7"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.3.6</span>.</h6>
+<p id="p-126">What is the probability of selecting a two or a club from a deck of cards?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution</span></a><div id="hk-solution-14" class="hidden-content tex2jax_ignore"><div class="solution">These events are not disjoint, because there is one card that is both a 2 and a club, thus we must use the general addition rule.<div class="displaymath">
+\begin{align*}
+P(2 \text{ or club} ) \amp = P(2) + P(\text{club})
+- P(2\cap \text{club})\\
+\amp = \frac{4}{52} + \frac{13}{52} - \frac{1}{52}\\
+\amp = \frac{16}{52} = \frac{4}{13} \approx 31\%
+\end{align*}
+</div>
+</div></div>
+</div></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

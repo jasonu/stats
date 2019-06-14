@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-06-13T18:45:22-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution">
+<h6 class="heading">
+<span class="type">Solution</span> <span class="codenumber">5.4.3.1</span>.</h6>
+<p>This first solution will take advantage of our solution to the last problem.</p>
+<div class="displaymath">
+\begin{align*}
+P(\text{at least one correct})
+\amp = 1-P(\text{none correct})\\
+\amp = 1 - \frac{81}{256}\\
+\amp = \frac{175}{256} \approx 0.6836
+\end{align*}
+</div>
+<p>We can also approach this problem by summing the probabilities of <dfn class="terminology">disjoint</dfn> events. This solution won't make sense until you read <a href="sec-counting-techniques.html" class="internal" title="Section 5.5: Counting Techniques">Section 5.5</a>.</p>
+<div class="displaymath">
+\begin{align*}
+P(\text{at least one correct}) = \amp
+P(\text{1}) + P(\text{2}) + P(\text{3}) + P(\text{4})\\
+= \amp
+4
+\left(
+\frac{1}{4}\cdot \frac{3}{4}\cdot \frac{3}{4}\cdot \frac{3}{4}
+\right) +\\
+\amp
+6
+\left(
+\frac{1}{4}\cdot \frac{1}{4}\cdot \frac{3}{4}\cdot \frac{3}{4}
+\right) +\\
+\amp
+4
+\left(
+\frac{1}{4}\cdot \frac{1}{4}\cdot \frac{1}{4}\cdot \frac{3}{4}
+\right) +\\
+\amp
+1
+\left(
+\frac{1}{4}\cdot \frac{1}{4}\cdot \frac{1}{4}\cdot \frac{1}{4}
+\right)\\
+= \amp
+\frac{108}{256} +
+\frac{54}{256} +
+\frac{12}{256} +
+\frac{1}{256}\\
+= \amp \frac{175}{256} \approx .6836
+\end{align*}
+</div>
+</div>
+<span class="incontext"><a href="sec-conditional-probability.html#solution-21">in-context</a></span>
+</body>
+</html>
