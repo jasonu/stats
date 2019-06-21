@@ -74,18 +74,10 @@
 
     <part xml:id="part-inferential-stats">
       <title>Inference: From Samples to Population</title>
-      <chapter xml:id="ch-sampling-distributions">
-	<title>Sampling Distributions</title>
-      </chapter>
-      <chapter xml:id="ch-estimating-parameters">
-	<title>Estimating the Value of a Parameter</title>
-      </chapter>
-      <chapter xml:id="ch-hypothesis-tests">
-	<title>Hypothesis Tests Regarding a Parameter</title>
-      </chapter>
-      <chapter xml:id="ch-inferences-on-two-samples">
-	<title>Inferences on Two Samples</title>
-      </chapter>
+      <xi:include href="./ch08-sampling-distributions.xml" />
+      <xi:include href="./ch09-estimating-parameters.xml" />
+      <xi:include href="./ch10-hypothesis-tests.xml" />
+      <xi:include href="./ch11-inferences-on-two-samples.xml" />
     </part>
 
   </book>

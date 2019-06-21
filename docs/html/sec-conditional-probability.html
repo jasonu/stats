@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-06-13T18:45:20-06:00    *-->
+<!--*    on 2019-06-20T18:32:52-06:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -144,90 +144,116 @@ var js_version = 0.11;
 </ul>
 </li>
 <li class="link"><a href="part-inferential-stats.html" data-scroll="part-inferential-stats"><span class="codenumber">IV</span> <span class="title">Inference: From Samples to Population</span></a></li>
-<li class="link"><a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></li>
-<li class="link"><a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a></li>
-<li class="link"><a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a></li>
-<li class="link"><a href="ch-inferences-on-two-samples.html" data-scroll="ch-inferences-on-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a></li>
+<li class="link">
+<a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a><ul>
+<li><a href="sec-distribution-sample-mean.html" data-scroll="sec-distribution-sample-mean">Distribution of the Sample Mean</a></li>
+<li><a href="sec-distribution-sample-proportion.html" data-scroll="sec-distribution-sample-proportion">Distribution of the Sample Proportion</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a><ul>
+<li><a href="sec-estimating-population-proportion.html" data-scroll="sec-estimating-population-proportion">Estimating a Population Proportion</a></li>
+<li><a href="sec-estimating-population-mean.html" data-scroll="sec-estimating-population-mean">Estimating a Population Mean</a></li>
+<li><a href="sec-putting-it-together.html" data-scroll="sec-putting-it-together">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a><ul>
+<li><a href="sec-language-hypothesis-testing.html" data-scroll="sec-language-hypothesis-testing">The Language of Hypothesis Testing</a></li>
+<li><a href="sec-hypothesis-tests-population-proportion.html" data-scroll="sec-hypothesis-tests-population-proportion">Hypothesis Tests for a Population Proportion</a></li>
+<li><a href="sec-hypothesis-tests-population-mean.html" data-scroll="sec-hypothesis-tests-population-mean">Hypothesis Tests for a Population Mean</a></li>
+<li><a href="sec-putting-it-together-hypothesis-testing.html" data-scroll="sec-putting-it-together-hypothesis-testing">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-inferences-two-samples.html" data-scroll="ch-inferences-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a><ul>
+<li><a href="sec-inference-two-population-proportions.html" data-scroll="sec-inference-two-population-proportions">Inference about Two Population Proportions</a></li>
+<li><a href="sec-inference-two-population-means-dependent.html" data-scroll="sec-inference-two-population-means-dependent">Inference about Two Means: Dependent Samples</a></li>
+<li><a href="sec-inference-two-population-means-independent.html" data-scroll="sec-inference-two-population-means-independent">Inference about Two Means: Independent Samples</a></li>
+<li><a href="sec-putting-it-together-inference.html" data-scroll="sec-putting-it-together-inference">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-conditional-probability"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">Conditional Probability and the General Multiplication Rule</span>
 </h2>
-<a href="sec-conditional-probability.html" class="permalink">¶</a><article class="definition-like" id="definition-62"><h6 class="heading">
+<a href="sec-conditional-probability.html" class="permalink">¶</a><article class="definition-like" id="definition-64"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">5.4.1</span>.</h6>
-<p id="p-127">The notation <dfn class="terminology">\(P(F|E)\)</dfn> is read “the probability of event \(F\) given event \(E\text{.}\)” It is the probability that event \(F\) occurs, given that event \(E\) occurred.</p></article><article class="theorem-like" id="fact-2"><h6 class="heading">
+<p id="p-218">The notation <dfn class="terminology">\(P(F|E)\)</dfn> is read “the probability of event \(F\) given event \(E\text{.}\)” It is the probability that event \(F\) occurs, given that event \(E\) occurred.</p></article><article class="theorem-like" id="fact-3"><h6 class="heading">
 <span class="type">Fact</span> <span class="codenumber">5.4.2</span>. <span class="title">Conditional Probability Rule.</span>
 </h6>
-<div class="displaymath">
+<div class="displaymath" id="p-219">
 \begin{gather*}
 P(F|E) = \frac{P(E \text{ and } F)}{P(E)}
 \end{gather*}
-</div></article><article class="theorem-like" id="fact-3"><h6 class="heading">
+</div></article><article class="theorem-like" id="fact-4"><h6 class="heading">
 <span class="type">Fact</span> <span class="codenumber">5.4.3</span>. <span class="title">General Multiplication Rule.</span>
 </h6>
-<div class="displaymath">
+<div class="displaymath" id="p-220">
 \begin{gather*}
 P(E \text{ and } F) = P(E) \cdot P(F|E)
 \end{gather*}
 </div>
-<p id="p-128">Notice that the general multiplication rule follows from the conditional probability rule.</p>
-<p id="p-129">Two events E and F are independent if \(P(E|F) = P(E)\) or, equivalently, if \(P(F|E) = P(F)\text{.}\) This is the same thing as saying that knowing that one event occurred does not affect the probability of the other event occurring (this is the definition of <dfn class="terminology">independence</dfn> from <a href="sec-multiplication-rule.html" class="internal" title="Section 5.3: Independence and the Multiplication Rule">Section 5.3</a>).</p></article><section class="reading-questions" id="reading-questions-19"><h3 class="heading hide-type">
+<p id="p-221">Notice that the general multiplication rule follows from the conditional probability rule.</p>
+<p id="p-222">Two events E and F are independent if \(P(E|F) = P(E)\) or, equivalently, if \(P(F|E) = P(F)\text{.}\) This is the same thing as saying that knowing that one event occurred does not affect the probability of the other event occurring (this is the definition of <dfn class="terminology">independence</dfn> from <a href="sec-multiplication-rule.html" class="internal" title="Section 5.3: Independence and the Multiplication Rule">Section 5.3</a>).</p></article><section class="reading-questions" id="reading-questions-17"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Colored Marbles in a Bag</span>
 </h3>
-<p id="p-130">A bag contains 6 blue marbles, 5 red marbles, and 2 green marbles. If two marbles are randomly selected from the bag, what is the probability that:</p>
+<p id="p-223">A bag contains 6 blue marbles, 5 red marbles, and 2 green marbles. If two marbles are randomly selected from the bag, what is the probability that:</p>
 <article class="exercise-like" id="exercise-77"><h6 class="heading"><span class="codenumber">1.</span></h6>
-<p id="p-131">both are blue?</p>
+<p id="p-224">both are blue?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span></a><div id="hk-solution-15" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span></a><div id="hk-solution-15" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath" id="p-225">
 \begin{align*}
-P(B_1 \text{ and } B_2) \amp = P(B_1)\cdot P(B_2 | B_1)\\
+P(B_1 \text{ and } B_2) \amp = P(B_1)\cdot P(B_2|B_1)\\
 \amp = \frac{6}{13} \cdot \frac{5}{12} = \frac{5}{26}\\
 \amp \approx 0.192
 \end{align*}
 </div></div></div>
 </div></article><article class="exercise-like" id="exercise-78"><h6 class="heading"><span class="codenumber">2.</span></h6>
-<p id="p-132">the first is blue and the second is green?</p>
+<p id="p-226">the first is blue and the second is green?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span></a><div id="hk-solution-16" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span></a><div id="hk-solution-16" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath" id="p-227">
 \begin{align*}
-P(B_1 \text{ and } G_2) \amp = P(B_1)\cdot P(G_2 | B_1)\\
+P(B_1 \text{ and } G_2) \amp = P(B_1)\cdot P(G_2|B_1)\\
 \amp = \frac{6}{13} \cdot \frac{2}{12} = \frac{1}{13}\\
 \amp \approx 0.077
 \end{align*}
 </div></div></div>
 </div></article><article class="exercise-like" id="exercise-79"><h6 class="heading"><span class="codenumber">3.</span></h6>
-<p id="p-133">the first is green and the second is blue?</p>
+<p id="p-228">the first is green and the second is blue?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span></a><div id="hk-solution-17" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span></a><div id="hk-solution-17" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath" id="p-229">
 \begin{align*}
-P(G_1 \text{ and } B_2) \amp = P(G_1)\cdot P(B_2 | G_1)\\
+P(G_1 \text{ and } B_2) \amp = P(G_1)\cdot P(B_2 |
+G_1)\\
 \amp = \frac{2}{13} \cdot \frac{6}{12} = \frac{1}{13}\\
 \amp \approx 0.077
 \end{align*}
 </div></div></div>
 </div></article><article class="exercise-like" id="exercise-80"><h6 class="heading"><span class="codenumber">4.</span></h6>
-<p id="p-134">one is red, one is blue (order is not specified)?</p>
+<p id="p-230">one is red, one is blue (order is not specified)?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution</span></a><div id="hk-solution-18" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution</span></a><div id="hk-solution-18" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath" id="p-231">
 \begin{align*}
-P(R_1 \text{ and } B_2) + P(B_1 \text{ and } R_2)
-\amp = P(R_1)\cdot P(B_2 | R_1) + P(B_1)\cdot P(R_2 | B_1)\\
+P(R_1 \text{ and } B_2) + P(B_1 \text{ and } R_2) \amp
+= P(R_1)\cdot P(B_2 | R_1) + P(B_1)\cdot P(R_2 | B_1)\\
 \amp = \frac{5}{13} \cdot \frac{6}{12} +
 \frac{6}{13} \cdot \frac{5}{12}\\
 \amp = \frac{5}{26} + \frac{5}{26}\\
 \amp = \frac{5}{13} \approx 0.385
 \end{align*}
 </div></div></div>
-</div></article></section><section class="reading-questions" id="reading-questions-20"><h3 class="heading hide-type">
+</div></article></section><section class="reading-questions" id="reading-questions-18"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Guessing on a Multiple Choice Quiz</span>
 </h3>
-<p id="p-135">Suppose a student guesses every answer on a multiple choice quiz. There are four questions and each question has four choices: A, B, C or D.</p>
+<p id="p-232">Suppose a student guesses every answer on a multiple choice quiz. There are four questions and each question has four choices: A, B, C or D.</p>
 <article class="exercise-like" id="exercise-81"><h6 class="heading"><span class="codenumber">1.</span></h6>
-<p id="p-136">Find the probability that all four answers are correct.</p>
+<p id="p-233">Find the probability that all four answers are correct.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution</span></a><div id="hk-solution-19" class="hidden-content tex2jax_ignore"><div class="solution">
-<p id="p-137">Multiple choice questions are <dfn class="terminology">independent</dfn> because the answer you give on one does not affect your probability of getting any other question correct.</p>
-<div class="displaymath">
+<p id="p-234">Multiple choice questions are <dfn class="terminology">independent</dfn> because the answer you give on one does not affect your probability of getting any other question correct.</p>
+<div class="displaymath" id="p-235">
 \begin{align*}
 P(C \text{ and } C \text{ and } C \text{ and } C)
 \amp = P(C) \cdot P(C) \cdot P(C) \cdot P(C)\\
@@ -239,12 +265,13 @@ P(C \text{ and } C \text{ and } C \text{ and } C)
 </div>
 </div></div>
 </div></article><article class="exercise-like" id="exercise-82"><h6 class="heading"><span class="codenumber">2.</span></h6>
-<p id="p-138">Find the probability that all four answers are incorrect.</p>
+<p id="p-236">Find the probability that all four answers are incorrect.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref" data-refid="hk-solution-20" id="solution-20"><span class="type">Solution</span></a><div id="hk-solution-20" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-20" id="solution-20"><span class="type">Solution</span></a><div id="hk-solution-20" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath" id="p-237">
 \begin{align*}
-P(C^c \text{ and } C^c \text{ and } C^c \text{ and } C^c)
-\amp = P(C^c) \cdot P(C^c) \cdot P(C^c) \cdot P(C^c)\\
+P(C^c \text{ and } C^c \text{ and } C^c \text{ and }
+C^c) \amp = P(C^c) \cdot P(C^c) \cdot P(C^c) \cdot
+P(C^c)\\
 \amp = \frac{3}{4} \cdot \frac{3}{4} \cdot \frac{3}{4}
 \cdot \frac{3}{4}\\
 \amp = \left( \frac{3}{4} \right)^4 = \frac{81}{256}
@@ -252,11 +279,11 @@ P(C^c \text{ and } C^c \text{ and } C^c \text{ and } C^c)
 \end{align*}
 </div></div></div>
 </div></article><article class="exercise-like" id="exercise-83"><h6 class="heading"><span class="codenumber">3.</span></h6>
-<p id="p-139">Find the probability that at least one answer is correct.</p>
+<p id="p-238">Find the probability that at least one answer is correct.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-solution-21" id="solution-21"><span class="type">Solution</span></a><div id="hk-solution-21" class="hidden-content tex2jax_ignore"><div class="solution">
-<p id="p-140">This first solution will take advantage of our solution to the last problem.</p>
-<div class="displaymath">
+<p id="p-239">This first solution will take advantage of our solution to the last problem.</p>
+<div class="displaymath" id="p-240">
 \begin{align*}
 P(\text{at least one correct})
 \amp = 1-P(\text{none correct})\\
@@ -264,31 +291,19 @@ P(\text{at least one correct})
 \amp = \frac{175}{256} \approx 0.6836
 \end{align*}
 </div>
-<p id="p-141">We can also approach this problem by summing the probabilities of <dfn class="terminology">disjoint</dfn> events. This solution won't make sense until you read <a href="sec-counting-techniques.html" class="internal" title="Section 5.5: Counting Techniques">Section 5.5</a>.</p>
-<div class="displaymath">
+<p id="p-241">We can also approach this problem by summing the probabilities of <dfn class="terminology">disjoint</dfn> events. This solution won't make sense until you read <a href="sec-counting-techniques.html" class="internal" title="Section 5.5: Counting Techniques">Section 5.5</a>.</p>
+<div class="displaymath" id="p-242">
 \begin{align*}
 P(\text{at least one correct}) = \amp
 P(\text{1}) + P(\text{2}) + P(\text{3}) + P(\text{4})\\
-= \amp
-4
-\left(
-\frac{1}{4}\cdot \frac{3}{4}\cdot \frac{3}{4}\cdot \frac{3}{4}
-\right) +\\
-\amp
-6
-\left(
-\frac{1}{4}\cdot \frac{1}{4}\cdot \frac{3}{4}\cdot \frac{3}{4}
-\right) +\\
-\amp
-4
-\left(
-\frac{1}{4}\cdot \frac{1}{4}\cdot \frac{1}{4}\cdot \frac{3}{4}
-\right) +\\
-\amp
-1
-\left(
-\frac{1}{4}\cdot \frac{1}{4}\cdot \frac{1}{4}\cdot \frac{1}{4}
-\right)\\
+= \amp 4 \left( \frac{1}{4}\cdot \frac{3}{4}\cdot
+\frac{3}{4}\cdot \frac{3}{4} \right) +\\
+\amp 6 \left( \frac{1}{4}\cdot \frac{1}{4}\cdot
+\frac{3}{4}\cdot \frac{3}{4} \right) +\\
+\amp 4 \left( \frac{1}{4}\cdot \frac{1}{4}\cdot
+\frac{1}{4}\cdot \frac{3}{4} \right) +\\
+\amp 1 \left( \frac{1}{4}\cdot \frac{1}{4}\cdot
+\frac{1}{4}\cdot \frac{1}{4} \right)\\
 = \amp
 \frac{108}{256} +
 \frac{54}{256} +
@@ -299,13 +314,12 @@ P(\text{1}) + P(\text{2}) + P(\text{3}) + P(\text{4})\\
 </div>
 </div></div>
 </div></article><article class="exercise-like" id="exercise-84"><h6 class="heading"><span class="codenumber">4.</span></h6>
-<p id="p-142">Find the probability that one is wrong and 3 are correct.</p>
+<p id="p-243">Find the probability that one is wrong and 3 are correct.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref" data-refid="hk-solution-22" id="solution-22"><span class="type">Solution</span></a><div id="hk-solution-22" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-22" id="solution-22"><span class="type">Solution</span></a><div id="hk-solution-22" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath" id="p-244">
 \begin{align*}
-P(\text{1 wrong, 3 correct})
-= \amp
-P(C^cCCC \text{ or } CC^cCC \text{ or } CCC^cC \text{ or } CCCC^c)\\
+P(\text{1 wrong, 3 correct}) = \amp P(C^cCCC \text{ or
+} CC^cCC \text{ or } CCC^cC \text{ or } CCCC^c)\\
 = \amp
 \frac{3}{4}\cdot \frac{1}{4}\cdot
 \frac{1}{4}\cdot \frac{1}{4} +\\

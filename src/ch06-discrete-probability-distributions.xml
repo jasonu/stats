@@ -5,6 +5,356 @@
   <section xml:id="sec-discrete-random-variables">
     <title>Discrete Random Variables</title>
 
+    <definition>
+      <statement>
+	<p>
+	  A <term>random variable</term> is a numerical measure of a
+	  probability experiment, so its value is determined by chance.
+	  Random variables are typically denoted by capital letters such
+	  as <m>X</m> or <m>Y</m>.
+	</p>
+      </statement>
+    </definition>
+
+    <definition>
+      <statement>
+	<p>
+	  A <term>discrete random variable</term> has either a finite or
+	  countable number of values.
+	</p>
+	<p>
+	  A <term>continuous random variables</term> has infinitely many
+	  values.
+	</p>
+      </statement>
+    </definition>
+
+    <definition>
+      <title>Probability Distributions</title>
+      <statement>
+	<p>
+	  The <term>probability distribution</term> of a discrete random
+	  variable <m>X</m> provides the possible values of the random
+	  variable and their corresponding probabilities. A probability
+	  distribution can be in the form of a table, graph, or
+	  mathematical formula.
+	  <ol>
+	    <li><m>\sum P(x) = 1</m></li>
+	    <li><m>0 \le P(x) \le 1</m></li>
+	  </ol>
+	</p>
+      </statement>
+    </definition>
+
+    <fact>
+      <title>The Mean of a Discrete Random Variable</title>
+      <statement>
+	<p>
+	  <men>
+	    \mu_X = \sum \left[ x\cdot P(x)\right]
+	  </men>
+	  where <m>x</m> is the value of the random variable <m>X</m>,
+	  and <m>P(x)</m> is the probability of observing the value
+	  <m>x</m>.
+	</p>
+      </statement>
+    </fact>
+
+    <example>
+      <title>Mean Number of People in Household</title>
+      <p>
+	The formula for computing the mean of a discrete random
+	variable is equivalent to how we compute the average. For
+	example, a small class of statistics students was asked how
+	many people live in their households. The following data was
+	obtained:
+	<me>
+	  2, 4, 6, 6, 4, 4, 2, 3, 5, 5
+	</me>
+	What is the mean or average number of people per household?
+      </p>
+      <p>
+	<md>
+	  <mrow>
+	    \mu \amp = \frac{\sum x_i}{N}
+	    = \frac{2+4+6+6+4+4+2+3+5+5}{10}
+	  </mrow>
+	  <mrow>
+	    \amp = \frac{
+	    \overbrace{2 + 2}^{2} +
+	    \overbrace{3}^{1} +
+	    \overbrace{4 + 4 + 4}^{3} +
+	    \overbrace{5 + 5}^{2} +
+	    \overbrace{6 + 6}^{2} +
+	    }{10}
+	  </mrow>
+	  <mrow>
+	    \amp = \frac{
+	    2\cdot 2 + 3\cdot 1 + 4\cdot 3 + 5\cdot 2 + 6\cdot 6
+	    }{10}
+	  </mrow>
+	  <mrow>
+	    \amp =
+	    2 \cdot \frac{2}{10} +
+	    3 \cdot \frac{1}{10} +
+	    4 \cdot \frac{3}{10} +
+	    5 \cdot \frac{2}{10} +
+	    6 \cdot \frac{2}{10}
+	  </mrow>
+	  <mrow>
+	    \amp =
+	    2 \cdot P(2) +
+	    3 \cdot P(3) +
+	    4 \cdot P(4) +
+	    5 \cdot P(5) +
+	    6 \cdot P(6)
+	  </mrow>
+	  <mrow>
+	    \amp = 4.1
+	  </mrow>
+	</md>
+      </p>
+    </example>
+
+    <remark>
+      <title>Interpretation of the Mean</title>
+      <p>
+	Suppose an experiment is repeated <m>n</m> times, and the
+	measurements of the random variable <m>X</m> are labeled:
+	<m>x_1, x_2, \ldots, x_n</m> then as <m>n</m> goes to
+	infinity, we expect the average of all measurements,
+	<m>\overline{x}</m>, to get closer and closer to
+	<m>\mu_X</m>:
+	<me>
+	  \text{as } n \to \infty \qquad \mu_X - \overline{x} \to 0.
+	</me>
+	where
+	<me>
+	  \overline{x} = \frac{x_1 + x_2 + \cdots + x_n}{n}.
+	</me>
+      </p>
+      <p>
+	In other words, the mean of a random variable represents
+	what we would <em>expect</em> the average value of all the
+	measurements to be in the long run, <ie/> if we do the
+	experiment many times.
+      </p>
+    </remark>
+
+    <fact>
+      <title>The Standard Deviation of a Discrete Random
+      Variable</title>
+      <statement>
+	<p>
+	  <men>
+	    \sigma_X =
+	    \sqrt{\sum \left[ (x-\mu_X)^2 \cdot P(x)\right]}
+	  </men>
+	  where <m>x</m> is the value of the random variable <m>X</m>,
+	  <m>\mu_X</m> is the mean of the random variable, and
+	  <m>P(x)</m> is the probability of observing the value
+	  <m>x</m>.
+	</p>
+      </statement>
+    </fact>
+
+    <reading-questions>
+      <title>Ideal Number of Children</title>
+      <p>
+	A random sample of 900 adult Americans were asked, <q>What is
+	the ideal number of children to have in a family?</q>
+      </p>
+      <table>
+	<caption>Ideal number of children (frequency
+	distribution)</caption>
+	<tabular>
+	  <row top="major" bottom="major">
+	    <cell><m>x</m></cell><cell>frequency</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>0</cell><cell halign="right">10</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>1</cell><cell halign="right">30</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>2</cell><cell halign="right">520</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>3</cell><cell halign="right">250</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>4</cell><cell halign="right">70</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>5</cell><cell halign="right">17</cell>
+	  </row>
+	  <row bottom="minor">
+	    <cell>6</cell><cell halign="right">3</cell>
+	  </row>
+	</tabular>
+      </table>
+      <question>
+	<statement>
+	  <p>
+	    Construct a discrete probability distribution for the
+	    variable <m>X</m>.
+	  </p>
+	</statement>
+	<solution>
+	  <table>
+	    <caption>Ideal number of children (probability
+	    distribution)</caption>
+	    <tabular>
+	      <row top="major" bottom="major">
+		<cell><m>x</m></cell><cell><m>P(x)</m></cell>
+	      </row>
+	      <row bottom="minor">
+		<cell>0</cell>
+		<cell halign="right"><m>0.0\overline{1}</m></cell>
+	      </row>
+	      <row bottom="minor">
+		<cell>1</cell>
+		<cell halign="right"><m>0.0\overline{3}</m></cell>
+	      </row>
+	      <row bottom="minor">
+		<cell>2</cell>
+		<cell halign="right"><m>0.5\overline{7}</m></cell>
+	      </row>
+	      <row bottom="minor">
+		<cell>3</cell>
+		<cell halign="right"><m>0.2\overline{7}</m></cell>
+	      </row>
+	      <row bottom="minor">
+		<cell>4</cell>
+		<cell halign="right"><m>0.0\overline{7}</m></cell>
+	      </row>
+	      <row bottom="minor">
+		<cell>5</cell>
+		<cell halign="right"><m>0.01\overline{8}</m></cell>
+	      </row>
+	      <row bottom="minor">
+		<cell>6</cell>
+		<cell halign="right"><m>0.00\overline{3}</m></cell>
+	      </row>
+	    </tabular>
+	  </table>
+	</solution>
+      </question>
+      <question>
+	<statement>
+	  <p>
+	    Compute the mean, <m>\mu_X</m>, and standard deviation,
+	    <m>\sigma_X</m>.
+	  </p>
+	</statement>
+	<solution>
+	  <p>
+	    Using the TI-84 Plus calculator we first put the data from
+	    the frequency distribution into lists 1 and 2 and then
+	    press: <c>stat</c> -> <c>CALC</c> -> <c>1-Var Stats</c>.
+	    Next, choose list 1 for <c>List</c> and list 2 for
+	    <c>FreqList</c>. Finally, cursor to <c>Calculate</c> and
+	    press <c>enter</c>.
+	  </p>
+	  <p>
+	    This yields: <m>\mu_X = 2.4478</m> and
+	    <m>\sigma_X =0.8308</m>.
+	  </p>
+	</solution>
+      </question>
+      <question>
+	<statement>
+	  <p>
+	    Draw the stick-graph of the discrete probability
+	    distribution.
+	  </p>
+	</statement>
+	<solution>
+	  <image source="images/stick-graph.png" width="50%" />
+	</solution>
+      </question>
+      <question>
+	<statement>
+	  <p>
+	    What is the probability that a randomly selected adult
+	    thinks the ideal number of children is 2?
+	  </p>
+	</statement>
+	<answer>
+	  <p>57.8%</p>
+	</answer>
+      </question>
+    </reading-questions>
+
+    <reading-questions>
+      <title>Expected Value of a Straight Bet in Roulette</title>
+      <p>
+	In the game of Roulette, a player can place a $1 bet on the
+	number 17. This is called a <em>straight bet</em>. Since the
+	wheel has pockets numbered 1<ndash/>36, 0, and 00, there is a
+	1/38 chance the ball will land on 17. If the ball lands on 17,
+	the player will win $36 (36 times the value of the bet).
+	Win or lose, the casino takes the player's $1 bet.
+      </p>
+      <p>
+	<table>
+	  <caption>Probability distribution for $1 bet</caption>
+	  <tabular top="major">
+	    <row bottom="major">
+	      <cell halign="center">Event</cell>
+	      <cell halign="right"><m>x</m></cell>
+	      <cell halign="right"><m>P(x)</m></cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell halign="center">17</cell>
+	      <cell halign="right"><m>36-1</m></cell>
+	      <cell halign="right"><m>1/38</m></cell>
+	    </row>
+	    <row bottom="major">
+	      <cell halign="center">not 17</cell>
+	      <cell halign="right"><m>-1</m></cell>
+	      <cell halign="right"><m>37/38</m></cell>
+	    </row>
+	  </tabular>
+	</table>
+      </p>
+      <exercise>
+	<statement>
+	  <p>
+	    What is the expected value of the game for the player?
+	  </p>
+	</statement>
+	<solution>
+	  <p>
+	    <me>
+	      E[X] = \mu_X = \sum x\cdot P(x) = (36-1)\cdot
+	      \frac{1}{38} + (-1)\frac{37}{38} = -0.05263
+	    </me>
+	  </p>
+	  <p>
+	    Thus the player expects to <em>lose</em> more than $0.05
+	    per spin.
+	  </p>
+	</solution>
+      </exercise>
+      <exercise>
+	<statement>
+	  <p>
+	    If you played 1000 times, how much would you expect to win
+	    or lose?
+	  </p>
+	</statement>
+	<solution>
+	  <p>
+	    <me>
+	      1000\cdot E[X] = (1000)(-0.05263) = $52.63
+	    </me>
+	  </p>
+	</solution>
+      </exercise>
+    </reading-questions>
+
   </section>
 
   <section xml:id="sec-binomial-probability-distribution">

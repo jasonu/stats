@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-06-13T18:45:20-06:00    *-->
+<!--*    on 2019-06-20T18:32:51-06:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -144,10 +144,35 @@ var js_version = 0.11;
 </ul>
 </li>
 <li class="link"><a href="part-inferential-stats.html" data-scroll="part-inferential-stats"><span class="codenumber">IV</span> <span class="title">Inference: From Samples to Population</span></a></li>
-<li class="link"><a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></li>
-<li class="link"><a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a></li>
-<li class="link"><a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a></li>
-<li class="link"><a href="ch-inferences-on-two-samples.html" data-scroll="ch-inferences-on-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a></li>
+<li class="link">
+<a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a><ul>
+<li><a href="sec-distribution-sample-mean.html" data-scroll="sec-distribution-sample-mean">Distribution of the Sample Mean</a></li>
+<li><a href="sec-distribution-sample-proportion.html" data-scroll="sec-distribution-sample-proportion">Distribution of the Sample Proportion</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a><ul>
+<li><a href="sec-estimating-population-proportion.html" data-scroll="sec-estimating-population-proportion">Estimating a Population Proportion</a></li>
+<li><a href="sec-estimating-population-mean.html" data-scroll="sec-estimating-population-mean">Estimating a Population Mean</a></li>
+<li><a href="sec-putting-it-together.html" data-scroll="sec-putting-it-together">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a><ul>
+<li><a href="sec-language-hypothesis-testing.html" data-scroll="sec-language-hypothesis-testing">The Language of Hypothesis Testing</a></li>
+<li><a href="sec-hypothesis-tests-population-proportion.html" data-scroll="sec-hypothesis-tests-population-proportion">Hypothesis Tests for a Population Proportion</a></li>
+<li><a href="sec-hypothesis-tests-population-mean.html" data-scroll="sec-hypothesis-tests-population-mean">Hypothesis Tests for a Population Mean</a></li>
+<li><a href="sec-putting-it-together-hypothesis-testing.html" data-scroll="sec-putting-it-together-hypothesis-testing">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-inferences-two-samples.html" data-scroll="ch-inferences-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a><ul>
+<li><a href="sec-inference-two-population-proportions.html" data-scroll="sec-inference-two-population-proportions">Inference about Two Population Proportions</a></li>
+<li><a href="sec-inference-two-population-means-dependent.html" data-scroll="sec-inference-two-population-means-dependent">Inference about Two Means: Dependent Samples</a></li>
+<li><a href="sec-inference-two-population-means-independent.html" data-scroll="sec-inference-two-population-means-independent">Inference about Two Means: Independent Samples</a></li>
+<li><a href="sec-putting-it-together-inference.html" data-scroll="sec-putting-it-together-inference">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-practice-of-stats"><h2 class="heading hide-type">
@@ -155,44 +180,140 @@ var js_version = 0.11;
 </h2>
 <a href="sec-practice-of-stats.html" class="permalink">¶</a><article class="definition-like" id="definition-1"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.1</span>. <span class="title">statistics.</span>
-</h6>how to collect, organize, summarize and analyze information so that conclusions can be drawn with a measure of confidence.</article><article class="definition-like" id="definition-2"><h6 class="heading">
+</h6>
+<p id="p-3">how to collect, organize, summarize and analyze information so that conclusions can be drawn with a measure of confidence.</p></article><article class="definition-like" id="definition-2"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.2</span>. <span class="title">descriptive stats.</span>
-</h6>entails organizing and summarizing collected data.</article><article class="definition-like" id="definition-3"><h6 class="heading">
+</h6>
+<p id="p-4">entails organizing and summarizing collected data.</p></article><article class="definition-like" id="definition-3"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.3</span>. <span class="title">inferential stats.</span>
-</h6>methods for taking sample results and extending it to the population with some measure of reliability.</article><article class="definition-like" id="definition-4"><h6 class="heading">
+</h6>
+<p id="p-5">methods for taking sample results and extending it to the population with some measure of reliability.</p></article><article class="definition-like" id="definition-4"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.4</span>. <span class="title">population.</span>
-</h6>entire group of interest in a study</article><article class="definition-like" id="definition-5"><h6 class="heading">
+</h6>
+<p id="p-6">entire group of interest in a study</p></article><article class="definition-like" id="definition-5"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.5</span>. <span class="title">individual.</span>
-</h6>a single person or object being studied</article><article class="definition-like" id="definition-6"><h6 class="heading">
+</h6>
+<p id="p-7">a single person or object being studied</p></article><article class="definition-like" id="definition-6"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.6</span>. <span class="title">sample.</span>
-</h6>subset of the population being studied</article><article class="definition-like" id="definition-7"><h6 class="heading">
+</h6>
+<p id="p-8">subset of the population being studied</p></article><article class="definition-like" id="definition-7"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.7</span>. <span class="title">statistic.</span>
-</h6>numerical summary of a sample</article><article class="definition-like" id="definition-8"><h6 class="heading">
+</h6>
+<p id="p-9">numerical summary of a sample</p></article><article class="definition-like" id="definition-8"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.8</span>. <span class="title">parameter.</span>
-</h6>numerical summary of a population</article><article class="definition-like" id="definition-9"><h6 class="heading">
+</h6>
+<p id="p-10">numerical summary of a population</p></article><article class="definition-like" id="definition-9"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.9</span>. <span class="title">variables.</span>
-</h6>characteristics of individuals in the population</article><article class="definition-like" id="definition-10"><h6 class="heading">
+</h6>
+<p id="p-11">characteristics of individuals in the population</p></article><article class="definition-like" id="definition-10"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.10</span>. <span class="title">qualitative variable.</span>
-</h6>responses based on attributes or characteristics</article><article class="definition-like" id="definition-11"><h6 class="heading">
+</h6>
+<p id="p-12">responses based on attributes or characteristics</p></article><article class="definition-like" id="definition-11"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.11</span>. <span class="title">quantitative variable.</span>
-</h6>responses are numerical measures, with a natural ordering i.e. it makes sense to compare via &lt; or &gt;</article><article class="definition-like" id="definition-12"><h6 class="heading">
+</h6>
+<p id="p-13">responses are numerical measures, with a natural ordering i.e. it makes sense to compare via &lt; or &gt;</p></article><article class="definition-like" id="definition-12"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.12</span>. <span class="title">discrete variable.</span>
-</h6>finite or countable number of possible values e.g. number of children</article><article class="definition-like" id="definition-13"><h6 class="heading">
+</h6>
+<p id="p-14">finite or countable number of possible values e.g. number of children</p></article><article class="definition-like" id="definition-13"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.1.13</span>. <span class="title">continuous variable.</span>
-</h6>infinite number of possible values e.g. height</article><figure class="figure-like" id="figure-1"><iframe id="video-1" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/sxQaBpKfDRk?&amp;modestbranding=1&amp;rel=0"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">1.1.14.</span> Crash Course Statistics: What Is Statistics</figcaption></figure><section class="reading-questions" id="reading-questions-1"><h3 class="heading hide-type">
-<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Statistic or Parameter?</span>
+</h6>
+<p id="p-15">infinite number of possible values e.g. height</p></article><figure class="figure-like" id="figure-1"><iframe id="video-1" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/sxQaBpKfDRk?&amp;modestbranding=1&amp;rel=0"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">1.1.14.</span> Crash Course Statistics: What Is Statistics</figcaption></figure><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Statistic or Parameter?</span>
 </h3>
-<p id="p-3">For each description which follows, determine whether the numerical quantity is a <em class="emphasis">statistic</em> or <em class="emphasis">parameter</em>.</p>
-<article class="exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1.</span></h6>In a study of all 2223 passengers aboard the Titanic, it is found that 706 survived when it sank. <a data-knowl="" class="id-ref" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span></a><div id="hk-answer-1" class="hidden-content tex2jax_ignore"><div class="solution">parameter</div></div></article><article class="exercise-like" id="exercise-2"><h6 class="heading"><span class="codenumber">2.</span></h6>A recent survey of a sample of MBA's reported that the average salary for an MBA is more than $82,000. (Source: The Wall Street Journal) <a data-knowl="" class="id-ref" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span></a><div id="hk-answer-2" class="hidden-content tex2jax_ignore"><div class="solution">statistic</div></div></article><article class="exercise-like" id="exercise-3"><h6 class="heading"><span class="codenumber">3.</span></h6>Starting salaries for all of the 667 MBA graduates from the University of Chicago Graduate School of Business increased 8.5% from the previous year. <a data-knowl="" class="id-ref" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer</span></a><div id="hk-answer-3" class="hidden-content tex2jax_ignore"><div class="solution">parameter</div></div></article><article class="exercise-like" id="exercise-4"><h6 class="heading"><span class="codenumber">4.</span></h6>In a recent poll of Salt Lake Community College students, 83% of students owned a vehicle. <a data-knowl="" class="id-ref" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer</span></a><div id="hk-answer-4" class="hidden-content tex2jax_ignore"><div class="solution">statistic</div></div></article><article class="exercise-like" id="exercise-5"><h6 class="heading"><span class="codenumber">5.</span></h6>In a recent survey of 457 attendees of Jumanji, 402 would recommend the movie to a friend. <a data-knowl="" class="id-ref" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span></a><div id="hk-answer-5" class="hidden-content tex2jax_ignore"><div class="solution">parameter, unless you consider the population to be all people who have seen Jumanji</div></div></article></section><section class="reading-questions" id="reading-questions-2"><h3 class="heading hide-type">
-<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Discrete or Continuous Variable?</span>
+<section class="introduction" id="introduction-1"><p id="p-16">For each description which follows, determine whether the numerical quantity is a <em class="emphasis">statistic</em> or <em class="emphasis">parameter</em>.</p></section><article class="exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-17">In a study of all 2223 passengers aboard the Titanic, it is found that 706 survived when it sank.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span></a><div id="hk-answer-1" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-18">parameter</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-19">A recent survey of a sample of MBA's reported that the average salary for an MBA is more than $82,000. (Source: The Wall Street Journal)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span></a><div id="hk-answer-2" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-20">statistic</p></div></div>
+</div></article><article class="exercise-like" id="exercise-3"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<p id="p-21">Starting salaries for all of the 667 MBA graduates from the University of Chicago Graduate School of Business increased 8.5% from the previous year.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer</span></a><div id="hk-answer-3" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-22">parameter</p></div></div>
+</div></article><article class="exercise-like" id="exercise-4"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<p id="p-23">In a recent poll of Salt Lake Community College students, 83% of students owned a vehicle.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer</span></a><div id="hk-answer-4" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-24">statistic</p></div></div>
+</div></article><article class="exercise-like" id="exercise-5"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<p id="p-25">In a recent survey of 457 attendees of Jumanji, 402 would recommend the movie to a friend.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span></a><div id="hk-answer-5" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-26">parameter, unless you consider the population to be all people who have seen Jumanji</p></div></div>
+</div></article></section><section class="exercises" id="exercises-2"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Discrete or Continuous Variable?</span>
 </h3>
-<article class="exercise-like" id="exercise-6"><h6 class="heading"><span class="codenumber">1.</span></h6>In a survey of 1059 adults, it is found that 39% of them have guns in their homes <a data-knowl="" class="id-ref" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer</span></a><div id="hk-answer-6" class="hidden-content tex2jax_ignore"><div class="solution">discrete</div></div></article><article class="exercise-like" id="exercise-7"><h6 class="heading"><span class="codenumber">2.</span></h6>The number of heads obtained after flipping a coin five times <a data-knowl="" class="id-ref" data-refid="hk-answer-7" id="answer-7"><span class="type">Answer</span></a><div id="hk-answer-7" class="hidden-content tex2jax_ignore"><div class="solution">discrete</div></div></article><article class="exercise-like" id="exercise-8"><h6 class="heading"><span class="codenumber">3.</span></h6>The distance Tiger Woods can drive a golf ball <a data-knowl="" class="id-ref" data-refid="hk-answer-8" id="answer-8"><span class="type">Answer</span></a><div id="hk-answer-8" class="hidden-content tex2jax_ignore"><div class="solution">continuous</div></div></article><article class="exercise-like" id="exercise-9"><h6 class="heading"><span class="codenumber">4.</span></h6>Points scored in a basketball game <a data-knowl="" class="id-ref" data-refid="hk-answer-9" id="answer-9"><span class="type">Answer</span></a><div id="hk-answer-9" class="hidden-content tex2jax_ignore"><div class="solution">discrete</div></div></article><article class="exercise-like" id="exercise-10"><h6 class="heading"><span class="codenumber">5.</span></h6>Volume of water lost each day from a leaky faucet <a data-knowl="" class="id-ref" data-refid="hk-answer-10" id="answer-10"><span class="type">Answer</span></a><div id="hk-answer-10" class="hidden-content tex2jax_ignore"><div class="solution">continuous</div></div></article><article class="exercise-like" id="exercise-11"><h6 class="heading"><span class="codenumber">6.</span></h6>Length of a song <a data-knowl="" class="id-ref" data-refid="hk-answer-11" id="answer-11"><span class="type">Answer</span></a><div id="hk-answer-11" class="hidden-content tex2jax_ignore"><div class="solution">continuous, but could be discrete if measured in seconds</div></div></article><article class="exercise-like" id="exercise-12"><h6 class="heading"><span class="codenumber">7.</span></h6>Number of words in a song <a data-knowl="" class="id-ref" data-refid="hk-answer-12" id="answer-12"><span class="type">Answer</span></a><div id="hk-answer-12" class="hidden-content tex2jax_ignore"><div class="solution">discrete</div></div></article></section><section class="reading-questions" id="reading-questions-3"><h3 class="heading hide-type">
+<article class="exercise-like" id="exercise-6"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-27">In a survey of 1059 adults, it is found that 39% of them have guns in their homes</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer</span></a><div id="hk-answer-6" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-28">discrete</p></div></div>
+</div></article><article class="exercise-like" id="exercise-7"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-29">The number of heads obtained after flipping a coin five times</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-7" id="answer-7"><span class="type">Answer</span></a><div id="hk-answer-7" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-30">discrete</p></div></div>
+</div></article><article class="exercise-like" id="exercise-8"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<p id="p-31">The distance Tiger Woods can drive a golf ball</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-8" id="answer-8"><span class="type">Answer</span></a><div id="hk-answer-8" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-32">continuous</p></div></div>
+</div></article><article class="exercise-like" id="exercise-9"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<p id="p-33">oints scored in a basketball game</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-9" id="answer-9"><span class="type">Answer</span></a><div id="hk-answer-9" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-34">discrete</p></div></div>
+</div></article><article class="exercise-like" id="exercise-10"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<p id="p-35">Volume of water lost each day from a leaky faucet</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-10" id="answer-10"><span class="type">Answer</span></a><div id="hk-answer-10" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-36">continuous</p></div></div>
+</div></article><article class="exercise-like" id="exercise-11"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<p id="p-37">Length of a song</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-11" id="answer-11"><span class="type">Answer</span></a><div id="hk-answer-11" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-38">continuous, but could be discrete if measured in seconds</p></div></div>
+</div></article><article class="exercise-like" id="exercise-12"><h6 class="heading"><span class="codenumber">7.</span></h6>
+<p id="p-39">Number of words in a song</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-12" id="answer-12"><span class="type">Answer</span></a><div id="hk-answer-12" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-40">discrete</p></div></div>
+</div></article></section><section class="reading-questions" id="reading-questions-1"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Qualitative or Quantitative Variable?</span>
 </h3>
-<article class="exercise-like" id="exercise-13"><h6 class="heading"><span class="codenumber">1.</span></h6>Gender <a data-knowl="" class="id-ref" data-refid="hk-answer-13" id="answer-13"><span class="type">Answer</span></a><div id="hk-answer-13" class="hidden-content tex2jax_ignore"><div class="solution">qualitative</div></div></article><article class="exercise-like" id="exercise-14"><h6 class="heading"><span class="codenumber">2.</span></h6>Temperature <a data-knowl="" class="id-ref" data-refid="hk-answer-14" id="answer-14"><span class="type">Answer</span></a><div id="hk-answer-14" class="hidden-content tex2jax_ignore"><div class="solution">quantitative</div></div></article><article class="exercise-like" id="exercise-15"><h6 class="heading"><span class="codenumber">3.</span></h6>Nation of origin <a data-knowl="" class="id-ref" data-refid="hk-answer-15" id="answer-15"><span class="type">Answer</span></a><div id="hk-answer-15" class="hidden-content tex2jax_ignore"><div class="solution">qualitative</div></div></article><article class="exercise-like" id="exercise-16"><h6 class="heading"><span class="codenumber">4.</span></h6>Number of siblings <a data-knowl="" class="id-ref" data-refid="hk-answer-16" id="answer-16"><span class="type">Answer</span></a><div id="hk-answer-16" class="hidden-content tex2jax_ignore"><div class="solution">quantitative</div></div></article><article class="exercise-like" id="exercise-17"><h6 class="heading"><span class="codenumber">5.</span></h6>Number of days <a data-knowl="" class="id-ref" data-refid="hk-answer-17" id="answer-17"><span class="type">Answer</span></a><div id="hk-answer-17" class="hidden-content tex2jax_ignore"><div class="solution">quantitative</div></div></article><article class="exercise-like" id="exercise-18"><h6 class="heading"><span class="codenumber">6.</span></h6>Grams of carbohydrates in a donut <a data-knowl="" class="id-ref" data-refid="hk-answer-18" id="answer-18"><span class="type">Answer</span></a><div id="hk-answer-18" class="hidden-content tex2jax_ignore"><div class="solution">quantitative</div></div></article><article class="exercise-like" id="exercise-19"><h6 class="heading"><span class="codenumber">7.</span></h6>Phone number <a data-knowl="" class="id-ref" data-refid="hk-answer-19" id="answer-19"><span class="type">Answer</span></a><div id="hk-answer-19" class="hidden-content tex2jax_ignore"><div class="solution">qualitative</div></div></article><article class="exercise-like" id="exercise-20"><h6 class="heading"><span class="codenumber">8.</span></h6>Value of a house <a data-knowl="" class="id-ref" data-refid="hk-answer-20" id="answer-20"><span class="type">Answer</span></a><div id="hk-answer-20" class="hidden-content tex2jax_ignore"><div class="solution">quantitative</div></div></article><article class="exercise-like" id="exercise-21"><h6 class="heading"><span class="codenumber">9.</span></h6>Zip code <a data-knowl="" class="id-ref" data-refid="hk-answer-21" id="answer-21"><span class="type">Answer</span></a><div id="hk-answer-21" class="hidden-content tex2jax_ignore"><div class="solution">qualitative</div></div></article></section><section class="reading-questions" id="reading-questions-4"><h3 class="heading hide-type">
+<article class="exercise-like" id="exercise-13"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-41">Gender</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-13" id="answer-13"><span class="type">Answer</span></a><div id="hk-answer-13" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-42">qualitative</p></div></div>
+</div></article><article class="exercise-like" id="exercise-14"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-43">Temperature</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-14" id="answer-14"><span class="type">Answer</span></a><div id="hk-answer-14" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-44">quantitative</p></div></div>
+</div></article><article class="exercise-like" id="exercise-15"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<p id="p-45">Nation of origin</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-15" id="answer-15"><span class="type">Answer</span></a><div id="hk-answer-15" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-46">qualitative</p></div></div>
+</div></article><article class="exercise-like" id="exercise-16"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<p id="p-47">Number of siblings</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-16" id="answer-16"><span class="type">Answer</span></a><div id="hk-answer-16" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-48">quantitative</p></div></div>
+</div></article><article class="exercise-like" id="exercise-17"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<p id="p-49">Number of days</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-17" id="answer-17"><span class="type">Answer</span></a><div id="hk-answer-17" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-50">quantitative</p></div></div>
+</div></article><article class="exercise-like" id="exercise-18"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<p id="p-51">Grams of carbohydrates in a donut</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-18" id="answer-18"><span class="type">Answer</span></a><div id="hk-answer-18" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-52">quantitative</p></div></div>
+</div></article><article class="exercise-like" id="exercise-19"><h6 class="heading"><span class="codenumber">7.</span></h6>
+<p id="p-53">Phone number</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-19" id="answer-19"><span class="type">Answer</span></a><div id="hk-answer-19" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-54">qualitative</p></div></div>
+</div></article><article class="exercise-like" id="exercise-20"><h6 class="heading"><span class="codenumber">8.</span></h6>
+<p id="p-55">Value of a house</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-20" id="answer-20"><span class="type">Answer</span></a><div id="hk-answer-20" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-56">quantitative</p></div></div>
+</div></article><article class="exercise-like" id="exercise-21"><h6 class="heading"><span class="codenumber">9.</span></h6>
+<p id="p-57">Zip code</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-21" id="answer-21"><span class="type">Answer</span></a><div id="hk-answer-21" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-58">qualitative</p></div></div>
+</div></article></section><section class="reading-questions" id="reading-questions-2"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">2011 BMW Models</span>
 </h3>
-<p id="p-4">The following information relates to the 2011 model year product line of BMW automobiles. Identify the individuals in the study, the variables and if the data corresponding to the variables are qualitative or quantitative, and continuous or discrete.</p>
+<p id="p-59">The following information relates to the 2011 model year product line of BMW automobiles. Identify the individuals in the study, the variables and if the data corresponding to the variables are qualitative or quantitative, and continuous or discrete.</p>
 <figure class="figure-like" id="table-1"><table>
 <tr>
 <td class="l m b2 r0 l0 t3 lines">Model</td>
@@ -258,10 +379,10 @@ var js_version = 0.11;
 <td class="l m b3 r0 l0 t0 lines">quantitative</td>
 <td class="l m b3 r0 l0 t0 lines">discrete</td>
 </tr>
-</table></div></div></article></section><section class="reading-questions" id="reading-questions-5"><h3 class="heading hide-type">
+</table></div></div></article></section><section class="reading-questions" id="reading-questions-3"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Smoker's IQ</span>
 </h3>
-<p id="p-5">A study was conducted in which 20,211 18--year old recruits were given an exam to measure IQ. In addition, the recruits were asked to disclose their smoking status. An individual was considered a smoker if he smoked at least 1 cigarette per day. The goal of the study was to determine whether adolescents aged 18 to 21 who smoke have a lower IQ than nonsmokers. It was found that the average IQ of the smokers was 94, while the average IQ of nonsmokers was 101. The researchers concluded that lower IQ individuals are more likely to chose to smoke, not that smoking makes people less intelligent.</p>
+<p id="p-60">A study was conducted in which 20,211 18--year old recruits were given an exam to measure IQ. In addition, the recruits were asked to disclose their smoking status. An individual was considered a smoker if he smoked at least 1 cigarette per day. The goal of the study was to determine whether adolescents aged 18 to 21 who smoke have a lower IQ than nonsmokers. It was found that the average IQ of the smokers was 94, while the average IQ of nonsmokers was 101. The researchers concluded that lower IQ individuals are more likely to chose to smoke, not that smoking makes people less intelligent.</p>
 <article class="exercise-like" id="exercise-24"><h6 class="heading"><span class="codenumber">1.</span></h6>What is the population being studied? <a data-knowl="" class="id-ref" data-refid="hk-answer-24" id="answer-24"><span class="type">Answer</span></a><div id="hk-answer-24" class="hidden-content tex2jax_ignore"><div class="solution">adolescents aged 18 to 21</div></div></article><article class="exercise-like" id="exercise-25"><h6 class="heading"><span class="codenumber">2.</span></h6>What is the sample? <a data-knowl="" class="id-ref" data-refid="hk-answer-25" id="answer-25"><span class="type">Answer</span></a><div id="hk-answer-25" class="hidden-content tex2jax_ignore"><div class="solution">20,211 18 year old recruits</div></div></article><article class="exercise-like" id="exercise-26"><h6 class="heading"><span class="codenumber">3.</span></h6>What are the descriptive statistics? <a data-knowl="" class="id-ref" data-refid="hk-answer-26" id="answer-26"><span class="type">Answer</span></a><div id="hk-answer-26" class="hidden-content tex2jax_ignore"><div class="solution">IQ, smoking status</div></div></article></section><figure class="figure-like" id="figure-2"><iframe id="video-2" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/tN9Xl1AcSv8?&amp;modestbranding=1&amp;rel=0"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">1.1.16.</span> Crash Course Statistics: Mathematical Thinking</figcaption></figure></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>

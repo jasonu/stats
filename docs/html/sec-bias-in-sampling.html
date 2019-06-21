@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-06-13T18:45:20-06:00    *-->
+<!--*    on 2019-06-20T18:32:51-06:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -144,10 +144,35 @@ var js_version = 0.11;
 </ul>
 </li>
 <li class="link"><a href="part-inferential-stats.html" data-scroll="part-inferential-stats"><span class="codenumber">IV</span> <span class="title">Inference: From Samples to Population</span></a></li>
-<li class="link"><a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></li>
-<li class="link"><a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a></li>
-<li class="link"><a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a></li>
-<li class="link"><a href="ch-inferences-on-two-samples.html" data-scroll="ch-inferences-on-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a></li>
+<li class="link">
+<a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a><ul>
+<li><a href="sec-distribution-sample-mean.html" data-scroll="sec-distribution-sample-mean">Distribution of the Sample Mean</a></li>
+<li><a href="sec-distribution-sample-proportion.html" data-scroll="sec-distribution-sample-proportion">Distribution of the Sample Proportion</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a><ul>
+<li><a href="sec-estimating-population-proportion.html" data-scroll="sec-estimating-population-proportion">Estimating a Population Proportion</a></li>
+<li><a href="sec-estimating-population-mean.html" data-scroll="sec-estimating-population-mean">Estimating a Population Mean</a></li>
+<li><a href="sec-putting-it-together.html" data-scroll="sec-putting-it-together">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a><ul>
+<li><a href="sec-language-hypothesis-testing.html" data-scroll="sec-language-hypothesis-testing">The Language of Hypothesis Testing</a></li>
+<li><a href="sec-hypothesis-tests-population-proportion.html" data-scroll="sec-hypothesis-tests-population-proportion">Hypothesis Tests for a Population Proportion</a></li>
+<li><a href="sec-hypothesis-tests-population-mean.html" data-scroll="sec-hypothesis-tests-population-mean">Hypothesis Tests for a Population Mean</a></li>
+<li><a href="sec-putting-it-together-hypothesis-testing.html" data-scroll="sec-putting-it-together-hypothesis-testing">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-inferences-two-samples.html" data-scroll="ch-inferences-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a><ul>
+<li><a href="sec-inference-two-population-proportions.html" data-scroll="sec-inference-two-population-proportions">Inference about Two Population Proportions</a></li>
+<li><a href="sec-inference-two-population-means-dependent.html" data-scroll="sec-inference-two-population-means-dependent">Inference about Two Means: Dependent Samples</a></li>
+<li><a href="sec-inference-two-population-means-independent.html" data-scroll="sec-inference-two-population-means-independent">Inference about Two Means: Independent Samples</a></li>
+<li><a href="sec-putting-it-together-inference.html" data-scroll="sec-putting-it-together-inference">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-bias-in-sampling"><h2 class="heading hide-type">
@@ -163,7 +188,7 @@ var js_version = 0.11;
 <span class="type">Definition</span> <span class="codenumber">1.5.4</span>. <span class="title">non-response bias.</span>
 </h6>bias because individuals in the sample do not respond</article><article class="definition-like" id="definition-42"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.5.5</span>. <span class="title">response bias.</span>
-</h6>bias because responses do not reflect the true feelings or beliefs of the respondent. <p id="p-32"><dfn class="terminology">Response bias</dfn> can occur in a number of different ways:</p>
+</h6>bias because responses do not reflect the true feelings or beliefs of the respondent. <p id="p-87"><dfn class="terminology">Response bias</dfn> can occur in a number of different ways:</p>
 <ul class="disc">
 <li id="li-17">From the interviewer—the nature or wording of the interviewer can affect the truthfulness of responses.</li>
 <li id="li-18">Misrepresented answers—when the results of a survey misrepresent facts or are flat out lies.</li>
@@ -177,7 +202,7 @@ var js_version = 0.11;
 <span class="type">Definition</span> <span class="codenumber">1.5.8</span>. <span class="title">non-sampling errors.</span>
 </h6>errors that result from under-coverage, non-response bias, response bias or data-entry error.</article><article class="definition-like" id="definition-46"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">1.5.9</span>. <span class="title">sampling errors.</span>
-</h6>errors that result from using a sample to estimate information about a population.</article><p id="p-33">I will leave it for you to read section 1.5 for examples. This section is only three pages but is a must read section!</p>
+</h6>errors that result from using a sample to estimate information about a population.</article><p id="p-88">I will leave it for you to read section 1.5 for examples. This section is only three pages but is a must read section!</p>
 <figure class="figure-like" id="figure-4"><iframe id="video-4" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/Rf-fIpB4D50?&amp;modestbranding=1&amp;rel=0"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">1.5.10.</span> Crash Course Statistics: Sampling Methods and Bias in Surveys</figcaption></figure></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>

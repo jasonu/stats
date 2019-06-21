@@ -1,10 +1,29 @@
-<chapter xml:id="ch-"
+<chapter xml:id="ch-estimating-parameters"
 	 xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title></title>
+  <title>Estimating the Value of a Parameter</title>
 
-  <section xml:id="sec-">
-    <title></title>
+  <section xml:id="sec-estimating-population-proportion">
+    <title>Estimating a Population Proportion</title>
 
+    <p>
+      Placeholder text.
+    </p>
+  </section>
+
+  <section xml:id="sec-estimating-population-mean">
+    <title>Estimating a Population Mean</title>
+
+    <p>
+      Placeholder text.
+    </p>
+  </section>
+
+  <section xml:id="sec-putting-it-together">
+    <title>Putting It Together: Which Method Do I Use?</title>
+
+    <p>
+      Placeholder text.
+    </p>
   </section>
 
 </chapter>

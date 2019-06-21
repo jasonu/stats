@@ -1,9 +1,40 @@
-<chapter xml:id="ch-"
+<chapter xml:id="ch-hypothesis-tests"
 	 xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title></title>
+  <title>Hypothesis Tests Regarding a Parameter</title>
 
-  <section xml:id="sec-">
-    <title></title>
+  <section xml:id="sec-language-hypothesis-testing">
+    <title>The Language of Hypothesis Testing</title>
+
+    <p>
+      Placeholder text.
+    </p>
+
+  </section>
+
+  <section xml:id="sec-hypothesis-tests-population-proportion">
+    <title>Hypothesis Tests for a Population Proportion</title>
+
+    <p>
+      Placeholder text.
+    </p>
+
+  </section>
+
+  <section xml:id="sec-hypothesis-tests-population-mean">
+    <title>Hypothesis Tests for a Population Mean</title>
+
+    <p>
+      Placeholder text.
+    </p>
+
+  </section>
+
+  <section xml:id="sec-putting-it-together-hypothesis-testing">
+    <title>Putting It Together: Which Method Do I Use?</title>
+
+    <p>
+      Placeholder text.
+    </p>
 
   </section>
 

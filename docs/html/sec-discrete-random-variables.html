@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-06-13T18:45:21-06:00    *-->
+<!--*    on 2019-06-20T18:32:53-06:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -144,16 +144,263 @@ var js_version = 0.11;
 </ul>
 </li>
 <li class="link"><a href="part-inferential-stats.html" data-scroll="part-inferential-stats"><span class="codenumber">IV</span> <span class="title">Inference: From Samples to Population</span></a></li>
-<li class="link"><a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></li>
-<li class="link"><a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a></li>
-<li class="link"><a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a></li>
-<li class="link"><a href="ch-inferences-on-two-samples.html" data-scroll="ch-inferences-on-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a></li>
+<li class="link">
+<a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a><ul>
+<li><a href="sec-distribution-sample-mean.html" data-scroll="sec-distribution-sample-mean">Distribution of the Sample Mean</a></li>
+<li><a href="sec-distribution-sample-proportion.html" data-scroll="sec-distribution-sample-proportion">Distribution of the Sample Proportion</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a><ul>
+<li><a href="sec-estimating-population-proportion.html" data-scroll="sec-estimating-population-proportion">Estimating a Population Proportion</a></li>
+<li><a href="sec-estimating-population-mean.html" data-scroll="sec-estimating-population-mean">Estimating a Population Mean</a></li>
+<li><a href="sec-putting-it-together.html" data-scroll="sec-putting-it-together">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a><ul>
+<li><a href="sec-language-hypothesis-testing.html" data-scroll="sec-language-hypothesis-testing">The Language of Hypothesis Testing</a></li>
+<li><a href="sec-hypothesis-tests-population-proportion.html" data-scroll="sec-hypothesis-tests-population-proportion">Hypothesis Tests for a Population Proportion</a></li>
+<li><a href="sec-hypothesis-tests-population-mean.html" data-scroll="sec-hypothesis-tests-population-mean">Hypothesis Tests for a Population Mean</a></li>
+<li><a href="sec-putting-it-together-hypothesis-testing.html" data-scroll="sec-putting-it-together-hypothesis-testing">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-inferences-two-samples.html" data-scroll="ch-inferences-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a><ul>
+<li><a href="sec-inference-two-population-proportions.html" data-scroll="sec-inference-two-population-proportions">Inference about Two Population Proportions</a></li>
+<li><a href="sec-inference-two-population-means-dependent.html" data-scroll="sec-inference-two-population-means-dependent">Inference about Two Means: Dependent Samples</a></li>
+<li><a href="sec-inference-two-population-means-independent.html" data-scroll="sec-inference-two-population-means-independent">Inference about Two Means: Independent Samples</a></li>
+<li><a href="sec-putting-it-together-inference.html" data-scroll="sec-putting-it-together-inference">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-discrete-random-variables"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">Discrete Random Variables</span>
 </h2>
-<a href="sec-discrete-random-variables.html" class="permalink">¶</a></section></div></main>
+<a href="sec-discrete-random-variables.html" class="permalink">¶</a><article class="definition-like" id="definition-68"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">6.1.1</span>.</h6>
+<p id="p-279">A <dfn class="terminology">random variable</dfn> is a numerical measure of a probability experiment, so its value is determined by chance. Random variables are typically denoted by capital letters such as \(X\) or \(Y\text{.}\)</p></article><article class="definition-like" id="definition-69"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">6.1.2</span>.</h6>
+<p id="p-280">A <dfn class="terminology">discrete random variable</dfn> has either a finite or countable number of values.</p>
+<p id="p-281">A <dfn class="terminology">continuous random variables</dfn> has infinitely many values.</p></article><article class="definition-like" id="definition-70"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">6.1.3</span>. <span class="title">Probability Distributions.</span>
+</h6>
+<p id="p-282">The <dfn class="terminology">probability distribution</dfn> of a discrete random variable \(X\) provides the possible values of the random variable and their corresponding probabilities. A probability distribution can be in the form of a table, graph, or mathematical formula.</p>
+<ol class="decimal">
+<li id="li-92">\(\sum P(x) = 1\)</li>
+<li id="li-93">\(0 \le P(x) \le 1\)</li>
+</ol></article><article class="theorem-like" id="fact-7"><h6 class="heading">
+<span class="type">Fact</span> <span class="codenumber">6.1.4</span>. <span class="title">The Mean of a Discrete Random Variable.</span>
+</h6>
+<div class="displaymath" id="p-283">
+\begin{equation}
+\mu_X = \sum \left[ x\cdot P(x)\right]\tag{6.1.1}
+\end{equation}
+</div>
+<p>where \(x\) is the value of the random variable \(X\text{,}\) and \(P(x)\) is the probability of observing the value \(x\text{.}\)</p></article><article class="example-like" id="example-19"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">6.1.5</span>. <span class="title">Mean Number of People in Household.</span>
+</h6>
+<p id="p-284">The formula for computing the mean of a discrete random variable is equivalent to how we compute the average. For example, a small class of statistics students was asked how many people live in their households. The following data was obtained:</p>
+<div class="displaymath">
+\begin{equation*}
+2, 4, 6, 6, 4, 4, 2, 3, 5, 5
+\end{equation*}
+</div>
+<p>What is the mean or average number of people per household?</p>
+<div class="displaymath" id="p-285">
+\begin{align*}
+\mu \amp = \frac{\sum x_i}{N}
+= \frac{2+4+6+6+4+4+2+3+5+5}{10}\\
+\amp = \frac{
+\overbrace{2 + 2}^{2} +
+\overbrace{3}^{1} +
+\overbrace{4 + 4 + 4}^{3} +
+\overbrace{5 + 5}^{2} +
+\overbrace{6 + 6}^{2} +
+}{10}\\
+\amp = \frac{
+2\cdot 2 + 3\cdot 1 + 4\cdot 3 + 5\cdot 2 + 6\cdot 6
+}{10}\\
+\amp =
+2 \cdot \frac{2}{10} +
+3 \cdot \frac{1}{10} +
+4 \cdot \frac{3}{10} +
+5 \cdot \frac{2}{10} +
+6 \cdot \frac{2}{10}\\
+\amp =
+2 \cdot P(2) +
+3 \cdot P(3) +
+4 \cdot P(4) +
+5 \cdot P(5) +
+6 \cdot P(6)\\
+\amp = 4.1
+\end{align*}
+</div></article><article class="remark-like" id="remark-2"><h6 class="heading">
+<span class="type">Remark</span> <span class="codenumber">6.1.6</span>. <span class="title">Interpretation of the Mean.</span>
+</h6>
+<p id="p-286">Suppose an experiment is repeated \(n\) times, and the measurements of the random variable \(X\) are labeled: \(x_1, x_2, \ldots, x_n\) then as \(n\) goes to infinity, we expect the average of all measurements, \(\overline{x}\text{,}\) to get closer and closer to \(\mu_X\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\text{as } n \to \infty \qquad \mu_X - \overline{x} \to 0.
+\end{equation*}
+</div>
+<p>where</p>
+<div class="displaymath">
+\begin{equation*}
+\overline{x} = \frac{x_1 + x_2 + \cdots + x_n}{n}.
+\end{equation*}
+</div>
+<p id="p-287">In other words, the mean of a random variable represents what we would <em class="emphasis">expect</em> the average value of all the measurements to be in the long run, i.e. if we do the experiment many times.</p></article><article class="theorem-like" id="fact-8"><h6 class="heading">
+<span class="type">Fact</span> <span class="codenumber">6.1.7</span>. <span class="title">The Standard Deviation of a Discrete Random Variable.</span>
+</h6>
+<div class="displaymath" id="p-288">
+\begin{equation}
+\sigma_X =
+\sqrt{\sum \left[ (x-\mu_X)^2 \cdot P(x)\right]}\tag{6.1.2}
+\end{equation}
+</div>
+<p>where \(x\) is the value of the random variable \(X\text{,}\) \(\mu_X\) is the mean of the random variable, and \(P(x)\) is the probability of observing the value \(x\text{.}\)</p></article><section class="reading-questions" id="reading-questions-20"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Ideal Number of Children</span>
+</h3>
+<p id="p-289">A random sample of 900 adult Americans were asked, “What is the ideal number of children to have in a family?”</p>
+<figure class="figure-like" id="table-15"><table>
+<tr>
+<td class="l m b3 r0 l0 t0 lines">\(x\)</td>
+<td class="l m b3 r0 l0 t0 lines">frequency</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">0</td>
+<td class="r m b1 r0 l0 t0 lines">10</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">1</td>
+<td class="r m b1 r0 l0 t0 lines">30</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">2</td>
+<td class="r m b1 r0 l0 t0 lines">520</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">3</td>
+<td class="r m b1 r0 l0 t0 lines">250</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">4</td>
+<td class="r m b1 r0 l0 t0 lines">70</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">5</td>
+<td class="r m b1 r0 l0 t0 lines">17</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">6</td>
+<td class="r m b1 r0 l0 t0 lines">3</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span> <span class="codenumber">6.1.8.</span> Ideal number of children (frequency distribution)</figcaption></figure><article class="example-like" id="question-1"><h6 class="heading">
+<span class="type">Question</span> <span class="codenumber">6.1.9</span>.</h6>
+<p id="p-290">Construct a discrete probability distribution for the variable \(X\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-33" id="solution-33"><span class="type">Solution</span></a><div id="hk-solution-33" class="hidden-content tex2jax_ignore"><div class="solution"><figure class="figure-like" id="table-16"><table>
+<tr>
+<td class="l m b3 r0 l0 t0 lines">\(x\)</td>
+<td class="l m b3 r0 l0 t0 lines">\(P(x)\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">0</td>
+<td class="r m b1 r0 l0 t0 lines">\(0.0\overline{1}\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">1</td>
+<td class="r m b1 r0 l0 t0 lines">\(0.0\overline{3}\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">2</td>
+<td class="r m b1 r0 l0 t0 lines">\(0.5\overline{7}\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">3</td>
+<td class="r m b1 r0 l0 t0 lines">\(0.2\overline{7}\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">4</td>
+<td class="r m b1 r0 l0 t0 lines">\(0.0\overline{7}\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">5</td>
+<td class="r m b1 r0 l0 t0 lines">\(0.01\overline{8}\)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">6</td>
+<td class="r m b1 r0 l0 t0 lines">\(0.00\overline{3}\)</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span> <span class="codenumber">6.1.10.</span> Ideal number of children (probability distribution)</figcaption></figure></div></div>
+</div></article><article class="example-like" id="question-2"><h6 class="heading">
+<span class="type">Question</span> <span class="codenumber">6.1.11</span>.</h6>
+<p id="p-291">Compute the mean, \(\mu_X\text{,}\) and standard deviation, \(\sigma_X\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-34" id="solution-34"><span class="type">Solution</span></a><div id="hk-solution-34" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-292">Using the TI-84 Plus calculator we first put the data from the frequency distribution into lists 1 and 2 and then press: <code class="code-inline tex2jax_ignore">stat</code> -&gt; <code class="code-inline tex2jax_ignore">CALC</code> -&gt; <code class="code-inline tex2jax_ignore">1-Var Stats</code>. Next, choose list 1 for <code class="code-inline tex2jax_ignore">List</code> and list 2 for <code class="code-inline tex2jax_ignore">FreqList</code>. Finally, cursor to <code class="code-inline tex2jax_ignore">Calculate</code> and press <code class="code-inline tex2jax_ignore">enter</code>.</p>
+<p id="p-293">This yields: \(\mu_X = 2.4478\) and \(\sigma_X =0.8308\text{.}\)</p>
+</div></div>
+</div></article><article class="example-like" id="question-3"><h6 class="heading">
+<span class="type">Question</span> <span class="codenumber">6.1.12</span>.</h6>
+<p id="p-294">Draw the stick-graph of the discrete probability distribution.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-35" id="solution-35"><span class="type">Solution</span></a><div id="hk-solution-35" class="hidden-content tex2jax_ignore"><div class="solution"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/stick-graph.png" style="width: 100%; height: auto;" alt=""></div></div></div>
+</div></article><article class="example-like" id="question-4"><h6 class="heading">
+<span class="type">Question</span> <span class="codenumber">6.1.13</span>.</h6>
+<p id="p-295">What is the probability that a randomly selected adult thinks the ideal number of children is 2?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-75" id="answer-75"><span class="type">Answer</span></a><div id="hk-answer-75" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-296">57.8%</p></div></div>
+</div></article></section><section class="reading-questions" id="reading-questions-21"><h3 class="heading hide-type">
+<span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Expected Value of a Straight Bet in Roulette</span>
+</h3>
+<p id="p-297">In the game of Roulette, a player can place a $1 bet on the number 17. This is called a <em class="emphasis">straight bet</em>. Since the wheel has pockets numbered 1–36, 0, and 00, there is a 1/38 chance the ball will land on 17. If the ball lands on 17, the player will win $36 (36 times the value of the bet). Win or lose, the casino takes the player's $1 bet.</p>
+<p id="p-298"><figure class="figure-like" id="table-17"><table>
+<tr>
+<td class="c m b3 r0 l0 t3 lines">Event</td>
+<td class="r m b3 r0 l0 t3 lines">\(x\)</td>
+<td class="r m b3 r0 l0 t3 lines">\(P(x)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">17</td>
+<td class="r m b1 r0 l0 t0 lines">\(36-1\)</td>
+<td class="r m b1 r0 l0 t0 lines">\(1/38\)</td>
+</tr>
+<tr>
+<td class="c m b3 r0 l0 t0 lines">not 17</td>
+<td class="r m b3 r0 l0 t0 lines">\(-1\)</td>
+<td class="r m b3 r0 l0 t0 lines">\(37/38\)</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span> <span class="codenumber">6.1.14.</span> Probability distribution for $1 bet</figcaption></figure></p>
+<article class="exercise-like" id="exercise-87"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-299">What is the expected value of the game for the player?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-36" id="solution-36"><span class="type">Solution</span></a><div id="hk-solution-36" class="hidden-content tex2jax_ignore"><div class="solution">
+<div class="displaymath" id="p-300">
+\begin{equation*}
+E[X] = \mu_X = \sum x\cdot P(x) = (36-1)\cdot
+\frac{1}{38} + (-1)\frac{37}{38} = -0.05263
+\end{equation*}
+</div>
+<p id="p-301">Thus the player expects to <em class="emphasis">lose</em> more than $0.05 per spin.</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-88"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-302">If you played 1000 times, how much would you expect to win or lose?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-37" id="solution-37"><span class="type">Solution</span></a><div id="hk-solution-37" class="hidden-content tex2jax_ignore"><div class="solution">
+<div class="displaymath" id="p-303">
+\begin{equation*}
+1000\cdot E[X] = (1000)(-0.05263) = $52.63
+\end{equation*}
+</div>
+<p id="p-304">Thus the player expects to <em class="emphasis">lose</em> more than $0.05 per spin.</p>
+</div></div>
+</div></article></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>

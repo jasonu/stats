@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-06-13T18:45:20-06:00    *-->
+<!--*    on 2019-06-20T18:32:52-06:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -144,10 +144,35 @@ var js_version = 0.11;
 </ul>
 </li>
 <li class="link"><a href="part-inferential-stats.html" data-scroll="part-inferential-stats"><span class="codenumber">IV</span> <span class="title">Inference: From Samples to Population</span></a></li>
-<li class="link"><a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></li>
-<li class="link"><a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a></li>
-<li class="link"><a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a></li>
-<li class="link"><a href="ch-inferences-on-two-samples.html" data-scroll="ch-inferences-on-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a></li>
+<li class="link">
+<a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a><ul>
+<li><a href="sec-distribution-sample-mean.html" data-scroll="sec-distribution-sample-mean">Distribution of the Sample Mean</a></li>
+<li><a href="sec-distribution-sample-proportion.html" data-scroll="sec-distribution-sample-proportion">Distribution of the Sample Proportion</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a><ul>
+<li><a href="sec-estimating-population-proportion.html" data-scroll="sec-estimating-population-proportion">Estimating a Population Proportion</a></li>
+<li><a href="sec-estimating-population-mean.html" data-scroll="sec-estimating-population-mean">Estimating a Population Mean</a></li>
+<li><a href="sec-putting-it-together.html" data-scroll="sec-putting-it-together">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a><ul>
+<li><a href="sec-language-hypothesis-testing.html" data-scroll="sec-language-hypothesis-testing">The Language of Hypothesis Testing</a></li>
+<li><a href="sec-hypothesis-tests-population-proportion.html" data-scroll="sec-hypothesis-tests-population-proportion">Hypothesis Tests for a Population Proportion</a></li>
+<li><a href="sec-hypothesis-tests-population-mean.html" data-scroll="sec-hypothesis-tests-population-mean">Hypothesis Tests for a Population Mean</a></li>
+<li><a href="sec-putting-it-together-hypothesis-testing.html" data-scroll="sec-putting-it-together-hypothesis-testing">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-inferences-two-samples.html" data-scroll="ch-inferences-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a><ul>
+<li><a href="sec-inference-two-population-proportions.html" data-scroll="sec-inference-two-population-proportions">Inference about Two Population Proportions</a></li>
+<li><a href="sec-inference-two-population-means-dependent.html" data-scroll="sec-inference-two-population-means-dependent">Inference about Two Means: Dependent Samples</a></li>
+<li><a href="sec-inference-two-population-means-independent.html" data-scroll="sec-inference-two-population-means-independent">Inference about Two Means: Independent Samples</a></li>
+<li><a href="sec-putting-it-together-inference.html" data-scroll="sec-putting-it-together-inference">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-organizing-quantitative-data"><h2 class="heading hide-type">
@@ -155,13 +180,13 @@ var js_version = 0.11;
 </h2>
 <a href="sec-organizing-quantitative-data.html" class="permalink">¶</a><article class="definition-like" id="definition-50"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">2.2.1</span>.</h6>
-<p id="p-46">A <dfn class="terminology">bar graph</dfn> is for qualitative data while a <dfn class="terminology">histogram</dfn> is used for quantitative data. In a histogram, data is grouped into <dfn class="terminology">classes</dfn> or <dfn class="terminology">bins</dfn>.</p>
-<p id="p-47">Notes on histograms:</p>
+<p id="p-101">A <dfn class="terminology">bar graph</dfn> is for qualitative data while a <dfn class="terminology">histogram</dfn> is used for quantitative data. In a histogram, data is grouped into <dfn class="terminology">classes</dfn> or <dfn class="terminology">bins</dfn>.</p>
+<p id="p-102">Notes on histograms:</p>
 <ol class="decimal">
 <li id="li-21">Bars have equal widths</li>
 <li id="li-22">Bars are touching</li>
 </ol>
-<p id="p-48">Terminology related to histograms:</p>
+<p id="p-103">Terminology related to histograms:</p>
 <ul class="disc">
 <li id="li-23">
 <dfn class="terminology">lower class limit</dfn>: smallest value in a class</li>
@@ -174,13 +199,13 @@ var js_version = 0.11;
 </ul></article><section class="subsection" id="sub-distribution-shapes"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">The Shape of a Distribution</span>
 </h3>
-<a href="sec-organizing-quantitative-data.html#sub-distribution-shapes" class="permalink">¶</a><p id="p-49">One reason for going through the trouble of displaying data in a histogram is to determine the basic shape of your data. The four most common shapes are:</p>
-<figure class="figure-like" id="figure-6"><div style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/four-distribution-shapes.png" style="width: 100%; height: auto;" alt=""></div>
+<a href="sec-organizing-quantitative-data.html#sub-distribution-shapes" class="permalink">¶</a><p id="p-104">One reason for going through the trouble of displaying data in a histogram is to determine the basic shape of your data. The four most common shapes are:</p>
+<figure class="figure-like" id="figure-9"><div style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/four-distribution-shapes.png" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span> <span class="codenumber">2.2.2.</span> Four most common distribution shapes.</figcaption></figure></section><section class="subsection" id="sub-histogram-from-data"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Create Histograms and Frequency Distributions from Data Using the TI-84 Plus</span>
 </h3>
-<a href="sec-organizing-quantitative-data.html#sub-histogram-from-data" class="permalink">¶</a><p id="p-50">The TI-84 Plus calculator can generate histograms and frequency distributions from raw data. Normally, one would first sort their data, separate it into classes to create a frequency distribution and then plot the frequency distribution with vertical bars to generate a histogram. However, when we use the calculator, we will first generate the histogram and then read off the frequencies from the height of each bar to create the frequency distribution.</p>
-<p id="p-51">The data below was generated by asking each student from a statistics class to give their height in inches.</p>
+<a href="sec-organizing-quantitative-data.html#sub-histogram-from-data" class="permalink">¶</a><p id="p-105">The TI-84 Plus calculator can generate histograms and frequency distributions from raw data. Normally, one would first sort their data, separate it into classes to create a frequency distribution and then plot the frequency distribution with vertical bars to generate a histogram. However, when we use the calculator, we will first generate the histogram and then read off the frequencies from the height of each bar to create the frequency distribution.</p>
+<p id="p-106">The data below was generated by asking each student from a statistics class to give their height in inches.</p>
 <figure class="figure-like" id="tab-student-heights"><table>
 <tr>
 <td class="l m b1 r0 l0 t3 lines">62</td>
@@ -215,33 +240,33 @@ var js_version = 0.11;
 <td class="l m b3 r0 l0 t0 lines">71</td>
 </tr>
 </table>
-<figcaption><span class="type">Table</span> <span class="codenumber">2.2.3.</span> Student heights (inches)</figcaption></figure><p id="p-52">To create a histogram of the height data above do the following:</p>
-<ol class="decimal">
+<figcaption><span class="type">Table</span> <span class="codenumber">2.2.3.</span> Student heights (inches)</figcaption></figure><p id="p-107">To create a histogram of the height data above do the following:</p>
+<ol id="p-108" class="decimal">
 <li id="li-27">Enter the data in the above table into list 1. This can be done by pressing <code class="code-inline tex2jax_ignore">stat</code>, <code class="code-inline tex2jax_ignore">1</code> and then using the cursor to select list 1.</li>
 <li id="li-28">
-<p id="p-53">Press <code class="code-inline tex2jax_ignore">2nd</code>, <code class="code-inline tex2jax_ignore">y=</code> to enter the STAT PLOTS menu. (Make sure Plot2 and Plot3 are OFF by pressing <code class="code-inline tex2jax_ignore">4</code> (PlotsOff) if necessary.) Choose Plot1 by pressing <code class="code-inline tex2jax_ignore">1</code>.</p>
+<p id="p-109">Press <code class="code-inline tex2jax_ignore">2nd</code>, <code class="code-inline tex2jax_ignore">y=</code> to enter the STAT PLOTS menu. (Make sure Plot2 and Plot3 are OFF by pressing <code class="code-inline tex2jax_ignore">4</code> (PlotsOff) if necessary.) Choose Plot1 by pressing <code class="code-inline tex2jax_ignore">1</code>.</p>
 <div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/stat-plots-menu.png" style="width: 100%; height: auto;" alt=""></div>
 </li>
 <li id="li-29">
-<p id="p-54">Make your screen match the image below:</p>
+<p id="p-110">Make your screen match the image below:</p>
 <div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/stat-plot-histogram-from-list.png" style="width: 100%; height: auto;" alt=""></div>
 </li>
 <li id="li-30">
-<p id="p-55">Press <code class="code-inline tex2jax_ignore">zoom</code>, <code class="code-inline tex2jax_ignore">9</code>. This will cause the calculator to bin the data according to its internal algorithm and display the histogram.</p>
+<p id="p-111">Press <code class="code-inline tex2jax_ignore">zoom</code>, <code class="code-inline tex2jax_ignore">9</code>. This will cause the calculator to bin the data according to its internal algorithm and display the histogram.</p>
 <div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/heights-histogram-1.png" style="width: 100%; height: auto;" alt=""></div>
-<p id="p-56">You can press <code class="code-inline tex2jax_ignore">trace</code> and move the cursor to check the class/bin limits the calculator chose.</p>
+<p id="p-112">You can press <code class="code-inline tex2jax_ignore">trace</code> and move the cursor to check the class/bin limits the calculator chose.</p>
 </li>
 <li id="li-31">
-<p id="p-57">Press <code class="code-inline tex2jax_ignore">window</code> and modify Xmin, Xmax, Xscl, Ymin and Ymax to match the screen below. Setting Xscl to 2 changes the class/bin width to 2 (inches).</p>
+<p id="p-113">Press <code class="code-inline tex2jax_ignore">window</code> and modify Xmin, Xmax, Xscl, Ymin and Ymax to match the screen below. Setting Xscl to 2 changes the class/bin width to 2 (inches).</p>
 <div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/heights-histogram-window.png" style="width: 100%; height: auto;" alt=""></div>
 </li>
 <li id="li-32">
-<p id="p-58">Press <code class="code-inline tex2jax_ignore">graph</code> to display the new histogram.</p>
+<p id="p-114">Press <code class="code-inline tex2jax_ignore">graph</code> to display the new histogram.</p>
 <div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/heights-histogram-2.png" style="width: 100%; height: auto;" alt=""></div>
-<p id="p-59">You can use the <code class="code-inline tex2jax_ignore">trace</code> and cursor keys to check the lower and upper class limits for each class as well as the count or frequency. The screenshot above indicates that the class of heights between 62 and 64 inches contains 7 individuals.</p>
+<p id="p-115">You can use the <code class="code-inline tex2jax_ignore">trace</code> and cursor keys to check the lower and upper class limits for each class as well as the count or frequency. The screenshot above indicates that the class of heights between 62 and 64 inches contains 7 individuals.</p>
 </li>
 <li id="li-33">
-<p id="p-60">If you use the <code class="code-inline tex2jax_ignore">trace</code> feature to determine the frequency for each bar (class) you can generate a <dfn class="terminology">frequency distribution</dfn>. On the TI-84 Plus calculator, instead of using the <dfn class="terminology">classes</dfn> we instead enter the <dfn class="terminology">class midpoints</dfn> in list 2 and the <dfn class="terminology">frequencies</dfn> in list 3.</p>
+<p id="p-116">If you use the <code class="code-inline tex2jax_ignore">trace</code> feature to determine the frequency for each bar (class) you can generate a <dfn class="terminology">frequency distribution</dfn>. On the TI-84 Plus calculator, instead of using the <dfn class="terminology">classes</dfn> we instead enter the <dfn class="terminology">class midpoints</dfn> in list 2 and the <dfn class="terminology">frequencies</dfn> in list 3.</p>
 <div class="sidebyside">
 <div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel fixed-width" style="width:50%;justify-content:flex-start;"><table>
@@ -302,11 +327,11 @@ var js_version = 0.11;
 </div>
 </li>
 <li id="li-34">
-<p id="p-61">Next, we can have the TI-84 Plus calculator generate <dfn class="terminology">relative frequencies</dfn> for us. Let's store the relative frequencies in list 4. Go to <code class="code-inline tex2jax_ignore">stat</code>, <code class="code-inline tex2jax_ignore">1</code> and edit list 4. Cursor to the list 4 header, i.e. cursor up until the header is highlighted (shaded black) and press the following: <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><p id="p-62"><code class="code-inline tex2jax_ignore">2nd</code><code class="code-inline tex2jax_ignore">3</code><code class="code-inline tex2jax_ignore">÷</code><code class="code-inline tex2jax_ignore">2nd</code><code class="code-inline tex2jax_ignore">stat</code>,</p></div></div></div> choose CALC and then press the following keys: <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><p id="p-63"><code class="code-inline tex2jax_ignore">5</code><code class="code-inline tex2jax_ignore">2nd</code><code class="code-inline tex2jax_ignore">3</code><code class="code-inline tex2jax_ignore">)</code><code class="code-inline tex2jax_ignore">enter</code></p></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<p id="p-117">Next, we can have the TI-84 Plus calculator generate <dfn class="terminology">relative frequencies</dfn> for us. Let's store the relative frequencies in list 4. Go to <code class="code-inline tex2jax_ignore">stat</code>, <code class="code-inline tex2jax_ignore">1</code> and edit list 4. Cursor to the list 4 header, i.e. cursor up until the header is highlighted (shaded black) and press the following: <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><p id="p-118"><code class="code-inline tex2jax_ignore">2nd</code><code class="code-inline tex2jax_ignore">3</code><code class="code-inline tex2jax_ignore">÷</code><code class="code-inline tex2jax_ignore">2nd</code><code class="code-inline tex2jax_ignore">stat</code>,</p></div></div></div> choose CALC and then press the following keys: <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><p id="p-119"><code class="code-inline tex2jax_ignore">5</code><code class="code-inline tex2jax_ignore">2nd</code><code class="code-inline tex2jax_ignore">3</code><code class="code-inline tex2jax_ignore">)</code><code class="code-inline tex2jax_ignore">enter</code></p></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="images/generate-rel-freq.png" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="images/generated-rel-freq.png" style="width: 100%; height: auto;" alt=""></div>
 </div></div> The resulting frequency and relative frequency distributions are reproduced here.</p>
-<figure class="figure-like" id="table-5"><table>
+<figure class="figure-like" id="table-9"><table>
 <tr>
 <td class="c m b3 r0 l0 t3 lines">Height</td>
 <td class="r m b3 r0 l0 t3 lines">Freq.</td>
@@ -373,23 +398,23 @@ var js_version = 0.11;
 </ol></section><section class="subsection" id="sub-histogram-from-freq-dist"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Creating Histograms from Frequency Distributions Using the TI-84 Plus</span>
 </h3>
-<a href="sec-organizing-quantitative-data.html#sub-histogram-from-freq-dist" class="permalink">¶</a><p id="p-64">Perhaps you don't have access to raw data, but you do have a frequency distribution of the data, then you can still create a histogram of the data.</p>
-<p id="p-65">In this section, we will continue using the height data in table <a data-knowl="./knowl/tab-student-heights.html" title="Table 2.2.3">Table 2.2.3</a>. Further, we will assume you have the same list data generated in that example in lists 2,3 and 4 of your calculator.</p>
-<p id="p-66">To create a histogram from a frequency distribution:</p>
+<a href="sec-organizing-quantitative-data.html#sub-histogram-from-freq-dist" class="permalink">¶</a><p id="p-120">Perhaps you don't have access to raw data, but you do have a frequency distribution of the data, then you can still create a histogram of the data.</p>
+<p id="p-121">In this section, we will continue using the height data in table <a data-knowl="./knowl/tab-student-heights.html" title="Table 2.2.3">Table 2.2.3</a>. Further, we will assume you have the same list data generated in that example in lists 2,3 and 4 of your calculator.</p>
+<p id="p-122">To create a histogram from a frequency distribution:</p>
 <ol class="decimal">
 <li id="li-35">
-<p id="p-67">Go to STAT PLOTS by pressing <code class="code-inline tex2jax_ignore">2nd</code> <code class="code-inline tex2jax_ignore">y=</code> and choosing Plot1. Assuming you have the class midpoints in list 2 and the frequencies in list 3, we can generate a histogram by filling out the Plot1 menu to look like below:</p>
+<p id="p-123">Go to STAT PLOTS by pressing <code class="code-inline tex2jax_ignore">2nd</code> <code class="code-inline tex2jax_ignore">y=</code> and choosing Plot1. Assuming you have the class midpoints in list 2 and the frequencies in list 3, we can generate a histogram by filling out the Plot1 menu to look like below:</p>
 <div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/stat-plot-histogram-from-freq-dist.png" style="width: 100%; height: auto;" alt=""></div>
 </li>
 <li id="li-36">
-<p id="p-68">If you have not changed any settings in <code class="code-inline tex2jax_ignore">window</code>, then you can just press <code class="code-inline tex2jax_ignore">graph</code> to generate the histogram. If you have changed window settings use ZoomStat by pressing <code class="code-inline tex2jax_ignore">zoom</code> <code class="code-inline tex2jax_ignore">9</code>.</p>
+<p id="p-124">If you have not changed any settings in <code class="code-inline tex2jax_ignore">window</code>, then you can just press <code class="code-inline tex2jax_ignore">graph</code> to generate the histogram. If you have changed window settings use ZoomStat by pressing <code class="code-inline tex2jax_ignore">zoom</code> <code class="code-inline tex2jax_ignore">9</code>.</p>
 <div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/histogram-from-freq-dist.png" style="width: 100%; height: auto;" alt=""></div>
 </li>
-</ol></section><section class="reading-questions" id="reading-questions-15"><h3 class="heading hide-type">
+</ol></section><section class="reading-questions" id="reading-questions-13"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Cigarette Tax Rates</span>
 </h3>
-<p id="p-69">The table shows the tax in dollars, on a pack of cigarettes in each of the 50 states and Washington D.C. as of January 2014.</p>
-<figure class="figure-like" id="table-6"><table>
+<p id="p-125">The table shows the tax in dollars, on a pack of cigarettes in each of the 50 states and Washington D.C. as of January 2014.</p>
+<figure class="figure-like" id="table-10"><table>
 <tr>
 <td class="l m b1 r0 l0 t3 lines">0.425</td>
 <td class="l m b1 r0 l0 t3 lines">1.339</td>
@@ -463,16 +488,16 @@ var js_version = 0.11;
 <td class="l m b3 r0 l0 t0 lines"></td>
 </tr>
 </table>
-<figcaption><span class="type">Table</span> <span class="codenumber">2.2.6.</span> Cigarette tax rates in dollars ($)</figcaption></figure><p id="p-70">Note: Normally when doing the following steps by hand, the first two steps are done in reverse, i.e. you first create a <dfn class="terminology">frequency distribution</dfn>, and then use that data to create a <dfn class="terminology">histogram</dfn>. However, since we will use the TI graphing calculator for the first two steps, we will have the calculator do the counting for us and then just read the <dfn class="terminology">frequency distribution</dfn> data from the histogram.</p>
+<figcaption><span class="type">Table</span> <span class="codenumber">2.2.6.</span> Cigarette tax rates in dollars ($)</figcaption></figure><p id="p-126">Note: Normally when doing the following steps by hand, the first two steps are done in reverse, i.e. you first create a <dfn class="terminology">frequency distribution</dfn>, and then use that data to create a <dfn class="terminology">histogram</dfn>. However, since we will use the TI graphing calculator for the first two steps, we will have the calculator do the counting for us and then just read the <dfn class="terminology">frequency distribution</dfn> data from the histogram.</p>
 <article class="exercise-like" id="exercise-64"><h6 class="heading"><span class="codenumber">1.</span></h6>
-<p id="p-71">Use your TI-84 Plus calculator to construct a histogram with lower limit $0.00, upper limit $5.00 and class width of $0.50.</p>
+<p id="p-127">Use your TI-84 Plus calculator to construct a histogram with lower limit $0.00, upper limit $5.00 and class width of $0.50.</p>
 <a data-knowl="" class="id-ref" data-refid="hk-answer-60" id="answer-60"><span class="type">Answer</span></a><div id="hk-answer-60" class="hidden-content tex2jax_ignore"><div class="solution"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/cigarette-tax-rates-histogram.png" style="width: 100%; height: auto;" alt=""></div></div></div></article><article class="exercise-like" id="exercise-65"><h6 class="heading"><span class="codenumber">2.</span></h6>
-<p id="p-72">What is the shape of your distribution?</p>
+<p id="p-128">What is the shape of your distribution?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-answer-61" id="answer-61"><span class="type">Answer</span></a><div id="hk-answer-61" class="hidden-content tex2jax_ignore"><div class="solution">skewed right</div></div>
 </div></article><article class="exercise-like" id="exercise-66"><h6 class="heading"><span class="codenumber">3.</span></h6>
-<p id="p-73">Construct a frequency distribution and relative frequency distribution.</p>
-<a data-knowl="" class="id-ref" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span></a><div id="hk-hint-1" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-74">Use your histogram to get the frequencies, put them in a list, and use your calculator to compute the relative frequencies.</p></div></div>
+<p id="p-129">Construct a frequency distribution and relative frequency distribution.</p>
+<a data-knowl="" class="id-ref" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span></a><div id="hk-hint-1" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-130">Use your histogram to get the frequencies, put them in a list, and use your calculator to compute the relative frequencies.</p></div></div>
 <a data-knowl="" class="id-ref" data-refid="hk-answer-62" id="answer-62"><span class="type">Answer</span></a><div id="hk-answer-62" class="hidden-content tex2jax_ignore"><div class="solution"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="images/cigarette-tax-rates-freq-dist.png" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel fixed-width" style="width:50%;justify-content:flex-start;"><table>
@@ -533,7 +558,7 @@ var js_version = 0.11;
 </tr>
 </table></div>
 </div></div></div></div></article><article class="exercise-like" id="exercise-67"><h6 class="heading"><span class="codenumber">4.</span></h6>
-<p id="p-75">Construct a relative frequency histogram with <code class="code-inline tex2jax_ignore">window</code> settings:</p>
+<p id="p-131">Construct a relative frequency histogram with <code class="code-inline tex2jax_ignore">window</code> settings:</p>
 <ul class="disc">
 <li id="li-37">Xmin = 0</li>
 <li id="li-38">Xmax = 5</li>
@@ -545,19 +570,19 @@ var js_version = 0.11;
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-answer-63" id="answer-63"><span class="type">Answer</span></a><div id="hk-answer-63" class="hidden-content tex2jax_ignore"><div class="solution"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/cigarette-tax-rel-freq-histogram.png" style="width: 100%; height: auto;" alt=""></div></div></div>
 </div></article><article class="exercise-like" id="exercise-68"><h6 class="heading"><span class="codenumber">5.</span></h6>
-<p id="p-76">What percentage of states have a tax of $3 or more on a pack of cigarettes?</p>
+<p id="p-132">What percentage of states have a tax of $3 or more on a pack of cigarettes?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-answer-64" id="answer-64"><span class="type">Answer</span></a><div id="hk-answer-64" class="hidden-content tex2jax_ignore"><div class="solution">
-<p id="p-77">We can use the calculator to answer this:</p>
+<p id="p-133">We can use the calculator to answer this:</p>
 <div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/cigarette-tax-rate-percentage.png" style="width: 100%; height: auto;" alt=""></div>
-<p id="p-78">Thus about 11.8% of states have a tax of $3 or more per pack of cigarettes.</p>
+<p id="p-134">Thus about 11.8% of states have a tax of $3 or more per pack of cigarettes.</p>
 </div></div>
-</div></article></section><figure class="figure-like" id="figure-7"><iframe id="video-6" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/HMkllhBI91Y?&amp;modestbranding=1&amp;rel=0&amp;start=0&amp;end=218"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">2.2.7.</span> Crash Course Statistics: Visualization Part II</figcaption></figure><article class="definition-like" id="definition-51"><h6 class="heading">
+</div></article></section><figure class="figure-like" id="figure-10"><iframe id="video-6" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/HMkllhBI91Y?&amp;modestbranding=1&amp;rel=0&amp;start=0&amp;end=218"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">2.2.7.</span> Crash Course Statistics: Visualization Part II</figcaption></figure><article class="definition-like" id="definition-51"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">2.2.8</span>.</h6>
-<p id="p-79">A <dfn class="terminology">stem and leaf plot</dfn> is another way to display quantitative data where the rightmost or last digit of a datum is called a <dfn class="terminology">leaf</dfn> and the other digits form the <dfn class="terminology">stem</dfn>.</p></article><section class="reading-questions" id="reading-questions-16"><h3 class="heading hide-type">
+<p id="p-135">A <dfn class="terminology">stem and leaf plot</dfn> is another way to display quantitative data where the rightmost or last digit of a datum is called a <dfn class="terminology">leaf</dfn> and the other digits form the <dfn class="terminology">stem</dfn>.</p></article><section class="reading-questions" id="reading-questions-14"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Grams of Fat in McDonald's' Breakfast Menu Items</span>
 </h3>
-<p id="p-80"></p></section></section></div></main>
+<p id="p-136"></p></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>

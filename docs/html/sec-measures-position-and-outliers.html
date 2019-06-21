@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-06-13T18:45:20-06:00    *-->
+<!--*    on 2019-06-20T18:32:52-06:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -144,10 +144,35 @@ var js_version = 0.11;
 </ul>
 </li>
 <li class="link"><a href="part-inferential-stats.html" data-scroll="part-inferential-stats"><span class="codenumber">IV</span> <span class="title">Inference: From Samples to Population</span></a></li>
-<li class="link"><a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></li>
-<li class="link"><a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a></li>
-<li class="link"><a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a></li>
-<li class="link"><a href="ch-inferences-on-two-samples.html" data-scroll="ch-inferences-on-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a></li>
+<li class="link">
+<a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a><ul>
+<li><a href="sec-distribution-sample-mean.html" data-scroll="sec-distribution-sample-mean">Distribution of the Sample Mean</a></li>
+<li><a href="sec-distribution-sample-proportion.html" data-scroll="sec-distribution-sample-proportion">Distribution of the Sample Proportion</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a><ul>
+<li><a href="sec-estimating-population-proportion.html" data-scroll="sec-estimating-population-proportion">Estimating a Population Proportion</a></li>
+<li><a href="sec-estimating-population-mean.html" data-scroll="sec-estimating-population-mean">Estimating a Population Mean</a></li>
+<li><a href="sec-putting-it-together.html" data-scroll="sec-putting-it-together">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a><ul>
+<li><a href="sec-language-hypothesis-testing.html" data-scroll="sec-language-hypothesis-testing">The Language of Hypothesis Testing</a></li>
+<li><a href="sec-hypothesis-tests-population-proportion.html" data-scroll="sec-hypothesis-tests-population-proportion">Hypothesis Tests for a Population Proportion</a></li>
+<li><a href="sec-hypothesis-tests-population-mean.html" data-scroll="sec-hypothesis-tests-population-mean">Hypothesis Tests for a Population Mean</a></li>
+<li><a href="sec-putting-it-together-hypothesis-testing.html" data-scroll="sec-putting-it-together-hypothesis-testing">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-inferences-two-samples.html" data-scroll="ch-inferences-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a><ul>
+<li><a href="sec-inference-two-population-proportions.html" data-scroll="sec-inference-two-population-proportions">Inference about Two Population Proportions</a></li>
+<li><a href="sec-inference-two-population-means-dependent.html" data-scroll="sec-inference-two-population-means-dependent">Inference about Two Means: Dependent Samples</a></li>
+<li><a href="sec-inference-two-population-means-independent.html" data-scroll="sec-inference-two-population-means-independent">Inference about Two Means: Independent Samples</a></li>
+<li><a href="sec-putting-it-together-inference.html" data-scroll="sec-putting-it-together-inference">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-measures-position-and-outliers"><h2 class="heading hide-type">
@@ -156,26 +181,28 @@ var js_version = 0.11;
 <a href="sec-measures-position-and-outliers.html" class="permalink">¶</a><article class="definition-like" id="definition-56"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">3.4.1</span>. <span class="title">Z-score.</span>
 </h6>
-<p id="p-101">A <dfn class="terminology">z-score</dfn> of a data point is the number of standard deviations the point is from the mean.</p>
+<p id="p-159">A <dfn class="terminology">z-score</dfn> of a data point is the number of standard deviations the point is from the mean.</p>
 <dl class="description-list">
 <dt id="li-60">population z-score</dt>
-<dd><p id="p-102">\(z = \dfrac{x-\mu}{\sigma}\)</p></dd>
+<dd><p id="p-160">\(z = \dfrac{x-\mu}{\sigma}\)</p></dd>
 <dt id="li-61">sample z-score</dt>
-<dd><p id="p-103">\(z = \dfrac{x-\bar{x}}{s}\)</p></dd>
-</dl> Characteristics of z-scores: <ol class="decimal">
+<dd><p id="p-161">\(z = \dfrac{x-\bar{x}}{s}\)</p></dd>
+</dl>
+<p id="p-162">Characteristics of z-scores:</p>
+<ol class="decimal">
 <li id="li-62">unitless</li>
 <li id="li-63">mean of z-scores = 0</li>
 <li id="li-64">std. deviation of z-scores=1</li>
 <li id="li-65">If a datum is larger than the mean its z-score is positive.</li>
 <li id="li-66">If a datum is smaller than the mean its z-score is negative.</li>
 <li id="li-67">Z-scores can be used to compare measurements on different scales.</li>
-</ol></article><figure class="figure-like" id="figure-10"><iframe id="video-9" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/uAxyI_XfqXk?&amp;modestbranding=1&amp;rel=0"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">3.4.2.</span> Crash Course Statistics: Z-Scores and Percentiles</figcaption></figure><article class="example-like" id="example-3"><h6 class="heading">
+</ol></article><figure class="figure-like" id="figure-14"><iframe id="video-9" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/uAxyI_XfqXk?&amp;modestbranding=1&amp;rel=0"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">3.4.2.</span> Crash Course Statistics: Z-Scores and Percentiles</figcaption></figure><article class="example-like" id="example-3"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">3.4.3</span>. <span class="title">Comparing Final Exam Scores.</span>
 </h6>
-<p id="p-104">Final exam scores for a Biology course have a mean of 79 and a standard deviation of 5. Final exam scores for a Statistics course have a mean of 82 and a standard deviation of 7. You scored 86 on the Biology exam and 91 on the Statistics exam. How many standard deviations above the mean were you in each course? Relative to the rest of the students, on which exam did you do better?</p>
+<p id="p-163">Final exam scores for a Biology course have a mean of 79 and a standard deviation of 5. Final exam scores for a Statistics course have a mean of 82 and a standard deviation of 7. You scored 86 on the Biology exam and 91 on the Statistics exam. How many standard deviations above the mean were you in each course? Relative to the rest of the students, on which exam did you do better?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-solution-10" id="solution-10"><span class="type">Solution</span></a><div id="hk-solution-10" class="hidden-content tex2jax_ignore"><div class="solution">
-<table>
+<figure class="figure-like" id="table-12"><table>
 <tr>
 <td class="r m b3 r0 l0 t3 lines">statistic</td>
 <td class="c m b3 r0 l0 t3 lines">symbol</td>
@@ -213,17 +240,17 @@ var js_version = 0.11;
 <td class="c m b3 r0 l0 t0 lines">\(\approx\) 1.3</td>
 </tr>
 </table>
-<p id="p-105">Thus since, 1.4 &gt; 1.3, you did slightly better on the Biology exam than you did on your Statistics exam, relative to your fellow students. This is despite the fact that in absolute terms, your score in Statistics was higher.</p>
-<p id="p-106">This example demonstrates that it is meaningless to compare absolute measures which come from different distributions, in this case, the test scores. However, by scaling each test score relative to the mean and the standard deviation of each distribution i.e. creating z-scores, we can meaningfully compare data from different distributions.</p>
+<figcaption><span class="type">Table</span> <span class="codenumber">3.4.4.</span> Test Scores</figcaption></figure><p id="p-164">Thus since, 1.4 &gt; 1.3, you did slightly better on the Biology exam than you did on your Statistics exam, relative to your fellow students. This is despite the fact that in absolute terms, your score in Statistics was higher.</p>
+<p id="p-165">This example demonstrates that it is meaningless to compare absolute measures which come from different distributions, in this case, the test scores. However, by scaling each test score relative to the mean and the standard deviation of each distribution i.e. creating z-scores, we can meaningfully compare data from different distributions.</p>
 </div></div>
 </div></article><article class="example-like" id="example-4"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.4.4</span>. <span class="title">Triathlon Times.</span>
+<span class="type">Example</span> <span class="codenumber">3.4.5</span>. <span class="title">Triathlon Times.</span>
 </h6>
-<p id="p-107">Roberto finishes a triathlon (750 m swim, 5 km run, and 20 km bicycle) in 63.2 minutes. Among all men in the race, the mean finishing time was 69.4 minutes with a standard deviation of 8.0 minutes. Zandra finishes the same triathlon in 79.3 minutes. Among all women in the race, the mean finishing time was 84.7 minutes with a standard deviation of 7.4 minutes. Who did better relative to their gender?</p>
+<p id="p-166">Roberto finishes a triathlon (750 m swim, 5 km run, and 20 km bicycle) in 63.2 minutes. Among all men in the race, the mean finishing time was 69.4 minutes with a standard deviation of 8.0 minutes. Zandra finishes the same triathlon in 79.3 minutes. Among all women in the race, the mean finishing time was 84.7 minutes with a standard deviation of 7.4 minutes. Who did better relative to their gender?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-solution-11" id="solution-11"><span class="type">Solution</span></a><div id="hk-solution-11" class="hidden-content tex2jax_ignore"><div class="solution">
-<p id="p-108">We compute a z-score for each athlete:</p>
-<table>
+<p id="p-167">We compute a z-score for each athlete:</p>
+<figure class="figure-like" id="table-13"><table>
 <tr>
 <td class="r m b1 r0 l0 t3 lines">statistic</td>
 <td class="c m b1 r0 l0 t3 lines">Roberto</td>
@@ -240,7 +267,7 @@ var js_version = 0.11;
 <td class="c m b3 r0 l0 t0 lines">\(\approx\) -0.730</td>
 </tr>
 </table>
-<p id="p-109">In the case of a race, it is better to have a time below the mean time of all the racers, thus the more negative the z-score the better. Since Roberto has the lower z-score, Roberto did better relative to his competitors than Zandra did relative to hers.</p>
+<figcaption><span class="type">Table</span> <span class="codenumber">3.4.6.</span> Triathlon Z-scores</figcaption></figure><p id="p-168">In the case of a race, it is better to have a time below the mean time of all the racers, thus the more negative the z-score the better. Since Roberto has the lower z-score, Roberto did better relative to his competitors than Zandra did relative to hers.</p>
 </div></div>
 </div></article></section></div></main>
 </div>

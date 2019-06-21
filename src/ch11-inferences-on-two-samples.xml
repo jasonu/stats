@@ -1,9 +1,40 @@
-<chapter xml:id="ch-"
+<chapter xml:id="ch-inferences-two-samples"
 	 xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title></title>
+  <title>Inferences on Two Samples</title>
 
-  <section xml:id="sec-">
-    <title></title>
+  <section xml:id="sec-inference-two-population-proportions">
+    <title>Inference about Two Population Proportions</title>
+
+    <p>
+      Placeholder text.
+    </p>
+
+  </section>
+
+  <section xml:id="sec-inference-two-population-means-dependent">
+    <title>Inference about Two Means: Dependent Samples</title>
+
+    <p>
+      Placeholder text.
+    </p>
+
+  </section>
+
+  <section xml:id="sec-inference-two-population-means-independent">
+    <title>Inference about Two Means: Independent Samples</title>
+
+    <p>
+      Placeholder text.
+    </p>
+
+  </section>
+
+  <section xml:id="sec-putting-it-together-inference">
+    <title>Putting It Together: Which Method Do I Use?</title>
+
+    <p>
+      Placeholder text.
+    </p>
 
   </section>
 

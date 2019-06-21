@@ -6,79 +6,123 @@
 
     <definition>
       <title>statistics</title>
-      <statement>how to collect, organize, summarize and analyze
-      information so that conclusions can be drawn with a measure
-      of confidence.
+      <statement>
+	<p>
+	how to collect, organize, summarize and analyze information so
+	that conclusions can be drawn with a measure of confidence.
+	</p>
       </statement>
     </definition>
 
     <definition>
       <title>descriptive stats</title>
-      <statement>entails organizing and summarizing collected
-      data.</statement>
+      <statement>
+	<p>
+	  entails organizing and summarizing collected
+	  data.
+	</p>
+	</statement>
     </definition>
 
     <definition>
       <title>inferential stats</title>
-      <statement>methods for taking sample results and extending
-      it to the population with some measure of
-      reliability.</statement>
+      <statement>
+	<p>
+	  methods for taking sample results and extending it to the
+	  population with some measure of reliability.
+	</p>
+      </statement>
     </definition>
 
-    <definition><title>population</title><statement>entire group
-    of interest in a study</statement>
+    <definition>
+      <title>population</title>
+      <statement>
+	<p>
+	  entire group of interest in a study
+	</p>
+      </statement>
     </definition>
 
     <definition>
       <title>individual</title>
-      <statement>a single person or object being
-      studied</statement>
+      <statement>
+	<p>
+	  a single person or object being studied
+	</p>
+	</statement>
     </definition>
 
     <definition>
       <title>sample</title>
-      <statement>subset of the population being
-      studied</statement>
+      <statement>
+	<p>
+	  subset of the population being studied
+	</p>
+      </statement>
     </definition>
 
     <definition>
       <title>statistic</title>
-      <statement>numerical summary of a sample</statement>
+      <statement>
+	<p>
+	  numerical summary of a sample
+	</p>
+      </statement>
     </definition>
 
     <definition>
       <title>parameter</title>
-      <statement>numerical summary of a population</statement>
+      <statement>
+	<p>
+	  numerical summary of a population
+	</p>
+      </statement>
     </definition>
 
     <definition>
       <title>variables</title>
-      <statement>characteristics of individuals in the
-      population</statement>
+      <statement>
+	<p>
+	  characteristics of individuals in the population
+	</p>
+      </statement>
     </definition>
 
     <definition>
       <title>qualitative variable</title>
-      <statement>responses based on attributes or
-      characteristics</statement>
+      <statement>
+	<p>
+	  responses based on attributes or characteristics
+	</p>
+      </statement>
     </definition>
 
     <definition>
       <title>quantitative variable</title>
-      <statement>responses are numerical measures, with a natural ordering
-      <ie /> it makes sense to compare via &lt; or &gt;
+      <statement>
+	<p>
+	  responses are numerical measures, with a natural ordering
+	  <ie /> it makes sense to compare via &lt; or &gt;
+	</p>
       </statement>
     </definition>
 
     <definition>
       <title>discrete variable</title>
-      <statement>finite or countable number of possible values
-      <eg /> number of children</statement>
+      <statement>
+	<p>
+	  finite or countable number of possible values <eg /> number
+	  of children
+	</p>
+      </statement>
     </definition>
 
     <definition>
       <title>continuous variable</title>
-      <statement>infinite number of possible values <eg /> height
+      <statement>
+	<p>
+	  infinite number of possible values <eg /> height
+	</p>
       </statement>
     </definition>
 
@@ -87,133 +131,201 @@
       <video youtube="sxQaBpKfDRk" />
     </figure>
 
-    <reading-questions>
+    <exercises>
       <title>Statistic or Parameter?</title>
-      <p>For each
-      description which follows, determine whether the numerical
-      quantity is a <em>statistic</em> or <em>parameter</em>.
-      </p>
+      <introduction>
+	<p>
+	  For each description which follows, determine whether the
+	  numerical quantity is a <em>statistic</em> or
+	  <em>parameter</em>.
+	</p>
+      </introduction>
 
       <exercise>
-	In a study of all 2223 passengers aboard the Titanic,
-	it is found that 706 survived when it sank.
-	<answer>parameter</answer>
+	<statement>
+	  <p>
+	    In a study of all 2223 passengers aboard the Titanic, it
+	    is found that 706 survived when it sank.
+	  </p>
+	</statement>
+	<answer><p>parameter</p></answer>
       </exercise>
 
       <exercise>
-	A recent survey of a sample of MBA's reported that the
-	average salary for an MBA is more than $82,000. (Source:
-	The Wall Street Journal)
-	<answer>statistic</answer>
+	<statement>
+	  <p>
+	    A recent survey of a sample of MBA's reported that the
+	    average salary for an MBA is more than $82,000. (Source:
+	    The Wall Street Journal)
+	  </p>
+	</statement>
+	<answer><p>statistic</p></answer>
       </exercise>
 
       <exercise>
-	Starting salaries for all of the 667 MBA graduates
-	from the University of Chicago Graduate School of Business
-	increased 8.5% from the previous year.
-	<answer>parameter</answer>
+	<statement>
+	  <p>
+	    Starting salaries for all of the 667 MBA graduates from
+	    the University of Chicago Graduate School of Business
+	    increased 8.5% from the previous year.
+	  </p>
+	</statement>
+	<answer><p>parameter</p></answer>
       </exercise>
 
       <exercise>
-	In a recent poll of Salt Lake Community College
-	students, 83% of students owned a vehicle.
-	<answer>statistic</answer>
+	<statement>
+	  <p>
+	    In a recent poll of Salt Lake Community College students,
+	    83% of students owned a vehicle.
+	  </p>
+	</statement>
+	<answer><p>statistic</p></answer>
       </exercise>
 
       <exercise>
-	In a recent survey of 457 attendees of Jumanji, 402
-	would recommend the movie to a friend.
-	<answer>parameter, unless you consider the population to
-	be all people who have seen Jumanji</answer>
+	<statement>
+	  <p>
+	    In a recent survey of 457 attendees of Jumanji, 402 would
+	    recommend the movie to a friend.
+	  </p>
+	</statement>
+	<answer>
+	  <p>
+	    parameter, unless you consider the population to be all
+	    people who have seen Jumanji
+	  </p>
+	</answer>
       </exercise>
-    </reading-questions>
+    </exercises>
 
-    <reading-questions>
+    <exercises>
       <title>Discrete or Continuous Variable?</title>
 
       <exercise>
-	In a survey of 1059 adults, it is found that 39% of them
-	have guns in their homes
-	<answer>discrete</answer>
+	<statement>
+	  <p>
+	    In a survey of 1059 adults, it is found that 39% of them
+	    have guns in their homes
+	  </p>
+	</statement>
+	<answer><p>discrete</p></answer>
       </exercise>
 
       <exercise>
-	The number of heads obtained after flipping a coin five
-	times <answer>discrete</answer>
+	<statement>
+	  <p>
+	    The number of heads obtained after flipping a coin five
+	    times
+	  </p>
+	</statement>
+	<answer><p>discrete</p></answer>
       </exercise>
 
       <exercise>
-	The distance Tiger Woods can drive a golf ball
-	<answer>continuous</answer>
+	<statement>
+	  <p>The distance Tiger Woods can drive a golf ball</p>
+	</statement>
+	<answer><p>continuous</p></answer>
       </exercise>
 
       <exercise>
-	Points scored in a basketball game
-	<answer>discrete</answer>
+	<statement>
+	  <p>oints scored in a basketball game</p>
+	</statement>
+	<answer><p>discrete</p></answer>
       </exercise>
 
       <exercise>
-	Volume of water lost each day from a leaky faucet
-	<answer>continuous</answer>
+	<statement>
+	  <p>Volume of water lost each day from a leaky faucet</p>
+	</statement>
+	<answer><p>continuous</p></answer>
       </exercise>
 
       <exercise>
-	Length of a song <answer>continuous, but could be discrete
-	if measured in seconds</answer>
+	<statement>
+	  <p>Length of a song</p>
+	</statement>
+	<answer>
+	  <p>
+	    continuous, but could be discrete if measured in seconds
+	  </p>
+	</answer>
       </exercise>
 
       <exercise>
-	Number of words in a song
-	<answer>discrete</answer>
+	<statement>
+	  <p>Number of words in a song</p>
+	</statement>
+	<answer><p>discrete</p></answer>
       </exercise>
-    </reading-questions>
+    </exercises>
 
     <reading-questions>
       <title>Qualitative or Quantitative Variable?</title>
 
       <exercise>
-	Gender
-	<answer>qualitative</answer>
+	<statement>
+	  <p>Gender</p>
+	</statement>
+	<answer><p>qualitative</p></answer>
       </exercise>
 
       <exercise>
-	Temperature
-	<answer>quantitative</answer>
+	<statement>
+	  <p>Temperature</p>
+	</statement>
+	<answer><p>quantitative</p></answer>
       </exercise>
 
       <exercise>
-	Nation of origin
-	<answer>qualitative</answer>
+	<statement>
+	  <p>Nation of origin</p>
+	</statement>
+	<answer><p>qualitative</p></answer>
       </exercise>
 
       <exercise>
-	Number of siblings
-	<answer>quantitative</answer>
+	<statement>
+	  <p>Number of siblings</p>
+	</statement>
+	<answer><p>quantitative</p></answer>
       </exercise>
 
       <exercise>
-	Number of days
-	<answer>quantitative</answer>
+	<statement>
+	  <p>Number of days</p>
+	</statement>
+	<answer><p>quantitative</p></answer>
       </exercise>
 
       <exercise>
-	Grams of carbohydrates in a donut
-	<answer>quantitative</answer>
+	<statement>
+	  <p>Grams of carbohydrates in a donut</p>
+	</statement>
+	<answer><p>quantitative</p></answer>
       </exercise>
 
       <exercise>
-	Phone number
-	<answer>qualitative</answer>
+	<statement>
+	  <p>Phone number</p>
+	</statement>
+	<answer><p>qualitative</p></answer>
       </exercise>
 
       <exercise>
-	Value of a house
-	<answer>quantitative</answer>
+	<statement>
+	  <p>Value of a house</p>
+	</statement>
+	<answer><p>quantitative</p></answer>
       </exercise>
 
       <exercise>
-	Zip code
-	<answer>qualitative</answer>
+	<statement>
+	  <p>Zip code</p>
+	</statement>
+	<answer><p>qualitative</p></answer>
       </exercise>
     </reading-questions>
 

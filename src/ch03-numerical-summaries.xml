@@ -13,39 +13,43 @@
 	  computed by adding up all the values and dividing by the
 	  number of observations.
 	</p>
-	<dl width="wide">
-	  <li>
-	    <title>population mean</title>
-	      <m>\mu = \dfrac{\sum x_i}{N}</m>
-	      (pronounced <q>mew</q>)
-	  </li>
+	<p>
+	  <dl width="wide">
+	    <li>
+	      <title>population mean</title>
+	      <p>
+		<m>\mu = \dfrac{\sum x_i}{N}</m>
+		(pronounced <q>mew</q>)
+	      </p>
+	    </li>
 
-	  <li>
-	    <title>sample mean</title>
-	    <p>
-	      <m>\bar{x} = \dfrac{\sum x_i}{n}</m>
-	      (pronounced <q>x bar</q>)
-	    </p>
-	  </li>
-	</dl>
+	    <li>
+	      <title>sample mean</title>
+	      <p>
+		<m>\bar{x} = \dfrac{\sum x_i}{n}</m>
+		(pronounced <q>x bar</q>)
+	      </p>
+	    </li>
+	  </dl>
+	</p>
 
 	<p>
 	  Note that it is a convention in Statistics to use Greek
 	  letters to represent population statistics while we use
 	  Roman letters to denote sample statistics.
+	  <ul>
+	    <li>
+	      <alert>Advantage:</alert> the mean is used as a starting
+	      point for computing several other useful statistics <eg/>
+	      std. deviation.
+	    </li>
+	    <li>
+	      <alert>Disadvantage:</alert> If the data is skewed or
+	      contains outliers, then the mean is not the best way to
+	      measure the center of your data.
+	    </li>
+	  </ul>
 	</p>
-	<ul>
-	  <li>
-	    <alert>Advantage:</alert> the mean is used as a starting
-	    point for computing several other useful statistics <eg/>
-	    std. deviation.
-	  </li>
-	  <li>
-	    <alert>Disadvantage:</alert> If the data is skewed or
-	    contains outliers, then the mean is not the best way to
-	    measure the center of your data.
-	  </li>
-	</ul>
       </statement>
     </definition>
 
@@ -218,9 +222,12 @@
 	    <c>graph</c> to plot the histogram with the above
 	    settings.
 	  </p>
-	  <image
-	      source="images/hours-worked-freq-histogram.png"
-	      width="50%" />
+	  <figure>
+	    <caption>Frequency histogram</caption>
+	    <image
+		source="images/hours-worked-freq-histogram.png"
+		width="50%" />
+	  </figure>
 	</answer>
       </exercise>
       <exercise>
@@ -284,38 +291,40 @@
 	<p>
 	  A <term>z-score</term> of a data point is the number of
 	  standard deviations the point is from the mean.
+	  <dl>
+	    <li>
+	      <title>population z-score</title>
+	      <p>
+		<m>z = \dfrac{x-\mu}{\sigma}</m>
+	      </p>
+	    </li>
+	    <li>
+	      <title>sample z-score</title>
+	      <p>
+		<m>z = \dfrac{x-\bar{x}}{s}</m>
+	      </p>
+	    </li>
+	  </dl>
 	</p>
-	<dl>
-	  <li>
-	    <title>population z-score</title>
-	    <p>
-	      <m>z = \dfrac{x-\mu}{\sigma}</m>
-	    </p>
-	  </li>
-	  <li>
-	    <title>sample z-score</title>
-	    <p>
-	      <m>z = \dfrac{x-\bar{x}}{s}</m>
-	    </p>
-	  </li>
-	</dl>
-	Characteristics of z-scores:
-	<ol>
-	  <li>unitless</li>
+	<p>
+	  Characteristics of z-scores:
+	  <ol>
+	    <li>unitless</li>
 
-	  <li>mean of z-scores = 0</li>
+	    <li>mean of z-scores = 0</li>
 
-	  <li>std. deviation of z-scores=1</li>
+	    <li>std. deviation of z-scores=1</li>
 
-	  <li>If a datum is larger than the mean its z-score is
-	  positive.</li>
+	    <li>If a datum is larger than the mean its z-score is
+	    positive.</li>
 
-	  <li>If a datum is smaller than the mean its z-score is
-	  negative.</li>
+	    <li>If a datum is smaller than the mean its z-score is
+	    negative.</li>
 
-	  <li>Z-scores can be used to compare measurements on
-	  different scales.</li>
-	</ol>
+	    <li>Z-scores can be used to compare measurements on
+	    different scales.</li>
+	  </ol>
+	</p>
       </statement>
     </definition>
 
@@ -339,48 +348,51 @@
 	</p>
       </statement>
       <solution>
-	<tabular top="major">
-	  <row bottom="major">
-	    <cell halign="right">statistic</cell>
-	    <cell halign="center">symbol</cell>
-	    <cell halign="center">Biology</cell>
-	    <cell halign="center">Statistics</cell>
-	  </row>
-	  <row bottom="minor">
-	    <cell halign="right">test score</cell>
-	    <cell halign="center"><m>x</m></cell>
-	    <cell halign="center">86</cell>
-	    <cell halign="center">91</cell>
-	  </row>
-	  <row bottom="minor">
-	    <cell halign="right">mean</cell>
-	    <cell halign="center"><m>\mu</m></cell>
-	    <cell halign="center">79</cell>
-	    <cell halign="center">82</cell>
-	  </row>
-	  <row bottom="minor">
-	    <cell halign="right">std. dev.</cell>
-	    <cell halign="center"><m>\sigma</m></cell>
-	    <cell halign="center">5</cell>
-	    <cell halign="center">7</cell>
-	  </row>
-	  <row bottom="major">
-	    <cell halign="right">z-score</cell>
-	    <cell halign="center"><m>z</m></cell>
-	    <cell halign="center">
-	      <m>\dfrac{86-79}{5}</m>
-	    </cell>
-	    <cell halign="center">
-	      <m>\dfrac{91-82}{7}</m>
-	    </cell>
-	  </row>
-	  <row bottom="major">
-	    <cell></cell>
-	    <cell halign="center"><m>z</m></cell>
-	    <cell halign="center">1.4</cell>
-	    <cell halign="center"><m>\approx</m> 1.3</cell>
-	  </row>
-	</tabular>
+	<table>
+	  <caption>Test Scores</caption>
+	  <tabular top="major">
+	    <row bottom="major">
+	      <cell halign="right">statistic</cell>
+	      <cell halign="center">symbol</cell>
+	      <cell halign="center">Biology</cell>
+	      <cell halign="center">Statistics</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell halign="right">test score</cell>
+	      <cell halign="center"><m>x</m></cell>
+	      <cell halign="center">86</cell>
+	      <cell halign="center">91</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell halign="right">mean</cell>
+	      <cell halign="center"><m>\mu</m></cell>
+	      <cell halign="center">79</cell>
+	      <cell halign="center">82</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell halign="right">std. dev.</cell>
+	      <cell halign="center"><m>\sigma</m></cell>
+	      <cell halign="center">5</cell>
+	      <cell halign="center">7</cell>
+	    </row>
+	    <row bottom="major">
+	      <cell halign="right">z-score</cell>
+	      <cell halign="center"><m>z</m></cell>
+	      <cell halign="center">
+		<m>\dfrac{86-79}{5}</m>
+	      </cell>
+	      <cell halign="center">
+		<m>\dfrac{91-82}{7}</m>
+	      </cell>
+	    </row>
+	    <row bottom="major">
+	      <cell></cell>
+	      <cell halign="center"><m>z</m></cell>
+	      <cell halign="center">1.4</cell>
+	      <cell halign="center"><m>\approx</m> 1.3</cell>
+	    </row>
+	  </tabular>
+	</table>
 	<p>
 	  Thus since, 1.4 &gt; 1.3, you did slightly better on the
 	  Biology exam than you did on your Statistics exam, relative
@@ -415,23 +427,26 @@
 	<p>
 	  We compute a z-score for each athlete:
 	</p>
-	<tabular top="major">
-	  <row bottom="minor">
-	    <cell halign="right">statistic</cell>
-	    <cell halign="center">Roberto</cell>
-	    <cell halign="center">Zandra</cell>
-	  </row>
-	  <row bottom="minor">
-	    <cell halign="right">z-score</cell>
-	    <cell halign="center"><m>\dfrac{63.2-69.4}{8.0}</m></cell>
-	    <cell halign="center"><m>\dfrac{79.3-84.7}{7.4}</m></cell>
-	  </row>
-	  <row bottom="major">
-	    <cell halign="right">z-score</cell>
-	    <cell halign="center">-0.775</cell>
-	    <cell halign="center"><m>\approx</m> -0.730</cell>
-	  </row>
-	</tabular>
+	<table>
+	  <caption>Triathlon Z-scores</caption>
+	  <tabular top="major">
+	    <row bottom="minor">
+	      <cell halign="right">statistic</cell>
+	      <cell halign="center">Roberto</cell>
+	      <cell halign="center">Zandra</cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell halign="right">z-score</cell>
+	      <cell halign="center"><m>\dfrac{63.2-69.4}{8.0}</m></cell>
+	      <cell halign="center"><m>\dfrac{79.3-84.7}{7.4}</m></cell>
+	    </row>
+	    <row bottom="major">
+	      <cell halign="right">z-score</cell>
+	      <cell halign="center">-0.775</cell>
+	      <cell halign="center"><m>\approx</m> -0.730</cell>
+	    </row>
+	  </tabular>
+	</table>
 	<p>
 	  In the case of a race, it is better to have a time below the
 	  mean time of all the racers, thus the more negative the

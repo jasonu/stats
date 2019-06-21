@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-06-13T18:45:20-06:00    *-->
+<!--*    on 2019-06-20T18:32:52-06:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -144,10 +144,35 @@ var js_version = 0.11;
 </ul>
 </li>
 <li class="link"><a href="part-inferential-stats.html" data-scroll="part-inferential-stats"><span class="codenumber">IV</span> <span class="title">Inference: From Samples to Population</span></a></li>
-<li class="link"><a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></li>
-<li class="link"><a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a></li>
-<li class="link"><a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a></li>
-<li class="link"><a href="ch-inferences-on-two-samples.html" data-scroll="ch-inferences-on-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a></li>
+<li class="link">
+<a href="ch-sampling-distributions.html" data-scroll="ch-sampling-distributions"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a><ul>
+<li><a href="sec-distribution-sample-mean.html" data-scroll="sec-distribution-sample-mean">Distribution of the Sample Mean</a></li>
+<li><a href="sec-distribution-sample-proportion.html" data-scroll="sec-distribution-sample-proportion">Distribution of the Sample Proportion</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-estimating-parameters.html" data-scroll="ch-estimating-parameters"><span class="codenumber">9</span> <span class="title">Estimating the Value of a Parameter</span></a><ul>
+<li><a href="sec-estimating-population-proportion.html" data-scroll="sec-estimating-population-proportion">Estimating a Population Proportion</a></li>
+<li><a href="sec-estimating-population-mean.html" data-scroll="sec-estimating-population-mean">Estimating a Population Mean</a></li>
+<li><a href="sec-putting-it-together.html" data-scroll="sec-putting-it-together">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-hypothesis-tests.html" data-scroll="ch-hypothesis-tests"><span class="codenumber">10</span> <span class="title">Hypothesis Tests Regarding a Parameter</span></a><ul>
+<li><a href="sec-language-hypothesis-testing.html" data-scroll="sec-language-hypothesis-testing">The Language of Hypothesis Testing</a></li>
+<li><a href="sec-hypothesis-tests-population-proportion.html" data-scroll="sec-hypothesis-tests-population-proportion">Hypothesis Tests for a Population Proportion</a></li>
+<li><a href="sec-hypothesis-tests-population-mean.html" data-scroll="sec-hypothesis-tests-population-mean">Hypothesis Tests for a Population Mean</a></li>
+<li><a href="sec-putting-it-together-hypothesis-testing.html" data-scroll="sec-putting-it-together-hypothesis-testing">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-inferences-two-samples.html" data-scroll="ch-inferences-two-samples"><span class="codenumber">11</span> <span class="title">Inferences on Two Samples</span></a><ul>
+<li><a href="sec-inference-two-population-proportions.html" data-scroll="sec-inference-two-population-proportions">Inference about Two Population Proportions</a></li>
+<li><a href="sec-inference-two-population-means-dependent.html" data-scroll="sec-inference-two-population-means-dependent">Inference about Two Means: Dependent Samples</a></li>
+<li><a href="sec-inference-two-population-means-independent.html" data-scroll="sec-inference-two-population-means-independent">Inference about Two Means: Independent Samples</a></li>
+<li><a href="sec-putting-it-together-inference.html" data-scroll="sec-putting-it-together-inference">Putting It Together: Which Method Do I Use?</a></li>
+</ul>
+</li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-measures-central-tendency"><h2 class="heading hide-type">
@@ -156,14 +181,14 @@ var js_version = 0.11;
 <a href="sec-measures-central-tendency.html" class="permalink">¶</a><article class="definition-like" id="definition-52"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">3.1.1</span>. <span class="title">Mean (Arithmetic Average).</span>
 </h6>
-<p id="p-82">The <dfn class="terminology">mean</dfn> or <dfn class="terminology">arithmetic average</dfn> is computed by adding up all the values and dividing by the number of observations.</p>
-<dl class="description-list">
+<p id="p-138">The <dfn class="terminology">mean</dfn> or <dfn class="terminology">arithmetic average</dfn> is computed by adding up all the values and dividing by the number of observations.</p>
+<dl id="p-139" class="description-list">
 <dt id="li-43">population mean</dt>
-<dd> \(\mu = \dfrac{\sum x_i}{N}\) (pronounced “mew”)</dd>
+<dd><p id="p-140">\(\mu = \dfrac{\sum x_i}{N}\) (pronounced “mew”)</p></dd>
 <dt id="li-44">sample mean</dt>
-<dd><p id="p-83">\(\bar{x} = \dfrac{\sum x_i}{n}\) (pronounced “x bar”)</p></dd>
+<dd><p id="p-141">\(\bar{x} = \dfrac{\sum x_i}{n}\) (pronounced “x bar”)</p></dd>
 </dl>
-<p id="p-84">Note that it is a convention in Statistics to use Greek letters to represent population statistics while we use Roman letters to denote sample statistics.</p>
+<p id="p-142">Note that it is a convention in Statistics to use Greek letters to represent population statistics while we use Roman letters to denote sample statistics.</p>
 <ul class="disc">
 <li id="li-45">
 <em class="alert">Advantage:</em> the mean is used as a starting point for computing several other useful statistics e.g. std. deviation.</li>
@@ -172,14 +197,14 @@ var js_version = 0.11;
 </ul></article><article class="definition-like" id="definition-53"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">3.1.2</span>. <span class="title">Median.</span>
 </h6>
-<p id="p-85">The <dfn class="terminology">median</dfn> or <dfn class="terminology">middle value</dfn> is the value that lies in the middle of the data when the data is arranged in ascending order. Notation: \(M\text{.}\)</p>
-<p id="p-86">Algorithm:</p>
+<p id="p-143">The <dfn class="terminology">median</dfn> or <dfn class="terminology">middle value</dfn> is the value that lies in the middle of the data when the data is arranged in ascending order. Notation: \(M\text{.}\)</p>
+<p id="p-144">Algorithm:</p>
 <ol class="decimal">
 <li id="li-47">Sort the data, from least to greatest.</li>
 <li id="li-48">Find the single middle element, or middle two elements if the list has an even number of elements.</li>
 <li id="li-49">If there is one value in the middle (\(n\) odd), then that value is the median. If there are two values in the middle (\(n\) even) then the median is the average of the two middle values.</li>
 </ol>
-<ul id="p-87" class="disc">
+<ul id="p-145" class="disc">
 <li id="li-50">
 <em class="alert">Advantage:</em> Resistant to outliers and or skewed data.</li>
 <li id="li-51">
@@ -187,16 +212,16 @@ var js_version = 0.11;
 </ul></article><article class="example-like" id="example-1"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">3.1.3</span>. <span class="title">Computing the Median By Hand I.</span>
 </h6>
-<p id="p-88">Find the median of the list: 3, 4, 2, 6, 3.</p>
+<p id="p-146">Find the median of the list: 3, 4, 2, 6, 3.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span></a><div id="hk-solution-8" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-89">The ordered list is: 2, 3, 3, 4, 6, and the middle value is 3, thus \(M=3\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span></a><div id="hk-solution-8" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-147">The ordered list is: 2, 3, 3, 4, 6, and the middle value is 3, thus \(M=3\text{.}\)</p></div></div>
 </div></article><article class="example-like" id="example-2"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">3.1.4</span>. <span class="title">Computing the Median By Hand II.</span>
 </h6>
-<p id="p-90">Find the median of the list: 3, 4, 2, 6, 3, 7</p>
+<p id="p-148">Find the median of the list: 3, 4, 2, 6, 3, 7</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-solution-9" id="solution-9"><span class="type">Solution</span></a><div id="hk-solution-9" class="hidden-content tex2jax_ignore"><div class="solution">
-<p id="p-91">The ordered list is: 2, 3, 3, 4, 6, 7, but it has an even number of elements, so we compute the average or mean of the middle two elements, thus the median is:</p>
+<p id="p-149">The ordered list is: 2, 3, 3, 4, 6, 7, but it has an even number of elements, so we compute the average or mean of the middle two elements, thus the median is:</p>
 <div class="displaymath">
 \begin{gather*}
 M = \frac{3+4}{2} = 3.5
@@ -206,14 +231,14 @@ M = \frac{3+4}{2} = 3.5
 </div></article><article class="definition-like" id="definition-54"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">3.1.5</span>. <span class="title">Resistant.</span>
 </h6>
-<p id="p-92">A statistic is said to be <dfn class="terminology">resistant</dfn> if extreme values do not affect the value of the statistic.</p></article><article class="definition-like" id="definition-55"><h6 class="heading">
+<p id="p-150">A statistic is said to be <dfn class="terminology">resistant</dfn> if extreme values do not affect the value of the statistic.</p></article><article class="definition-like" id="definition-55"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">3.1.6</span>. <span class="title">Mode.</span>
 </h6>
-<p id="p-93">The <dfn class="terminology">mode</dfn> is the most frequently occurring observation in a data set. A single data set may have multiple modes.</p></article><figure class="figure-like" id="figure-8"><iframe id="video-7" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/kn83BA7cRNM?&amp;modestbranding=1&amp;rel=0"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">3.1.7.</span> Crash Course Statistics: Mean, Median and Mode: Measures of Central Tendency</figcaption></figure><section class="reading-questions" id="reading-questions-17"><h3 class="heading hide-type">
+<p id="p-151">The <dfn class="terminology">mode</dfn> is the most frequently occurring observation in a data set. A single data set may have multiple modes.</p></article><figure class="figure-like" id="figure-11"><iframe id="video-7" width="600" height="337" allowfullscreen="" src="https://www.youtube.com/embed/kn83BA7cRNM?&amp;modestbranding=1&amp;rel=0"></iframe><figcaption><span class="type">Figure</span> <span class="codenumber">3.1.7.</span> Crash Course Statistics: Mean, Median and Mode: Measures of Central Tendency</figcaption></figure><section class="reading-questions" id="reading-questions-15"><h3 class="heading hide-type">
 <span class="type">Reading Questions</span> <span class="codenumber"></span> <span class="title">Working Hours</span>
 </h3>
-<p id="p-94">A random sample of 25 college students was asked, “How many hours per week do you typically work outside your home?” Their responses are recorded in the table below.</p>
-<figure class="figure-like" id="table-7"><table>
+<p id="p-152">A random sample of 25 college students was asked, “How many hours per week do you typically work outside your home?” Their responses are recorded in the table below.</p>
+<figure class="figure-like" id="table-11"><table>
 <tr>
 <td class="r m b1 r0 l0 t3 lines">0</td>
 <td class="r m b1 r0 l0 t3 lines">32</td>
@@ -251,10 +276,10 @@ M = \frac{3+4}{2} = 3.5
 </tr>
 </table>
 <figcaption><span class="type">Table</span> <span class="codenumber">3.1.8.</span> Working hours of 25 college students</figcaption></figure><article class="exercise-like" id="exercise-69"><h6 class="heading"><span class="codenumber">1.</span></h6>
-<p id="p-95">Determine the distribution of the hours worked by creating a frequency histogram on your TI-84 Plus calculator. Use 0 as your lower class limit and 5 as your class width.</p>
+<p id="p-153">Determine the distribution of the hours worked by creating a frequency histogram on your TI-84 Plus calculator. Use 0 as your lower class limit and 5 as your class width.</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-answer-65" id="answer-65"><span class="type">Answer</span></a><div id="hk-answer-65" class="hidden-content tex2jax_ignore"><div class="solution">
-<p id="p-96">First enter the data into any list, press <code class="code-inline tex2jax_ignore">window</code> and enter the following values:</p>
+<p id="p-154">First enter the data into any list, press <code class="code-inline tex2jax_ignore">window</code> and enter the following values:</p>
 <ul class="disc">
 <li id="li-52">Xmin=0</li>
 <li id="li-53">Xmax=45</li>
@@ -264,17 +289,18 @@ M = \frac{3+4}{2} = 3.5
 <li id="li-57">Yscl=2</li>
 </ul>
 <p>Finally after choosing the correct list in STAT PLOT press <code class="code-inline tex2jax_ignore">graph</code> to plot the histogram with the above settings.</p>
-<div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/hours-worked-freq-histogram.png" style="width: 100%; height: auto;" alt=""></div>
+<figure class="figure-like" id="figure-12"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/hours-worked-freq-histogram.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">3.1.9.</span> Frequency histogram</figcaption></figure>
 </div></div>
 </div></article><article class="exercise-like" id="exercise-70"><h6 class="heading"><span class="codenumber">2.</span></h6>
-<p id="p-97">Use your graphing calculator to find the mean and median. Which measure better describes the hours worked?</p>
+<p id="p-155">Use your graphing calculator to find the mean and median. Which measure better describes the hours worked?</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref" data-refid="hk-answer-66" id="answer-66"><span class="type">Answer</span></a><div id="hk-answer-66" class="hidden-content tex2jax_ignore"><div class="solution">
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="images/hours-worked-mean.png" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="images/hours-worked-median.png" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<ul id="p-98" class="disc">
+<ul id="p-156" class="disc">
 <li id="li-58">\(\bar{x} = 26.64\)</li>
 <li id="li-59">\(M = 30\)</li>
 </ul>
