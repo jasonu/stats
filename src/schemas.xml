@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
+  <uri resource="ch06-discrete-probability-distributions.xml" uri="../../../mathbook/schema/pretext.rnc"/>
   <uri resource="stats.xml" uri="pretext.rnc"/>
   <uri resource="ch05-probability.xml" uri="pretext.rnc"/>
 </locatingRules>

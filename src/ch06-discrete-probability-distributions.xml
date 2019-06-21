@@ -355,10 +355,77 @@
       </exercise>
     </reading-questions>
 
+
+    <reading-questions>
+      <title>Expected Value of a Term Life Insurance Policy</title>
+      <p>
+	An insurance company sells a $250,000, 1-year term life
+	insurance policy to a 20 year old female for $200. Accoring to
+	the National Vital Statistics Report the probability that a
+	female survives the year is 0.999544. Compute and interpret
+	the expected vale of this policy to the insurance company.
+      </p>
+      <p>
+	<table>
+	  <caption>Probability distribution for life insurance
+	  policy</caption>
+	  <tabular top="major">
+	    <row bottom="major">
+	      <cell halign="center">Event</cell>
+	      <cell halign="right"><m>x</m></cell>
+	      <cell halign="right"><m>P(x)</m></cell>
+	    </row>
+	    <row bottom="minor">
+	      <cell halign="center">dies</cell>
+	      <cell halign="right"><m>-250,000+200</m></cell>
+	      <cell halign="right"><m>1-0.999544</m></cell>
+	    </row>
+	    <row bottom="major">
+	      <cell halign="center">does not die</cell>
+	      <cell halign="right"><m>200</m></cell>
+	      <cell halign="right"><m>0.999544</m></cell>
+	    </row>
+	  </tabular>
+	</table>
+      </p>
+      <exercise>
+	<statement>
+	  <p>
+	    What is the expected value of the policy for the insurance
+	    company?
+	  </p>
+	</statement>
+	<solution>
+	  <p>
+	    <md>
+	      <mrow>
+		E[X] \amp = \mu_X
+	      </mrow>
+	      <mrow>
+		\amp = \sum x\cdot P(x)
+	      </mrow>
+	      <mrow>
+		\amp = -249,800(0.000456) + 200(0.999544)
+	      </mrow>
+	      <mrow>
+		\amp = 86
+	      </mrow>
+	    </md>
+	  </p>
+	  <p>
+	    Thus the insurance company expects to <em>earn</em> $86
+	    from the sale of the policy.
+	  </p>
+	</solution>
+      </exercise>
+    </reading-questions>
+
   </section>
 
   <section xml:id="sec-binomial-probability-distribution">
     <title>The Binomial Probability Distribution</title>
+
+    <p>Place holder text.</p>
 
   </section>
 
